@@ -1,0 +1,3704 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ley</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .seccion {
+            margin-bottom: 40px;
+        }
+        .grafico {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .titulo-seccion {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .subtitulo {
+            color: #d63384;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ley</h1>
+
+        
+<div style="margin-bottom: 20px;">
+    <h2 style="color: #007bff; margin-bottom: 10px;">Índice</h2>
+    <ul style="list-style-type: none; padding-left: 0;">
+        <li><a href="#emotivismo" style="color: #007bff; text-decoration: none;">Emotivismo</a></li>
+        <li><a href="#polarizacion" style="color: #007bff; text-decoration: none;">Polarización: Topic Modelling con LDA y LSI</a></li>
+        <li><a href="#redes" style="color: #007bff; text-decoration: none;">Redes complejas</a></li>
+        <li><a href="#odio" style="color: #007bff; text-decoration: none;">Discurso de odio</a></li>
+        <li><a href="#POS" style="color: #007bff; text-decoration: none;">POStagging</a></li>
+        <li><a href="#colocaciones" style="color: #007bff; text-decoration: none;">Colocaciones</a></li>
+    </ul>
+</div>
+
+
+        <div class="seccion" id="emotivismo">
+            <h2 class="titulo-seccion">Emotivismo</h2>
+            
+<div style="width:400px; height:400px;">
+    <canvas id="miGraficoCircular"></canvas>
+</div>
+<script>
+var ctx = document.getElementById('miGraficoCircular').getContext('2d');
+var miGraficoCircular = new Chart(ctx, {
+    type: 'pie',
+    data: {
+        labels: ['Razonamientos', 'Emotivos'], // Ejemplo de etiquetas
+        datasets: [{
+            label: 'Proporción de Razonamientos y Emotivos',
+            data: [30, 70], // Ejemplo de valores
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.6)',
+                'rgba(255, 99, 132, 0.6)'
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        legend: {
+            position: 'top',
+        },
+        title: {
+            display: true,
+            text: 'Proporción de Razonamientos (No Emotivos) vs Resto (Emotivos)'
+        }
+    }
+});
+</script>
+
+        </div>
+
+        <div class="seccion" id="polarizacion">
+            <h2 class="titulo-seccion">Polarización: Topic Modelling con LDA y LSI</h2>
+            <h3 class="subtitulo">Comparación de Coherencias LDA vs LSI</h3>
+            
+<div style="width:600px; height:400px;">
+  <canvas id="coherenciaChart"></canvas>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  var ctx = document.getElementById('coherenciaChart').getContext('2d');
+  var coherenciaChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: [2, 3, 4, 5, 6, 7, 8, 9, 10],
+      datasets: [
+        {
+          label: 'LDA',
+          data: [0.4023411750709241, 0.4493011098343328, 0.4122225432523591, 0.4527964371439254, 0.4533019784887511, 0.4099144406686927, 0.4045359878097908, 0.4249021083746978, 0.4523115214559208],
+          borderColor: 'rgba(255, 99, 132, 1)',
+          backgroundColor: 'rgba(255, 99, 132, 0.2)',
+        },
+        {
+          label: 'LSI',
+          data: [0.3632045138541435, 0.4443924722332641, 0.4769217948950576, 0.3278913996610905, 0.3959819220404341, 0.3844479827896525, 0.4182797506184471, 0.3524362999913916, 0.4340174391920079],
+          borderColor: 'rgba(54, 162, 235, 1)',
+          backgroundColor: 'rgba(54, 162, 235, 0.2)',
+        }
+      ]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+
+            <div style="display: flex; justify-content: space-between;">
+              <div style="flex: 50%; padding: 10px;">
+                <div>
+                    <h4 class="subtitulo">LDA</h4>
+                    <!-- Aquí insertarás el gráfico y resultados de LDA -->
+                    <div style="padding: 10px;">
+                      <canvas id="graficoLDA" style="max-width: 100%; height: auto;"></canvas>
+                    </div>
+                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<div style="margin-top: 20px;">
+    <h3>Modelo con 2 temas - Tema 0, Coherencia: 0.3682</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema0-03682445020533398"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema0-03682445020533398"), {
+        type: 'bar',
+        data: {
+            labels: ['aborto', 'mujer', 'derecho', 'él', 'emmarincon', 'vida', 'izquierdo', 'humano', 'madre', 'volver'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.078, 0.053, 0.034, 0.031, 0.026, 0.025, 0.023, 0.019, 0.017, 0.017],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 2 temas - Tema 1, Coherencia: 0.3682</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema1-03682445020533398"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema1-03682445020533398"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'vox', 'género', 'pp', 'izquierda', 'ley', 'voto', 'deber', 'él', 'persona'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.105, 0.064, 0.028, 0.024, 0.023, 0.022, 0.021, 0.019, 0.018, 0.018],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 3 temas - Tema 0, Coherencia: 0.4766</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema0-04766209463775667"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema0-04766209463775667"), {
+        type: 'bar',
+        data: {
+            labels: ['aborto', 'vox', 'derecho', 'él', 'vida', 'ley', 'volver', 'gallardo', 'año', 'decir'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.101, 0.078, 0.057, 0.036, 0.03, 0.024, 0.021, 0.02, 0.019, 0.018],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 3 temas - Tema 1, Coherencia: 0.4766</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema1-04766209463775667"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema1-04766209463775667"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'género', 'hombre', 'mujer', 'ministerio', 'partido', 'deber', 'humano', 'pp', 'pasar'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.157, 0.043, 0.038, 0.034, 0.02, 0.02, 0.02, 0.019, 0.019, 0.017],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 3 temas - Tema 2, Coherencia: 0.4766</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema2-04766209463775667"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema2-04766209463775667"), {
+        type: 'bar',
+        data: {
+            labels: ['izquierdo', 'izquierda', 'mujer', 'voto', 'él', 'madre', 'ver', 'querer', 'theobjective_es', 'dar'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.042, 0.04, 0.039, 0.037, 0.03, 0.029, 0.025, 0.024, 0.02, 0.02],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 4 temas - Tema 0, Coherencia: 0.4251</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema0-04250539685555704"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema0-04250539685555704"), {
+        type: 'bar',
+        data: {
+            labels: ['aborto', 'mujer', 'hombre', 'él', 'madre', 'derecho', 'abortar', 'anticonceptivo', 'vida', 'feminismo'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.156, 0.088, 0.051, 0.037, 0.035, 0.024, 0.022, 0.017, 0.016, 0.015],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 4 temas - Tema 1, Coherencia: 0.4251</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema1-04250539685555704"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema1-04250539685555704"), {
+        type: 'bar',
+        data: {
+            labels: ['vox', 'derecho', 'emmarincon', 'izquierdo', 'izquierda', 'voto', 'humano', 'vida', 'pp', 'decir'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.095, 0.05, 0.042, 0.041, 0.039, 0.036, 0.031, 0.029, 0.028, 0.026],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 4 temas - Tema 2, Coherencia: 0.4251</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema2-04250539685555704"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema2-04250539685555704"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'género', 'volver', 'gallardo', 'dirigir', 'ministerio', 'esperar', 'theobjective_es', 'ver', 'privado'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.169, 0.055, 0.033, 0.031, 0.026, 0.026, 0.026, 0.022, 0.022, 0.019],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 4 temas - Tema 3, Coherencia: 0.4251</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema3-04250539685555704"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema3-04250539685555704"), {
+        type: 'bar',
+        data: {
+            labels: ['ley', 'igualdad', 'deber', 'vox_es', 'partido', 'sexual', 'él', 'entender', 'político', 'pedir'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.05, 0.042, 0.041, 0.033, 0.03, 0.029, 0.028, 0.026, 0.025, 0.024],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 5 temas - Tema 0, Coherencia: 0.3740</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema0-03739821427492983"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema0-03739821427492983"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'aborto', 'género', 'él', 'volver', 'gallardo', 'dirigir', 'ley', 'quedar', 'violencia'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.111, 0.091, 0.059, 0.05, 0.039, 0.036, 0.03, 0.027, 0.021, 0.017],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 5 temas - Tema 1, Coherencia: 0.3740</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema1-03739821427492983"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema1-03739821427492983"), {
+        type: 'bar',
+        data: {
+            labels: ['aborto', 'madre', 'vida', 'izquierda', 'esperar', 'monasterior', 'político', 'año', 'derecho', 'seguir'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.068, 0.043, 0.038, 0.032, 0.029, 0.025, 0.025, 0.023, 0.022, 0.022],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 5 temas - Tema 2, Coherencia: 0.3740</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema2-03739821427492983"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema2-03739821427492983"), {
+        type: 'bar',
+        data: {
+            labels: ['izquierdo', 'derecho', 'voto', 'vox', 'ir', 'theobjective_es', 'pp', 'pedir', 'irenemontero', 'abascal'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.065, 0.051, 0.046, 0.044, 0.037, 0.032, 0.031, 0.029, 0.024, 0.024],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 5 temas - Tema 3, Coherencia: 0.3740</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema3-03739821427492983"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema3-03739821427492983"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'emmarincon', 'humano', 'aborto', 'defender', 'vida', 'sexual', 'sociedad', 'decir', 'niño'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.084, 0.081, 0.061, 0.04, 0.032, 0.03, 0.029, 0.026, 0.026, 0.023],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 5 temas - Tema 4, Coherencia: 0.3740</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema4-03739821427492983"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema4-03739821427492983"), {
+        type: 'bar',
+        data: {
+            labels: ['mujer', 'vox', 'igualdad', 'hombre', 'él', 'deber', 'pp', 'derecho', 'pagar', 'creer'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.111, 0.098, 0.058, 0.053, 0.027, 0.026, 0.026, 0.025, 0.021, 0.02],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 6 temas - Tema 0, Coherencia: 0.3989</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema0-03989487479256261"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema0-03989487479256261"), {
+        type: 'bar',
+        data: {
+            labels: ['aborto', 'derecho', 'vida', 'madre', 'entender', 'irenemontero', 'él', 'theobjective_es', 'pam_angelar', 'caso'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.194, 0.089, 0.047, 0.045, 0.031, 0.026, 0.025, 0.025, 0.023, 0.023],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 6 temas - Tema 1, Coherencia: 0.3989</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema1-03989487479256261"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema1-03989487479256261"), {
+        type: 'bar',
+        data: {
+            labels: ['izquierda', 'vox', 'vox_es', 'pp', 'creer', 'monasterior', 'político', 'español', 'seguir', 'partido'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.089, 0.059, 0.052, 0.045, 0.045, 0.041, 0.037, 0.031, 0.03, 0.03],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 6 temas - Tema 2, Coherencia: 0.3989</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema2-03989487479256261"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema2-03989487479256261"), {
+        type: 'bar',
+        data: {
+            labels: ['él', 'mujer', 'izquierdo', 'llamar', 'querer', 'dar', 'feminismo', 'ver', 'hablar', 'voto'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.061, 0.06, 0.057, 0.045, 0.045, 0.039, 0.035, 0.033, 0.029, 0.025],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 6 temas - Tema 3, Coherencia: 0.3989</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema3-03989487479256261"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema3-03989487479256261"), {
+        type: 'bar',
+        data: {
+            labels: ['volver', 'gallardo', 'dirigir', 'privado', 'euros', 'vox', 'león', 'lista', 'embarazo', 'madrid'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.059, 0.056, 0.046, 0.033, 0.03, 0.029, 0.027, 0.027, 0.026, 0.026],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 6 temas - Tema 4, Coherencia: 0.3989</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema4-03989487479256261"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema4-03989487479256261"), {
+        type: 'bar',
+        data: {
+            labels: ['vox', 'emmarincon', 'mujer', 'él', 'humano', 'decir', 'ir', 'aborto', 'pasar', 'vida'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.092, 0.059, 0.057, 0.046, 0.045, 0.033, 0.028, 0.027, 0.027, 0.025],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 6 temas - Tema 5, Coherencia: 0.3989</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema5-03989487479256261"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema5-03989487479256261"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'género', 'ley', 'hombre', 'ministerio', 'sexual', 'mujer', 'deber', 'persona', 'violencia'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.237, 0.064, 0.04, 0.036, 0.03, 0.028, 0.027, 0.024, 0.021, 0.017],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 7 temas - Tema 0, Coherencia: 0.4245</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema0-04245313136802271"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema0-04245313136802271"), {
+        type: 'bar',
+        data: {
+            labels: ['volver', 'gallardo', 'dirigir', 'monasterior', 'vox_es', 'ver', 'abascal', 'él', 'gobierno', 'buscar'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.072, 0.068, 0.057, 0.045, 0.044, 0.041, 0.037, 0.033, 0.032, 0.028],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 7 temas - Tema 1, Coherencia: 0.4245</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema1-04245313136802271"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema1-04245313136802271"), {
+        type: 'bar',
+        data: {
+            labels: ['aborto', 'mujer', 'él', 'derecho', 'vida', 'vox', 'entender', 'abortar', 'quedar', 'anticonceptivo'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.117, 0.067, 0.062, 0.052, 0.034, 0.034, 0.032, 0.029, 0.026, 0.022],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 7 temas - Tema 2, Coherencia: 0.4245</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema2-04245313136802271"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema2-04245313136802271"), {
+        type: 'bar',
+        data: {
+            labels: ['aborto', 'ley', 'derecho', 'madre', 'sexual', 'persona', 'pena', 'caso', 'él', 'salud'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.081, 0.067, 0.063, 0.062, 0.043, 0.036, 0.033, 0.03, 0.027, 0.023],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 7 temas - Tema 3, Coherencia: 0.4245</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema3-04245313136802271"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema3-04245313136802271"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'género', 'ministerio', 'hombre', 'mujer', 'él', 'perspectiva', 'oportunidad', 'feminismo', 'derechos'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.242, 0.084, 0.039, 0.037, 0.036, 0.02, 0.02, 0.02, 0.02, 0.019],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 7 temas - Tema 4, Coherencia: 0.4245</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema4-04245313136802271"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema4-04245313136802271"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'deber', 'político', 'hablar', 'libertad', 'mujer', 'dar', 'pedir', 'filolabutpl', 'filolabutpl'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.105, 0.071, 0.067, 0.038, 0.034, 0.03, 0.029, 0.029, 0.029, 0.029],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 7 temas - Tema 5, Coherencia: 0.4245</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema5-04245313136802271"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema5-04245313136802271"), {
+        type: 'bar',
+        data: {
+            labels: ['vox', 'pp', 'izquierda', 'voto', 'pasar', 'decir', 'poner', 'ir', 'humano', 'derecho'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.145, 0.073, 0.07, 0.065, 0.041, 0.028, 0.026, 0.024, 0.022, 0.021],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 7 temas - Tema 6, Coherencia: 0.4245</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema6-04245313136802271"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema6-04245313136802271"), {
+        type: 'bar',
+        data: {
+            labels: ['izquierdo', 'aborto', 'theobjective_es', 'público', 'privado', 'salir', 'llamar', 'león', 'emmarincon', 'año'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.093, 0.051, 0.038, 0.038, 0.038, 0.033, 0.033, 0.03, 0.03, 0.027],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 8 temas - Tema 0, Coherencia: 0.4205</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema0-04205322785183057"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema0-04205322785183057"), {
+        type: 'bar',
+        data: {
+            labels: ['vox', 'pp', 'vox_es', 'monasterior', 'izquierda', 'abascal', 'pedir', 'voto', 'pasar', 'gobierno'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.214, 0.086, 0.048, 0.038, 0.032, 0.031, 0.028, 0.028, 0.027, 0.024],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 8 temas - Tema 1, Coherencia: 0.4205</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema1-04205322785183057"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema1-04205322785183057"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'género', 'aborto', 'privado', 'león', 'hablar', 'tomar', 'perspectiva', 'castilla', 'derechos'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.134, 0.101, 0.036, 0.033, 0.029, 0.028, 0.026, 0.026, 0.026, 0.022],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 8 temas - Tema 2, Coherencia: 0.4205</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema2-04205322785183057"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema2-04205322785183057"), {
+        type: 'bar',
+        data: {
+            labels: ['emmarincon', 'humano', 'igualdad', 'mujer', 'vida', 'llamar', 'justicia', 'derecho', 'lograr', 'ayuso'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.077, 0.074, 0.068, 0.055, 0.039, 0.031, 0.028, 0.026, 0.025, 0.025],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 8 temas - Tema 3, Coherencia: 0.4205</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema3-04205322785183057"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema3-04205322785183057"), {
+        type: 'bar',
+        data: {
+            labels: ['volver', 'gallardo', 'madre', 'dirigir', 'entender', 'derecho', 'deber', 'emmarincon', 'aborto', 'él'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.085, 0.081, 0.071, 0.067, 0.052, 0.036, 0.032, 0.029, 0.027, 0.027],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 8 temas - Tema 4, Coherencia: 0.4205</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema4-04205322785183057"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema4-04205322785183057"), {
+        type: 'bar',
+        data: {
+            labels: ['ver', 'él', 'esperar', 'ir', 'lista', 'defender', '100', 'comunidad', 'dejar', 'feto'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.087, 0.082, 0.069, 0.062, 0.047, 0.047, 0.04, 0.034, 0.029, 0.028],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 8 temas - Tema 5, Coherencia: 0.4205</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema5-04205322785183057"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema5-04205322785183057"), {
+        type: 'bar',
+        data: {
+            labels: ['mujer', 'izquierdo', 'político', 'theobjective_es', 'hombre', 'pam_angelar', 'dar', 'poner', 'aborto', 'él'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.111, 0.071, 0.034, 0.034, 0.029, 0.025, 0.025, 0.025, 0.024, 0.022],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 8 temas - Tema 6, Coherencia: 0.4205</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema6-04205322785183057"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema6-04205322785183057"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'derecho', 'izquierda', 'deber', 'creer', 'ministerio', 'hombre', 'partido', 'ley', 'medio'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.181, 0.056, 0.049, 0.039, 0.036, 0.036, 0.035, 0.032, 0.028, 0.028],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 8 temas - Tema 7, Coherencia: 0.4205</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema7-04205322785183057"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema7-04205322785183057"), {
+        type: 'bar',
+        data: {
+            labels: ['aborto', 'derecho', 'voto', 'él', 'sexual', 'ley', 'decir', 'persona', 'anticonceptivo', 'quedar'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.187, 0.048, 0.046, 0.044, 0.042, 0.039, 0.032, 0.03, 0.029, 0.029],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 9 temas - Tema 0, Coherencia: 0.4216</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema0-04216256215515467"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema0-04216256215515467"), {
+        type: 'bar',
+        data: {
+            labels: ['gallardo', 'volver', 'pp', 'dirigir', 'pasar', 'ver', 'madrid', 'él', 'pagar', 'decir'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.073, 0.068, 0.062, 0.06, 0.057, 0.043, 0.042, 0.041, 0.032, 0.031],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 9 temas - Tema 1, Coherencia: 0.4216</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema1-04216256215515467"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema1-04216256215515467"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'humano', 'dar', 'sociedad', 'persona', 'justicia', 'libertad', 'emmarincon', 'embarazo', 'referir'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.093, 0.068, 0.053, 0.053, 0.047, 0.042, 0.037, 0.037, 0.032, 0.027],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 9 temas - Tema 2, Coherencia: 0.4216</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema2-04216256215515467"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema2-04216256215515467"), {
+        type: 'bar',
+        data: {
+            labels: ['vox', 'vox_es', 'entender', 'mujer', 'monasterior', 'él', 'pedir', 'derecho', 'abortar', 'decidir'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.058, 0.054, 0.053, 0.05, 0.045, 0.042, 0.037, 0.034, 0.033, 0.033],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 9 temas - Tema 3, Coherencia: 0.4216</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema3-04216256215515467"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema3-04216256215515467"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'género', 'hombre', 'mujer', 'ministerio', 'deber', 'violencia', 'querer', 'feminismo', 'perspectiva'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.287, 0.091, 0.063, 0.058, 0.043, 0.03, 0.025, 0.023, 0.022, 0.022],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 9 temas - Tema 4, Coherencia: 0.4216</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema4-04216256215515467"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema4-04216256215515467"), {
+        type: 'bar',
+        data: {
+            labels: ['izquierdo', 'emmarincon', 'madre', 'bebé', 'idea', 'mil', 'ganar', 'nacer', 'vientre', 'él'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.149, 0.125, 0.096, 0.04, 0.04, 0.035, 0.032, 0.032, 0.03, 0.026],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 9 temas - Tema 5, Coherencia: 0.4216</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema5-04216256215515467"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema5-04216256215515467"), {
+        type: 'bar',
+        data: {
+            labels: ['derecho', 'izquierda', 'vida', 'esperar', 'aborto', 'cosa', 'lista', 'filolabutpl', 'decir', 'abortir'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.133, 0.099, 0.07, 0.058, 0.036, 0.033, 0.033, 0.029, 0.025, 0.025],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 9 temas - Tema 6, Coherencia: 0.4216</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema6-04216256215515467"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema6-04216256215515467"), {
+        type: 'bar',
+        data: {
+            labels: ['vox', 'voto', 'político', 'pp', 'theobjective_es', 'abascal', 'gobierno', 'seguir', 'partido', 'español'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.21, 0.093, 0.067, 0.044, 0.042, 0.038, 0.038, 0.038, 0.033, 0.032],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 9 temas - Tema 7, Coherencia: 0.4216</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema7-04216256215515467"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema7-04216256215515467"), {
+        type: 'bar',
+        data: {
+            labels: ['aborto', 'él', 'ley', 'sexual', 'mujer', 'ir', 'defender', 'anticonceptivo', 'derecho', 'deber'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.188, 0.071, 0.05, 0.036, 0.034, 0.028, 0.028, 0.025, 0.024, 0.023],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 9 temas - Tema 8, Coherencia: 0.4216</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema8-04216256215515467"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema8-04216256215515467"), {
+        type: 'bar',
+        data: {
+            labels: ['poner', 'mujer', 'medio', 'privado', 'pam_angelar', 'león', 'euros', 'público', 'castilla', 'castigar'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.071, 0.067, 0.052, 0.048, 0.038, 0.038, 0.038, 0.035, 0.033, 0.033],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 10 temas - Tema 0, Coherencia: 0.4188</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema0-0418815425537783"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema0-0418815425537783"), {
+        type: 'bar',
+        data: {
+            labels: ['vox', 'izquierda', 'gallardo', 'volver', 'dirigir', 'vox_es', 'monasterior', 'partido', 'abascal', 'pp'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.088, 0.083, 0.066, 0.062, 0.054, 0.046, 0.043, 0.037, 0.035, 0.032],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 10 temas - Tema 1, Coherencia: 0.4188</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema1-0418815425537783"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema1-0418815425537783"), {
+        type: 'bar',
+        data: {
+            labels: ['izquierdo', 'decir', 'él', 'sexual', 'medio', 'ley', 'castigar', 'pabloiglesia', 'theobjective_es', 'comunista'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.15, 0.104, 0.069, 0.065, 0.052, 0.048, 0.046, 0.04, 0.034, 0.033],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 10 temas - Tema 2, Coherencia: 0.4188</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema2-0418815425537783"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema2-0418815425537783"), {
+        type: 'bar',
+        data: {
+            labels: ['vox', 'voto', 'pasar', 'él', 'ver', 'pp', 'dar', 'dejar', 'red', 'sánchez'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.226, 0.12, 0.081, 0.077, 0.076, 0.06, 0.028, 0.028, 0.022, 0.019],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 10 temas - Tema 3, Coherencia: 0.4188</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema3-0418815425537783"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema3-0418815425537783"), {
+        type: 'bar',
+        data: {
+            labels: ['aborto', '000', 'él', 'año', 'persona', 'privado', 'país', 'creer', 'euros', 'médico'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.198, 0.051, 0.047, 0.038, 0.034, 0.034, 0.03, 0.029, 0.026, 0.025],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 10 temas - Tema 4, Coherencia: 0.4188</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema4-0418815425537783"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema4-0418815425537783"), {
+        type: 'bar',
+        data: {
+            labels: ['emmarincon', 'esperar', 'lista', 'vida', 'humano', 'llamar', 'niño', 'cosa', 'comunidad', 'bebé'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.112, 0.067, 0.05, 0.042, 0.041, 0.039, 0.037, 0.028, 0.028, 0.028],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 10 temas - Tema 5, Coherencia: 0.4188</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema5-0418815425537783"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema5-0418815425537783"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'género', 'ministerio', 'violencia', 'irenemontero', 'pam_angelar', 'perspectiva', 'madre', 'ley', 'pena'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.226, 0.064, 0.058, 0.033, 0.033, 0.033, 0.029, 0.028, 0.026, 0.026],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 10 temas - Tema 6, Coherencia: 0.4188</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema6-0418815425537783"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema6-0418815425537783"), {
+        type: 'bar',
+        data: {
+            labels: ['mujer', 'igualdad', 'hombre', 'género', 'tomar', 'político', 'pedir', 'decidir', 'querer', 'poner'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.164, 0.112, 0.097, 0.051, 0.031, 0.03, 0.03, 0.028, 0.028, 0.024],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 10 temas - Tema 7, Coherencia: 0.4188</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema7-0418815425537783"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema7-0418815425537783"), {
+        type: 'bar',
+        data: {
+            labels: ['derecho', 'deber', 'quedar', 'seguir', 'hablar', 'ppopular', 'entender', 'él', 'denunciar', '50'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.133, 0.095, 0.049, 0.049, 0.045, 0.035, 0.035, 0.032, 0.028, 0.025],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 10 temas - Tema 8, Coherencia: 0.4188</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema8-0418815425537783"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema8-0418815425537783"), {
+        type: 'bar',
+        data: {
+            labels: ['aborto', 'derecho', 'vida', 'humano', 'ir', 'mujer', 'anticonceptivo', 'embarazo', 'emmarincon', 'madre'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.14, 0.064, 0.058, 0.053, 0.045, 0.04, 0.036, 0.032, 0.031, 0.029],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 10 temas - Tema 9, Coherencia: 0.4188</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LDATema9-0418815425537783"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LDATema9-0418815425537783"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'justicia', 'filolabutpl', 'filolabutpl', 'sociedad', 'trabajar', 'crear', 'lograr', 'j_zaragoza', 'seguro'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.122, 0.045, 0.039, 0.039, 0.035, 0.034, 0.034, 0.029, 0.029, 0.029],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+                </div>
+              </div>
+              <div style="flex: 50%; padding: 10px;">
+                <div>
+                    <h4 class="subtitulo">LSI</h4>
+                    <!-- Aquí insertarás el gráfico y resultados de LSI -->
+                    <div style="padding: 10px;">
+                      <canvas id="graficoLSI" style="max-width: 100%; height: auto;"></canvas>
+                    </div>
+                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<div style="margin-top: 20px;">
+    <h3>Modelo con 2 temas - Tema 0, Coherencia: 0.2758</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema0-02758454893926119"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema0-02758454893926119"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'mujer', 'aborto', 'derecho', 'él', 'hombre', 'vox', 'género', 'deber', 'vida'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.629, 0.363, 0.337, 0.22, 0.212, 0.184, 0.173, 0.161, 0.113, 0.11],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 2 temas - Tema 1, Coherencia: 0.2758</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema1-02758454893926119"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema1-02758454893926119"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'aborto', 'vox', 'derecho', 'él', 'género', 'vida', 'año', '000', 'hombre'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [-0.597, 0.577, 0.248, 0.202, 0.196, -0.167, 0.136, 0.09, 0.087, -0.084],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 3 temas - Tema 0, Coherencia: 0.3010</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema0-03009599956746125"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema0-03009599956746125"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'mujer', 'aborto', 'derecho', 'él', 'hombre', 'vox', 'género', 'deber', 'vida'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.629, 0.363, 0.337, 0.22, 0.212, 0.184, 0.173, 0.161, 0.113, 0.11],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 3 temas - Tema 1, Coherencia: 0.3010</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema1-03009599956746125"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema1-03009599956746125"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'aborto', 'vox', 'derecho', 'él', 'género', 'vida', 'año', '000', 'hombre'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [-0.597, 0.577, 0.248, 0.202, 0.196, -0.167, 0.136, 0.09, 0.087, -0.084],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 3 temas - Tema 2, Coherencia: 0.3010</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema2-03009599956746125"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema2-03009599956746125"), {
+        type: 'bar',
+        data: {
+            labels: ['vox', 'aborto', 'voto', 'pp', 'mujer', 'él', 'decir', 'izquierda', 'vox_es', 'pagar'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.761, -0.417, 0.258, 0.202, -0.127, 0.095, 0.094, 0.09, 0.081, 0.078],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 4 temas - Tema 0, Coherencia: 0.3257</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema0-03256679252453031"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema0-03256679252453031"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'mujer', 'aborto', 'derecho', 'él', 'hombre', 'vox', 'género', 'deber', 'vida'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.629, 0.363, 0.337, 0.22, 0.212, 0.184, 0.173, 0.161, 0.113, 0.11],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 4 temas - Tema 1, Coherencia: 0.3257</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema1-03256679252453031"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema1-03256679252453031"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'aborto', 'vox', 'derecho', 'él', 'género', 'vida', 'año', '000', 'hombre'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [-0.597, 0.577, 0.248, 0.202, 0.196, -0.167, 0.136, 0.09, 0.087, -0.084],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 4 temas - Tema 2, Coherencia: 0.3257</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema2-03256679252453031"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema2-03256679252453031"), {
+        type: 'bar',
+        data: {
+            labels: ['vox', 'aborto', 'voto', 'pp', 'mujer', 'él', 'decir', 'izquierda', 'vox_es', 'pagar'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.761, -0.417, 0.258, 0.202, -0.127, 0.095, 0.095, 0.09, 0.081, 0.078],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 4 temas - Tema 3, Coherencia: 0.3257</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema3-03256679252453031"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema3-03256679252453031"), {
+        type: 'bar',
+        data: {
+            labels: ['mujer', 'derecho', 'hombre', 'igualdad', 'aborto', 'género', 'feminismo', 'decidir', 'vida', 'decir'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [-0.779, 0.283, -0.261, 0.239, 0.19, 0.128, -0.109, -0.099, 0.095, 0.09],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 5 temas - Tema 0, Coherencia: 0.4326</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema0-04326487265324543"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema0-04326487265324543"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'mujer', 'aborto', 'derecho', 'él', 'hombre', 'vox', 'género', 'deber', 'vida'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [-0.629, -0.363, -0.337, -0.22, -0.212, -0.184, -0.173, -0.161, -0.113, -0.11],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 5 temas - Tema 1, Coherencia: 0.4326</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema1-04326487265324543"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema1-04326487265324543"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'aborto', 'vox', 'derecho', 'él', 'género', 'vida', 'año', '000', 'hombre'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [-0.597, 0.577, 0.248, 0.202, 0.196, -0.167, 0.136, 0.09, 0.087, -0.084],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 5 temas - Tema 2, Coherencia: 0.4326</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema2-04326487265324543"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema2-04326487265324543"), {
+        type: 'bar',
+        data: {
+            labels: ['vox', 'aborto', 'voto', 'pp', 'mujer', 'él', 'decir', 'izquierda', 'vox_es', 'pagar'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [-0.761, 0.417, -0.258, -0.202, 0.127, -0.095, -0.094, -0.09, -0.081, -0.078],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 5 temas - Tema 3, Coherencia: 0.4326</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema3-04326487265324543"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema3-04326487265324543"), {
+        type: 'bar',
+        data: {
+            labels: ['mujer', 'derecho', 'hombre', 'igualdad', 'aborto', 'género', 'feminismo', 'decidir', 'vida', 'decir'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.779, -0.283, 0.261, -0.239, -0.19, -0.128, 0.109, 0.099, -0.095, -0.09],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 5 temas - Tema 4, Coherencia: 0.4326</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema4-04326487265324543"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema4-04326487265324543"), {
+        type: 'bar',
+        data: {
+            labels: ['derecho', 'aborto', 'privado', 'emmarincon', '000', 'vida', 'vox', 'público', 'año', 'león'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [-0.699, 0.295, 0.184, -0.182, 0.18, -0.174, 0.151, 0.145, 0.133, 0.128],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 6 temas - Tema 0, Coherencia: 0.3996</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema0-03995835901487586"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema0-03995835901487586"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'mujer', 'aborto', 'derecho', 'él', 'hombre', 'vox', 'género', 'deber', 'vida'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.629, 0.363, 0.337, 0.22, 0.212, 0.184, 0.173, 0.161, 0.113, 0.11],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 6 temas - Tema 1, Coherencia: 0.3996</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema1-03995835901487586"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema1-03995835901487586"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'aborto', 'vox', 'derecho', 'él', 'género', 'vida', 'año', '000', 'hombre'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.597, -0.577, -0.248, -0.202, -0.196, 0.167, -0.136, -0.09, -0.087, 0.084],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 6 temas - Tema 2, Coherencia: 0.3996</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema2-03995835901487586"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema2-03995835901487586"), {
+        type: 'bar',
+        data: {
+            labels: ['vox', 'aborto', 'voto', 'pp', 'mujer', 'él', 'decir', 'izquierda', 'vox_es', 'pagar'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.761, -0.417, 0.258, 0.202, -0.127, 0.095, 0.095, 0.09, 0.081, 0.078],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 6 temas - Tema 3, Coherencia: 0.3996</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema3-03995835901487586"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema3-03995835901487586"), {
+        type: 'bar',
+        data: {
+            labels: ['mujer', 'derecho', 'hombre', 'igualdad', 'aborto', 'género', 'feminismo', 'decidir', 'vida', 'decir'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.779, -0.283, 0.261, -0.239, -0.19, -0.128, 0.109, 0.099, -0.095, -0.09],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 6 temas - Tema 4, Coherencia: 0.3996</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema4-03995835901487586"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema4-03995835901487586"), {
+        type: 'bar',
+        data: {
+            labels: ['derecho', 'aborto', 'privado', 'emmarincon', '000', 'vida', 'vox', 'público', 'año', 'león'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [-0.699, 0.295, 0.184, -0.182, 0.18, -0.174, 0.151, 0.145, 0.133, 0.128],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 6 temas - Tema 5, Coherencia: 0.3996</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema5-03995835901487586"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema5-03995835901487586"), {
+        type: 'bar',
+        data: {
+            labels: ['voto', 'él', 'derecho', 'vox', 'mujer', '000', 'decir', 'español', 'izquierdo', 'gobierno'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [-0.661, 0.544, -0.195, 0.152, -0.118, -0.099, 0.099, -0.095, 0.092, -0.091],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 7 temas - Tema 0, Coherencia: 0.4068</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema0-04068354119420329"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema0-04068354119420329"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'mujer', 'aborto', 'derecho', 'él', 'hombre', 'vox', 'género', 'deber', 'vida'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [-0.629, -0.363, -0.337, -0.22, -0.212, -0.184, -0.173, -0.161, -0.113, -0.11],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 7 temas - Tema 1, Coherencia: 0.4068</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema1-04068354119420329"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema1-04068354119420329"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'aborto', 'vox', 'derecho', 'él', 'género', 'vida', 'año', '000', 'hombre'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [-0.597, 0.577, 0.248, 0.202, 0.196, -0.167, 0.136, 0.09, 0.087, -0.084],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 7 temas - Tema 2, Coherencia: 0.4068</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema2-04068354119420329"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema2-04068354119420329"), {
+        type: 'bar',
+        data: {
+            labels: ['vox', 'aborto', 'voto', 'pp', 'mujer', 'él', 'decir', 'izquierda', 'vox_es', 'pagar'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.761, -0.417, 0.258, 0.202, -0.127, 0.095, 0.095, 0.09, 0.081, 0.078],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 7 temas - Tema 3, Coherencia: 0.4068</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema3-04068354119420329"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema3-04068354119420329"), {
+        type: 'bar',
+        data: {
+            labels: ['mujer', 'derecho', 'hombre', 'igualdad', 'aborto', 'género', 'feminismo', 'decidir', 'vida', 'decir'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.779, -0.283, 0.261, -0.239, -0.19, -0.128, 0.108, 0.099, -0.095, -0.09],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 7 temas - Tema 4, Coherencia: 0.4068</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema4-04068354119420329"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema4-04068354119420329"), {
+        type: 'bar',
+        data: {
+            labels: ['derecho', 'aborto', 'privado', 'emmarincon', '000', 'vida', 'vox', 'público', 'año', 'león'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.699, -0.295, -0.184, 0.182, -0.18, 0.174, -0.151, -0.145, -0.133, -0.128],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 7 temas - Tema 5, Coherencia: 0.4068</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema5-04068354119420329"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema5-04068354119420329"), {
+        type: 'bar',
+        data: {
+            labels: ['voto', 'él', 'derecho', 'vox', 'mujer', '000', 'decir', 'español', 'izquierdo', 'gobierno'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.661, -0.544, 0.195, -0.152, 0.118, 0.099, -0.099, 0.095, -0.092, 0.091],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 7 temas - Tema 6, Coherencia: 0.4068</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema6-04068354119420329"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema6-04068354119420329"), {
+        type: 'bar',
+        data: {
+            labels: ['él', 'voto', 'vox', 'izquierdo', 'derecho', 'medio', 'pasar', 'quedar', 'idea', 'privado'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.482, 0.48, -0.349, 0.346, -0.183, 0.139, 0.134, 0.101, 0.1, -0.097],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 8 temas - Tema 0, Coherencia: 0.3587</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema0-03586933938386712"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema0-03586933938386712"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'mujer', 'aborto', 'derecho', 'él', 'hombre', 'vox', 'género', 'deber', 'vida'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.629, 0.363, 0.337, 0.22, 0.212, 0.184, 0.173, 0.161, 0.113, 0.11],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 8 temas - Tema 1, Coherencia: 0.3587</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema1-03586933938386712"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema1-03586933938386712"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'aborto', 'vox', 'derecho', 'él', 'género', 'vida', 'año', '000', 'hombre'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [-0.597, 0.577, 0.248, 0.202, 0.196, -0.167, 0.136, 0.09, 0.087, -0.084],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 8 temas - Tema 2, Coherencia: 0.3587</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema2-03586933938386712"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema2-03586933938386712"), {
+        type: 'bar',
+        data: {
+            labels: ['vox', 'aborto', 'voto', 'pp', 'mujer', 'él', 'decir', 'izquierda', 'vox_es', 'pagar'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.761, -0.417, 0.258, 0.202, -0.127, 0.095, 0.095, 0.09, 0.081, 0.078],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 8 temas - Tema 3, Coherencia: 0.3587</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema3-03586933938386712"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema3-03586933938386712"), {
+        type: 'bar',
+        data: {
+            labels: ['mujer', 'derecho', 'hombre', 'igualdad', 'aborto', 'género', 'feminismo', 'decidir', 'vida', 'decir'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.779, -0.283, 0.261, -0.239, -0.19, -0.128, 0.108, 0.099, -0.095, -0.09],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 8 temas - Tema 4, Coherencia: 0.3587</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema4-03586933938386712"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema4-03586933938386712"), {
+        type: 'bar',
+        data: {
+            labels: ['derecho', 'aborto', 'privado', 'emmarincon', '000', 'vida', 'vox', 'público', 'año', 'león'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [-0.699, 0.295, 0.184, -0.182, 0.18, -0.174, 0.151, 0.145, 0.133, 0.128],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 8 temas - Tema 5, Coherencia: 0.3587</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema5-03586933938386712"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema5-03586933938386712"), {
+        type: 'bar',
+        data: {
+            labels: ['voto', 'él', 'derecho', 'vox', 'mujer', '000', 'decir', 'español', 'izquierdo', 'gobierno'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.661, -0.544, 0.195, -0.152, 0.118, 0.099, -0.099, 0.095, -0.092, 0.092],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 8 temas - Tema 6, Coherencia: 0.3587</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema6-03586933938386712"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema6-03586933938386712"), {
+        type: 'bar',
+        data: {
+            labels: ['él', 'voto', 'vox', 'izquierdo', 'derecho', 'medio', 'pasar', 'quedar', 'idea', 'privado'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [-0.482, -0.48, 0.348, -0.346, 0.183, -0.138, -0.134, -0.101, -0.1, 0.097],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 8 temas - Tema 7, Coherencia: 0.3587</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema7-03586933938386712"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema7-03586933938386712"), {
+        type: 'bar',
+        data: {
+            labels: ['privado', 'público', 'aborto', 'izquierdo', 'derecho', 'león', 'castilla', 'valladolid', 'euros', 'año'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.339, 0.322, -0.299, 0.294, 0.23, 0.225, 0.212, 0.194, 0.191, 0.19],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 9 temas - Tema 0, Coherencia: 0.3932</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema0-03931933350453315"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema0-03931933350453315"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'mujer', 'aborto', 'derecho', 'él', 'hombre', 'vox', 'género', 'deber', 'vida'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.629, 0.363, 0.337, 0.22, 0.212, 0.184, 0.173, 0.161, 0.113, 0.11],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 9 temas - Tema 1, Coherencia: 0.3932</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema1-03931933350453315"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema1-03931933350453315"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'aborto', 'vox', 'derecho', 'él', 'género', 'vida', 'año', '000', 'hombre'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [-0.597, 0.577, 0.248, 0.202, 0.196, -0.167, 0.136, 0.09, 0.087, -0.084],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 9 temas - Tema 2, Coherencia: 0.3932</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema2-03931933350453315"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema2-03931933350453315"), {
+        type: 'bar',
+        data: {
+            labels: ['vox', 'aborto', 'voto', 'pp', 'mujer', 'él', 'decir', 'izquierda', 'vox_es', 'pagar'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [-0.761, 0.417, -0.258, -0.202, 0.127, -0.095, -0.095, -0.09, -0.081, -0.078],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 9 temas - Tema 3, Coherencia: 0.3932</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema3-03931933350453315"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema3-03931933350453315"), {
+        type: 'bar',
+        data: {
+            labels: ['mujer', 'derecho', 'hombre', 'igualdad', 'aborto', 'género', 'feminismo', 'decidir', 'vida', 'decir'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [-0.779, 0.283, -0.261, 0.239, 0.19, 0.128, -0.108, -0.099, 0.095, 0.09],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 9 temas - Tema 4, Coherencia: 0.3932</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema4-03931933350453315"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema4-03931933350453315"), {
+        type: 'bar',
+        data: {
+            labels: ['derecho', 'aborto', 'privado', 'emmarincon', '000', 'vida', 'vox', 'público', 'año', 'león'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [-0.699, 0.295, 0.184, -0.182, 0.18, -0.174, 0.151, 0.145, 0.133, 0.128],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 9 temas - Tema 5, Coherencia: 0.3932</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema5-03931933350453315"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema5-03931933350453315"), {
+        type: 'bar',
+        data: {
+            labels: ['voto', 'él', 'derecho', 'vox', 'mujer', '000', 'decir', 'español', 'izquierdo', 'gobierno'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [-0.661, 0.544, -0.195, 0.152, -0.118, -0.099, 0.099, -0.095, 0.092, -0.091],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 9 temas - Tema 6, Coherencia: 0.3932</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema6-03931933350453315"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema6-03931933350453315"), {
+        type: 'bar',
+        data: {
+            labels: ['él', 'voto', 'vox', 'izquierdo', 'derecho', 'medio', 'pasar', 'quedar', 'idea', 'privado'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.482, 0.48, -0.348, 0.346, -0.183, 0.139, 0.134, 0.101, 0.099, -0.097],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 9 temas - Tema 7, Coherencia: 0.3932</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema7-03931933350453315"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema7-03931933350453315"), {
+        type: 'bar',
+        data: {
+            labels: ['privado', 'público', 'aborto', 'izquierdo', 'derecho', 'león', 'castilla', 'valladolid', 'euros', 'año'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [-0.339, -0.322, 0.299, -0.294, -0.23, -0.225, -0.212, -0.194, -0.191, -0.189],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 9 temas - Tema 8, Coherencia: 0.3932</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema8-03931933350453315"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema8-03931933350453315"), {
+        type: 'bar',
+        data: {
+            labels: ['izquierdo', 'dirigir', 'volver', 'gallardo', 'medio', 'él', 'marcelo', 'año', 'género', 'vida'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.472, -0.399, -0.393, -0.363, 0.35, -0.183, -0.155, -0.107, 0.103, 0.095],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 10 temas - Tema 0, Coherencia: 0.4464</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema0-04463773620791205"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema0-04463773620791205"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'mujer', 'aborto', 'derecho', 'él', 'hombre', 'vox', 'género', 'deber', 'vida'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [-0.629, -0.363, -0.337, -0.22, -0.212, -0.184, -0.173, -0.161, -0.113, -0.11],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 10 temas - Tema 1, Coherencia: 0.4464</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema1-04463773620791205"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema1-04463773620791205"), {
+        type: 'bar',
+        data: {
+            labels: ['igualdad', 'aborto', 'vox', 'derecho', 'él', 'género', 'vida', 'año', '000', 'hombre'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.597, -0.577, -0.248, -0.202, -0.196, 0.167, -0.136, -0.09, -0.087, 0.084],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 10 temas - Tema 2, Coherencia: 0.4464</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema2-04463773620791205"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema2-04463773620791205"), {
+        type: 'bar',
+        data: {
+            labels: ['vox', 'aborto', 'voto', 'pp', 'mujer', 'él', 'decir', 'izquierda', 'vox_es', 'pagar'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.761, -0.417, 0.258, 0.202, -0.127, 0.095, 0.094, 0.09, 0.081, 0.078],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 10 temas - Tema 3, Coherencia: 0.4464</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema3-04463773620791205"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema3-04463773620791205"), {
+        type: 'bar',
+        data: {
+            labels: ['mujer', 'derecho', 'hombre', 'igualdad', 'aborto', 'género', 'feminismo', 'decidir', 'vida', 'decir'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.779, -0.283, 0.261, -0.239, -0.19, -0.128, 0.108, 0.099, -0.095, -0.09],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 10 temas - Tema 4, Coherencia: 0.4464</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema4-04463773620791205"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema4-04463773620791205"), {
+        type: 'bar',
+        data: {
+            labels: ['derecho', 'aborto', 'privado', 'emmarincon', '000', 'vida', 'vox', 'público', 'año', 'león'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.699, -0.295, -0.184, 0.182, -0.18, 0.174, -0.151, -0.145, -0.133, -0.128],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 10 temas - Tema 5, Coherencia: 0.4464</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema5-04463773620791205"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema5-04463773620791205"), {
+        type: 'bar',
+        data: {
+            labels: ['voto', 'él', 'derecho', 'vox', 'mujer', '000', 'decir', 'español', 'izquierdo', 'gobierno'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [-0.661, 0.544, -0.195, 0.152, -0.118, -0.099, 0.099, -0.095, 0.092, -0.091],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 10 temas - Tema 6, Coherencia: 0.4464</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema6-04463773620791205"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema6-04463773620791205"), {
+        type: 'bar',
+        data: {
+            labels: ['él', 'voto', 'vox', 'izquierdo', 'derecho', 'medio', 'pasar', 'quedar', 'idea', 'privado'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [-0.482, -0.48, 0.349, -0.346, 0.183, -0.139, -0.135, -0.101, -0.1, 0.097],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 10 temas - Tema 7, Coherencia: 0.4464</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema7-04463773620791205"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema7-04463773620791205"), {
+        type: 'bar',
+        data: {
+            labels: ['privado', 'público', 'aborto', 'izquierdo', 'derecho', 'león', 'castilla', 'valladolid', 'euros', 'año'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.339, 0.322, -0.299, 0.294, 0.23, 0.225, 0.212, 0.194, 0.191, 0.189],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 10 temas - Tema 8, Coherencia: 0.4464</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema8-04463773620791205"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema8-04463773620791205"), {
+        type: 'bar',
+        data: {
+            labels: ['izquierdo', 'dirigir', 'volver', 'gallardo', 'medio', 'él', 'marcelo', 'año', 'género', 'vida'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [-0.472, 0.399, 0.393, 0.363, -0.349, 0.183, 0.154, 0.108, -0.103, -0.095],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Modelo con 10 temas - Tema 9, Coherencia: 0.4464</h3>
+    <div style="width:600px; height:400px;">
+    <canvas id="LSITema9-04463773620791205"></canvas>
+    </div>
+    <script>
+    new Chart(document.getElementById("LSITema9-04463773620791205"), {
+        type: 'bar',
+        data: {
+            labels: ['volver', 'él', 'dirigir', 'gallardo', 'humano', 'emmarincon', 'izquierdo', 'medio', 'vida', 'derecho'],
+            datasets: [{
+                label: 'Valor de Importancia',
+                data: [0.343, -0.31, 0.302, 0.294, 0.283, 0.264, 0.255, 0.242, 0.236, -0.2],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div>
+
+                </div>
+              </div>.
+        </div>
+
+        <div class="seccion" id="redes">
+            <h2 class="titulo-seccion">Redes complejas</h2>
+            <div style="flex: 50%; padding: 10px;">
+              <h3 class="subtitulo">LDA</h3>
+              <!-- Aquí insertarás el gráfico de redes complejas con plotly para LDA-->
+              
+<div id="redesLDA"></div>
+<script>
+<div>                            <div id="56becf2e-00dc-4d0b-886b-bb410a0d901f" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("56becf2e-00dc-4d0b-886b-bb410a0d901f")) {                    Plotly.newPlot(                        "56becf2e-00dc-4d0b-886b-bb410a0d901f",                        [{"hoverinfo":"none","line":{"color":"#888","width":0.5},"mode":"lines","x":[0.0031078410200957585,0.0974425142178935,null,0.0031078410200957585,0.06072433457148403,null,0.0031078410200957585,0.1288456338114411,null,0.0031078410200957585,-0.06426166472405996,null,0.0031078410200957585,-0.043961706788197996,null,0.0031078410200957585,-0.03850222992626119,null,0.0031078410200957585,0.06368517039632741,null,0.0031078410200957585,0.01252310129512157,null,0.0031078410200957585,0.03333762365553765,null,0.0031078410200957585,-0.24319269400425067,null,0.0031078410200957585,0.01964178388299163,null,0.0031078410200957585,0.12385565098162399,null,0.0031078410200957585,-0.08401492503713366,null,0.0031078410200957585,0.20066277907490943,null,0.0031078410200957585,0.21206743982301038,null,0.0031078410200957585,0.15303638612829934,null,0.0031078410200957585,-0.22514903316987284,null,0.0031078410200957585,0.4720417653464773,null,0.0031078410200957585,-0.46405620146145354,null,0.0031078410200957585,-0.10149604895093128,null,0.0031078410200957585,-0.04750600968679188,null,0.0031078410200957585,-0.16702580788991864,null,0.0031078410200957585,0.14088891421746816,null,0.0031078410200957585,-0.40970846384032994,null,0.0031078410200957585,0.06594286935255406,null,0.0031078410200957585,-0.18516675009745823,null,0.0031078410200957585,-0.18317253853615967,null,0.0031078410200957585,-0.042631432605196355,null,0.0031078410200957585,0.004196590717716857,null,0.0031078410200957585,0.034534005088224656,null,0.0031078410200957585,-0.21034154863796214,null,0.0031078410200957585,-0.29335124070273316,null,0.0031078410200957585,0.2637611051667271,null,0.0031078410200957585,0.5396065021189985,null,0.0031078410200957585,-0.6616489385095546,null,0.0031078410200957585,-0.15037690481075108,null,0.0031078410200957585,0.1602472531085161,null,0.0031078410200957585,-0.2727100228851829,null,0.0031078410200957585,0.04453394699957998,null,0.0031078410200957585,0.06230131167350116,null,0.0031078410200957585,0.24285962799206823,null,0.0031078410200957585,0.42933844545573757,null,0.0031078410200957585,0.34618754104049254,null,0.0974425142178935,0.1342677082203309,null,0.0974425142178935,-0.023718806463915,null,0.0974425142178935,-0.05960326993606519,null,0.0974425142178935,-0.09568244092338034,null,0.0974425142178935,0.14250440770239306,null,0.0974425142178935,-0.05420923423132402,null,0.0974425142178935,0.2581291702746143,null,0.0974425142178935,0.18466726196463368,null,0.06072433457148403,0.1342677082203309,null,0.06072433457148403,-0.09568244092338034,null,0.06072433457148403,-0.05960326993606519,null,0.06072433457148403,-0.05420923423132402,null,0.06072433457148403,-0.023718806463915,null,0.06072433457148403,0.2581291702746143,null,0.06072433457148403,0.18466726196463368,null,0.06072433457148403,0.14250440770239306,null,0.1288456338114411,0.1342677082203309,null,0.1288456338114411,-0.09568244092338034,null,0.1288456338114411,-0.05960326993606519,null,0.1288456338114411,-0.05420923423132402,null,0.1288456338114411,-0.023718806463915,null,0.1288456338114411,0.14250440770239306,null,0.1288456338114411,0.2581291702746143,null,0.1288456338114411,0.18466726196463368,null,-0.06426166472405996,0.1342677082203309,null,-0.06426166472405996,-0.09568244092338034,null,-0.06426166472405996,-0.023718806463915,null,-0.06426166472405996,-0.05960326993606519,null,-0.06426166472405996,-0.05420923423132402,null,-0.06426166472405996,0.2581291702746143,null,-0.043961706788197996,0.1342677082203309,null,-0.043961706788197996,-0.023718806463915,null,-0.043961706788197996,-0.05960326993606519,null,-0.043961706788197996,0.14250440770239306,null,-0.043961706788197996,-0.09568244092338034,null,-0.043961706788197996,0.18466726196463368,null,-0.03850222992626119,0.1342677082203309,null,-0.03850222992626119,-0.023718806463915,null,-0.03850222992626119,-0.05960326993606519,null,-0.03850222992626119,-0.09568244092338034,null,-0.03850222992626119,-0.05420923423132402,null,-0.03850222992626119,0.18466726196463368,null,0.06368517039632741,-0.09568244092338034,null,0.06368517039632741,0.1342677082203309,null,0.06368517039632741,0.14250440770239306,null,0.06368517039632741,-0.05420923423132402,null,0.06368517039632741,-0.05960326993606519,null,0.01252310129512157,0.1342677082203309,null,0.01252310129512157,-0.023718806463915,null,0.01252310129512157,-0.05960326993606519,null,0.01252310129512157,-0.05420923423132402,null,0.01252310129512157,-0.09568244092338034,null,0.01252310129512157,0.18466726196463368,null,0.03333762365553765,-0.09568244092338034,null,0.03333762365553765,0.1342677082203309,null,0.03333762365553765,-0.023718806463915,null,0.03333762365553765,-0.05960326993606519,null,0.03333762365553765,-0.05420923423132402,null,0.03333762365553765,0.18466726196463368,null,-0.24319269400425067,-0.09568244092338034,null,-0.24319269400425067,-0.023718806463915,null,0.1342677082203309,-0.10149604895093128,null,0.1342677082203309,0.01964178388299163,null,0.1342677082203309,-0.04750600968679188,null,0.1342677082203309,-0.15037690481075108,null,0.1342677082203309,0.1602472531085161,null,0.1342677082203309,0.12385565098162399,null,0.1342677082203309,0.04453394699957998,null,0.1342677082203309,0.1909706400505164,null,0.1342677082203309,0.2478111454570569,null,0.1342677082203309,0.15303638612829934,null,0.1342677082203309,-0.14700931974449985,null,0.1342677082203309,0.34618754104049254,null,0.1342677082203309,0.06230131167350116,null,0.1342677082203309,0.21206743982301038,null,0.1342677082203309,-0.19871703186355935,null,0.1342677082203309,0.034534005088224656,null,0.1342677082203309,-0.0831384273496599,null,0.1342677082203309,0.20066277907490943,null,0.1342677082203309,0.5015463012794217,null,0.1342677082203309,-0.21034154863796214,null,0.1342677082203309,0.28820379733190665,null,0.1342677082203309,0.3195196149815874,null,0.1342677082203309,0.06594286935255406,null,0.1342677082203309,-0.22514903316987284,null,0.1342677082203309,0.14088891421746816,null,0.1342677082203309,0.4720417653464773,null,0.1342677082203309,0.08035925786635201,null,0.1342677082203309,0.22168018988308638,null,0.1342677082203309,0.3243738606587621,null,0.1342677082203309,-0.04066523283146812,null,0.1342677082203309,-0.35500183046014433,null,0.1342677082203309,0.3248882693145814,null,0.1342677082203309,0.4738776084011339,null,0.1342677082203309,0.29453496052581274,null,0.1342677082203309,-0.22313810157315497,null,0.1342677082203309,-0.15113583137383776,null,0.1342677082203309,0.252263381183747,null,0.1342677082203309,0.0833305701332031,null,0.1342677082203309,0.7153106509480018,null,0.1342677082203309,0.13388460611854755,null,0.1342677082203309,0.35102300022063426,null,0.1342677082203309,0.39927199188861695,null,0.1342677082203309,0.17668343224883432,null,0.1342677082203309,-0.18317253853615967,null,0.1342677082203309,0.7328773502318053,null,-0.10149604895093128,-0.09568244092338034,null,-0.10149604895093128,-0.023718806463915,null,-0.10149604895093128,-0.05960326993606519,null,-0.10149604895093128,-0.05420923423132402,null,-0.10149604895093128,0.14250440770239306,null,-0.10149604895093128,-0.3833560594974202,null,0.01964178388299163,-0.09568244092338034,null,0.01964178388299163,-0.05960326993606519,null,0.01964178388299163,-0.023718806463915,null,0.01964178388299163,-0.05420923423132402,null,0.01964178388299163,0.14250440770239306,null,-0.04750600968679188,-0.09568244092338034,null,-0.04750600968679188,-0.05420923423132402,null,-0.04750600968679188,-0.023718806463915,null,-0.04750600968679188,0.14250440770239306,null,-0.15037690481075108,-0.09568244092338034,null,-0.15037690481075108,-0.05960326993606519,null,-0.15037690481075108,-0.05420923423132402,null,-0.15037690481075108,0.14250440770239306,null,0.1602472531085161,-0.09568244092338034,null,0.1602472531085161,-0.05420923423132402,null,0.1602472531085161,0.14250440770239306,null,0.12385565098162399,-0.023718806463915,null,0.12385565098162399,-0.05420923423132402,null,0.12385565098162399,-0.09568244092338034,null,0.12385565098162399,0.14250440770239306,null,0.12385565098162399,0.2581291702746143,null,0.04453394699957998,-0.09568244092338034,null,0.04453394699957998,-0.05420923423132402,null,0.04453394699957998,0.2581291702746143,null,0.04453394699957998,0.14250440770239306,null,0.1909706400505164,-0.023718806463915,null,0.1909706400505164,-0.05960326993606519,null,0.1909706400505164,-0.05420923423132402,null,0.1909706400505164,0.14250440770239306,null,0.1909706400505164,0.2581291702746143,null,0.2478111454570569,-0.05420923423132402,null,0.2478111454570569,-0.09568244092338034,null,0.2478111454570569,0.2581291702746143,null,0.2478111454570569,-0.023718806463915,null,-0.08401492503713366,-0.09568244092338034,null,-0.08401492503713366,-0.023718806463915,null,0.20066277907490943,0.14250440770239306,null,0.20066277907490943,-0.023718806463915,null,0.21206743982301038,-0.023718806463915,null,0.21206743982301038,-0.05960326993606519,null,0.21206743982301038,-0.05420923423132402,null,0.21206743982301038,0.2581291702746143,null,0.15303638612829934,-0.05960326993606519,null,0.15303638612829934,-0.05420923423132402,null,0.15303638612829934,-0.023718806463915,null,0.15303638612829934,0.14250440770239306,null,-0.14700931974449985,-0.09568244092338034,null,-0.14700931974449985,-0.05420923423132402,null,-0.14700931974449985,-0.023718806463915,null,-0.14700931974449985,0.14250440770239306,null,0.34618754104049254,-0.023718806463915,null,0.34618754104049254,0.14250440770239306,null,0.06230131167350116,-0.05960326993606519,null,0.06230131167350116,-0.05420923423132402,null,0.06230131167350116,-0.09568244092338034,null,-0.09568244092338034,-0.29335124070273316,null,-0.09568244092338034,-0.2833784826279664,null,-0.09568244092338034,-0.18317253853615967,null,-0.09568244092338034,0.29453496052581274,null,-0.09568244092338034,-0.16702580788991864,null,-0.09568244092338034,-0.19871703186355935,null,-0.09568244092338034,0.08035925786635201,null,-0.09568244092338034,-0.004484926691240676,null,-0.09568244092338034,-0.2727100228851829,null,-0.09568244092338034,-0.18516675009745823,null,-0.09568244092338034,0.2637611051667271,null,-0.09568244092338034,0.33127680714616364,null,-0.09568244092338034,-0.46405620146145354,null,-0.09568244092338034,0.3243738606587621,null,-0.09568244092338034,0.13388460611854755,null,-0.09568244092338034,-0.5287165723379067,null,-0.09568244092338034,0.004196590717716857,null,-0.09568244092338034,-0.720945265077203,null,-0.09568244092338034,-0.15113583137383776,null,-0.09568244092338034,-0.6482882369659143,null,-0.09568244092338034,-0.772609702437706,null,-0.09568244092338034,-0.21034154863796214,null,-0.09568244092338034,0.06594286935255406,null,-0.09568244092338034,0.034534005088224656,null,-0.09568244092338034,-0.22514903316987284,null,-0.09568244092338034,0.3755026958056326,null,-0.09568244092338034,-0.5330438582318959,null,-0.09568244092338034,-0.6328467400368915,null,-0.09568244092338034,0.6318250516489681,null,-0.29335124070273316,-0.05960326993606519,null,-0.2833784826279664,-0.023718806463915,null,-0.2833784826279664,0.14250440770239306,null,-0.18317253853615967,0.14250440770239306,null,-0.18317253853615967,-0.05420923423132402,null,0.29453496052581274,-0.05960326993606519,null,0.29453496052581274,-0.05420923423132402,null,0.4720417653464773,0.2581291702746143,null,0.4720417653464773,0.18466726196463368,null,-0.46405620146145354,-0.023718806463915,null,-0.16702580788991864,-0.023718806463915,null,-0.19871703186355935,-0.05960326993606519,null,-0.19871703186355935,-0.05420923423132402,null,0.08035925786635201,-0.023718806463915,null,0.08035925786635201,0.14250440770239306,null,0.08035925786635201,0.18466726196463368,null,-0.023718806463915,-0.21034154863796214,null,-0.023718806463915,0.13388460611854755,null,-0.023718806463915,0.06594286935255406,null,-0.023718806463915,-0.0831384273496599,null,-0.023718806463915,-0.2727100228851829,null,-0.023718806463915,-0.1379715979162138,null,-0.023718806463915,-0.22313810157315497,null,-0.023718806463915,-0.15956514873084077,null,-0.023718806463915,0.43257040771839494,null,-0.023718806463915,0.22168018988308638,null,-0.023718806463915,-0.24602166403043838,null,-0.023718806463915,0.0833305701332031,null,-0.023718806463915,0.24285962799206823,null,-0.023718806463915,-0.35500183046014433,null,-0.023718806463915,0.7267915974521857,null,-0.023718806463915,0.4738776084011339,null,-0.023718806463915,-0.40970846384032994,null,-0.023718806463915,-0.2516626036481916,null,-0.023718806463915,-0.4373443231204542,null,-0.023718806463915,0.28820379733190665,null,-0.023718806463915,-0.4593904657914387,null,0.13388460611854755,-0.05420923423132402,null,0.13388460611854755,0.2581291702746143,null,0.06594286935255406,0.2581291702746143,null,-0.0831384273496599,-0.05960326993606519,null,-0.0831384273496599,-0.05420923423132402,null,-0.0831384273496599,0.14250440770239306,null,-0.2727100228851829,-0.05960326993606519,null,-0.2727100228851829,0.14250440770239306,null,0.14088891421746816,0.2581291702746143,null,-0.40970846384032994,-0.05420923423132402,null,0.5015463012794217,0.14250440770239306,null,0.5015463012794217,0.2581291702746143,null,-0.004484926691240676,-0.05960326993606519,null,-0.004484926691240676,-0.05420923423132402,null,-0.004484926691240676,0.2581291702746143,null,-0.004484926691240676,0.18466726196463368,null,-0.18516675009745823,-0.05420923423132402,null,0.2637611051667271,0.14250440770239306,null,-0.1379715979162138,-0.05960326993606519,null,-0.1379715979162138,0.2581291702746143,null,-0.22313810157315497,-0.3833560594974202,null,-0.15956514873084077,-0.05960326993606519,null,-0.05960326993606519,0.42933844545573757,null,-0.05960326993606519,0.28820379733190665,null,-0.05960326993606519,0.3243738606587621,null,-0.05960326993606519,0.252263381183747,null,-0.05960326993606519,-0.35425089847856434,null,-0.05960326993606519,-0.41450529654714396,null,-0.05960326993606519,-0.24602166403043838,null,-0.05960326993606519,-0.14665946379234163,null,-0.05960326993606519,-0.040232985211907595,null,-0.05960326993606519,-0.5330438582318959,null,-0.05960326993606519,-0.7060178933677195,null,-0.05960326993606519,-0.588730084849636,null,-0.05960326993606519,-0.4889902784359505,null,-0.05960326993606519,0.1427384841490327,null,-0.05960326993606519,-0.5660999115590559,null,-0.05960326993606519,0.41277009027541345,null,-0.05960326993606519,0.557429173154736,null,-0.05960326993606519,0.33127680714616364,null,-0.05960326993606519,-0.09625329853922285,null,0.28820379733190665,0.14250440770239306,null,-0.042631432605196355,-0.05420923423132402,null,-0.042631432605196355,0.18466726196463368,null,0.3195196149815874,0.14250440770239306,null,0.33127680714616364,0.14250440770239306,null,0.3243738606587621,0.2581291702746143,null,0.43257040771839494,0.18466726196463368,null,0.22168018988308638,0.14250440770239306,null,0.22168018988308638,0.18466726196463368,null,-0.24602166403043838,-0.05420923423132402,null,0.0833305701332031,0.18466726196463368,null,-0.05420923423132402,0.1583976992104382,null,-0.05420923423132402,-0.09625329853922285,null,-0.05420923423132402,-0.41450529654714396,null,-0.05420923423132402,0.05763877127196277,null,-0.05420923423132402,-0.35500183046014433,null,-0.05420923423132402,-0.5287165723379067,null,0.5396065021189985,0.14250440770239306,null,-0.35425089847856434,-0.3833560594974202,null,-0.41450529654714396,-0.3833560594974202,null,0.1583976992104382,0.18466726196463368,null,0.1583976992104382,0.14250440770239306,null,0.14250440770239306,0.5162543819160186,null,0.14250440770239306,0.494153536983231,null,0.14250440770239306,0.35102300022063426,null,0.14250440770239306,-0.04066523283146812,null,0.14250440770239306,0.3755026958056326,null,0.5162543819160186,0.18466726196463368,null,0.3248882693145814,0.18466726196463368,null,-0.15113583137383776,-0.3833560594974202,null,-0.6482882369659143,-0.3833560594974202,null,0.35102300022063426,0.18466726196463368,null,0.2581291702746143,0.8036590958763362,null,0.2581291702746143,0.8981354571427869,null,0.2581291702746143,-0.2469864467096565,null,0.18466726196463368,0.39927199188861695,null,-0.3833560594974202,-0.39294048504960516,null,-0.3833560594974202,-0.7460137883413814,null,-0.3833560594974202,-0.56174337243419,null,-0.3833560594974202,-0.4171490243003724,null],"y":[0.003863385069037895,0.09210283576524456,null,0.003863385069037895,0.1244709342190062,null,0.003863385069037895,0.13333139806363786,null,0.003863385069037895,-0.05770694784630774,null,0.003863385069037895,0.07708772622163639,null,0.003863385069037895,0.1846087673164622,null,0.003863385069037895,-0.01725702729654123,null,0.003863385069037895,0.16684809279959992,null,0.003863385069037895,-0.07812421941860462,null,0.003863385069037895,-0.09463458209070351,null,0.003863385069037895,0.06083250240006255,null,0.003863385069037895,-0.05249312309854349,null,0.003863385069037895,-0.23625604861794086,null,0.003863385069037895,-0.2466774354317299,null,0.003863385069037895,-0.0797549310146329,null,0.003863385069037895,-0.007009761913758314,null,0.003863385069037895,0.38217309728152576,null,0.003863385069037895,0.276731114908981,null,0.003863385069037895,0.10158426719767344,null,0.003863385069037895,-0.09160275715083399,null,0.003863385069037895,0.13425394225086623,null,0.003863385069037895,-0.22512447427743892,null,0.003863385069037895,-0.3086738550722655,null,0.003863385069037895,-0.11753352463050545,null,0.003863385069037895,-0.17182145444977245,null,0.003863385069037895,0.4112806167204011,null,0.003863385069037895,0.21676836525391868,null,0.003863385069037895,0.4691869806376764,null,0.003863385069037895,-0.4452060897034005,null,0.003863385069037895,-0.24996531838587271,null,0.003863385069037895,0.028308144193023153,null,0.003863385069037895,-0.10542108428127028,null,0.003863385069037895,0.2943153608430775,null,0.003863385069037895,0.0794614422127432,null,0.003863385069037895,-0.08736541589057614,null,0.003863385069037895,0.11361020938187234,null,0.003863385069037895,0.05622312618790157,null,0.003863385069037895,0.058225503132038815,null,0.003863385069037895,0.2295457205217468,null,0.003863385069037895,0.19602796074311266,null,0.003863385069037895,-0.35428338073055654,null,0.003863385069037895,0.0643587775783863,null,0.003863385069037895,-0.07627299748359553,null,0.09210283576524456,0.097966474708852,null,0.09210283576524456,-0.01092087153200646,null,0.09210283576524456,-0.14953305351299032,null,0.09210283576524456,0.044514489037894754,null,0.09210283576524456,0.1822070665141505,null,0.09210283576524456,0.031887759388572155,null,0.09210283576524456,0.06077006638231707,null,0.09210283576524456,0.32598296681674577,null,0.1244709342190062,0.097966474708852,null,0.1244709342190062,0.044514489037894754,null,0.1244709342190062,-0.14953305351299032,null,0.1244709342190062,0.031887759388572155,null,0.1244709342190062,-0.01092087153200646,null,0.1244709342190062,0.06077006638231707,null,0.1244709342190062,0.32598296681674577,null,0.1244709342190062,0.1822070665141505,null,0.13333139806363786,0.097966474708852,null,0.13333139806363786,0.044514489037894754,null,0.13333139806363786,-0.14953305351299032,null,0.13333139806363786,0.031887759388572155,null,0.13333139806363786,-0.01092087153200646,null,0.13333139806363786,0.1822070665141505,null,0.13333139806363786,0.06077006638231707,null,0.13333139806363786,0.32598296681674577,null,-0.05770694784630774,0.097966474708852,null,-0.05770694784630774,0.044514489037894754,null,-0.05770694784630774,-0.01092087153200646,null,-0.05770694784630774,-0.14953305351299032,null,-0.05770694784630774,0.031887759388572155,null,-0.05770694784630774,0.06077006638231707,null,0.07708772622163639,0.097966474708852,null,0.07708772622163639,-0.01092087153200646,null,0.07708772622163639,-0.14953305351299032,null,0.07708772622163639,0.1822070665141505,null,0.07708772622163639,0.044514489037894754,null,0.07708772622163639,0.32598296681674577,null,0.1846087673164622,0.097966474708852,null,0.1846087673164622,-0.01092087153200646,null,0.1846087673164622,-0.14953305351299032,null,0.1846087673164622,0.044514489037894754,null,0.1846087673164622,0.031887759388572155,null,0.1846087673164622,0.32598296681674577,null,-0.01725702729654123,0.044514489037894754,null,-0.01725702729654123,0.097966474708852,null,-0.01725702729654123,0.1822070665141505,null,-0.01725702729654123,0.031887759388572155,null,-0.01725702729654123,-0.14953305351299032,null,0.16684809279959992,0.097966474708852,null,0.16684809279959992,-0.01092087153200646,null,0.16684809279959992,-0.14953305351299032,null,0.16684809279959992,0.031887759388572155,null,0.16684809279959992,0.044514489037894754,null,0.16684809279959992,0.32598296681674577,null,-0.07812421941860462,0.044514489037894754,null,-0.07812421941860462,0.097966474708852,null,-0.07812421941860462,-0.01092087153200646,null,-0.07812421941860462,-0.14953305351299032,null,-0.07812421941860462,0.031887759388572155,null,-0.07812421941860462,0.32598296681674577,null,-0.09463458209070351,0.044514489037894754,null,-0.09463458209070351,-0.01092087153200646,null,0.097966474708852,-0.09160275715083399,null,0.097966474708852,0.06083250240006255,null,0.097966474708852,0.13425394225086623,null,0.097966474708852,0.11361020938187234,null,0.097966474708852,0.05622312618790157,null,0.097966474708852,-0.05249312309854349,null,0.097966474708852,0.2295457205217468,null,0.097966474708852,-0.12233673852656213,null,0.097966474708852,-0.029265482719365563,null,0.097966474708852,-0.007009761913758314,null,0.097966474708852,0.2680135497054036,null,0.097966474708852,-0.07627299748359553,null,0.097966474708852,0.19602796074311266,null,0.097966474708852,-0.0797549310146329,null,0.097966474708852,-0.14725532719207896,null,0.097966474708852,-0.24996531838587271,null,0.097966474708852,0.20536442933861115,null,0.097966474708852,-0.2466774354317299,null,0.097966474708852,0.18644944867918106,null,0.097966474708852,0.028308144193023153,null,0.097966474708852,-0.148793261476022,null,0.097966474708852,0.548987441374926,null,0.097966474708852,-0.17182145444977245,null,0.097966474708852,0.38217309728152576,null,0.097966474708852,-0.3086738550722655,null,0.097966474708852,0.276731114908981,null,0.097966474708852,0.37773193352708684,null,0.097966474708852,0.42050919452073365,null,0.097966474708852,-0.1715492337656612,null,0.097966474708852,0.5952030966231425,null,0.097966474708852,0.13123687579510857,null,0.097966474708852,0.6640625964441176,null,0.097966474708852,-0.31251362180480163,null,0.097966474708852,-0.04025420965658385,null,0.097966474708852,-0.23881885432289343,null,0.097966474708852,-0.320020284452218,null,0.097966474708852,-0.4069800985218081,null,0.097966474708852,0.4918264334777939,null,0.097966474708852,0.4369021580721047,null,0.097966474708852,-0.14260995927340503,null,0.097966474708852,0.39861468609912043,null,0.097966474708852,0.5018888260325075,null,0.097966474708852,0.6770340340510179,null,0.097966474708852,0.21676836525391868,null,0.097966474708852,0.12263258428940287,null,-0.09160275715083399,0.044514489037894754,null,-0.09160275715083399,-0.01092087153200646,null,-0.09160275715083399,-0.14953305351299032,null,-0.09160275715083399,0.031887759388572155,null,-0.09160275715083399,0.1822070665141505,null,-0.09160275715083399,-0.4286293578342011,null,0.06083250240006255,0.044514489037894754,null,0.06083250240006255,-0.14953305351299032,null,0.06083250240006255,-0.01092087153200646,null,0.06083250240006255,0.031887759388572155,null,0.06083250240006255,0.1822070665141505,null,0.13425394225086623,0.044514489037894754,null,0.13425394225086623,0.031887759388572155,null,0.13425394225086623,-0.01092087153200646,null,0.13425394225086623,0.1822070665141505,null,0.11361020938187234,0.044514489037894754,null,0.11361020938187234,-0.14953305351299032,null,0.11361020938187234,0.031887759388572155,null,0.11361020938187234,0.1822070665141505,null,0.05622312618790157,0.044514489037894754,null,0.05622312618790157,0.031887759388572155,null,0.05622312618790157,0.1822070665141505,null,-0.05249312309854349,-0.01092087153200646,null,-0.05249312309854349,0.031887759388572155,null,-0.05249312309854349,0.044514489037894754,null,-0.05249312309854349,0.1822070665141505,null,-0.05249312309854349,0.06077006638231707,null,0.2295457205217468,0.044514489037894754,null,0.2295457205217468,0.031887759388572155,null,0.2295457205217468,0.06077006638231707,null,0.2295457205217468,0.1822070665141505,null,-0.12233673852656213,-0.01092087153200646,null,-0.12233673852656213,-0.14953305351299032,null,-0.12233673852656213,0.031887759388572155,null,-0.12233673852656213,0.1822070665141505,null,-0.12233673852656213,0.06077006638231707,null,-0.029265482719365563,0.031887759388572155,null,-0.029265482719365563,0.044514489037894754,null,-0.029265482719365563,0.06077006638231707,null,-0.029265482719365563,-0.01092087153200646,null,-0.23625604861794086,0.044514489037894754,null,-0.23625604861794086,-0.01092087153200646,null,-0.2466774354317299,0.1822070665141505,null,-0.2466774354317299,-0.01092087153200646,null,-0.0797549310146329,-0.01092087153200646,null,-0.0797549310146329,-0.14953305351299032,null,-0.0797549310146329,0.031887759388572155,null,-0.0797549310146329,0.06077006638231707,null,-0.007009761913758314,-0.14953305351299032,null,-0.007009761913758314,0.031887759388572155,null,-0.007009761913758314,-0.01092087153200646,null,-0.007009761913758314,0.1822070665141505,null,0.2680135497054036,0.044514489037894754,null,0.2680135497054036,0.031887759388572155,null,0.2680135497054036,-0.01092087153200646,null,0.2680135497054036,0.1822070665141505,null,-0.07627299748359553,-0.01092087153200646,null,-0.07627299748359553,0.1822070665141505,null,0.19602796074311266,-0.14953305351299032,null,0.19602796074311266,0.031887759388572155,null,0.19602796074311266,0.044514489037894754,null,0.044514489037894754,-0.10542108428127028,null,0.044514489037894754,0.3301189250052027,null,0.044514489037894754,0.21676836525391868,null,0.044514489037894754,-0.04025420965658385,null,0.044514489037894754,-0.22512447427743892,null,0.044514489037894754,-0.14725532719207896,null,0.044514489037894754,0.37773193352708684,null,0.044514489037894754,0.25514234003485325,null,0.044514489037894754,0.058225503132038815,null,0.044514489037894754,0.4112806167204011,null,0.044514489037894754,0.2943153608430775,null,0.044514489037894754,0.02445258188878329,null,0.044514489037894754,0.10158426719767344,null,0.044514489037894754,-0.1715492337656612,null,0.044514489037894754,-0.14260995927340503,null,0.044514489037894754,0.014874043438083193,null,0.044514489037894754,-0.4452060897034005,null,0.044514489037894754,0.37864867919598016,null,0.044514489037894754,-0.320020284452218,null,0.044514489037894754,-0.2999054863773499,null,0.044514489037894754,0.1974080986512613,null,0.044514489037894754,0.028308144193023153,null,0.044514489037894754,-0.17182145444977245,null,0.044514489037894754,-0.24996531838587271,null,0.044514489037894754,0.38217309728152576,null,0.044514489037894754,0.29019707177267173,null,0.044514489037894754,-0.13378440503461425,null,0.044514489037894754,0.534426075049261,null,0.044514489037894754,-0.35758019096864624,null,-0.10542108428127028,-0.14953305351299032,null,0.3301189250052027,-0.01092087153200646,null,0.3301189250052027,0.1822070665141505,null,0.21676836525391868,0.1822070665141505,null,0.21676836525391868,0.031887759388572155,null,-0.04025420965658385,-0.14953305351299032,null,-0.04025420965658385,0.031887759388572155,null,0.276731114908981,0.06077006638231707,null,0.276731114908981,0.32598296681674577,null,0.10158426719767344,-0.01092087153200646,null,-0.22512447427743892,-0.01092087153200646,null,-0.14725532719207896,-0.14953305351299032,null,-0.14725532719207896,0.031887759388572155,null,0.37773193352708684,-0.01092087153200646,null,0.37773193352708684,0.1822070665141505,null,0.37773193352708684,0.32598296681674577,null,-0.01092087153200646,0.028308144193023153,null,-0.01092087153200646,-0.14260995927340503,null,-0.01092087153200646,-0.17182145444977245,null,-0.01092087153200646,0.20536442933861115,null,-0.01092087153200646,0.058225503132038815,null,-0.01092087153200646,0.1933930699502037,null,-0.01092087153200646,-0.23881885432289343,null,-0.01092087153200646,-0.5248266496783999,null,-0.01092087153200646,0.4225775511588167,null,-0.01092087153200646,0.42050919452073365,null,-0.01092087153200646,0.23076551193736705,null,-0.01092087153200646,0.4918264334777939,null,-0.01092087153200646,-0.35428338073055654,null,-0.01092087153200646,0.13123687579510857,null,-0.01092087153200646,0.21562415711148186,null,-0.01092087153200646,-0.31251362180480163,null,-0.01092087153200646,-0.11753352463050545,null,-0.01092087153200646,-0.42959657078276553,null,-0.01092087153200646,0.5007745124175608,null,-0.01092087153200646,-0.148793261476022,null,-0.01092087153200646,-0.5523874016646465,null,-0.14260995927340503,0.031887759388572155,null,-0.14260995927340503,0.06077006638231707,null,-0.17182145444977245,0.06077006638231707,null,0.20536442933861115,-0.14953305351299032,null,0.20536442933861115,0.031887759388572155,null,0.20536442933861115,0.1822070665141505,null,0.058225503132038815,-0.14953305351299032,null,0.058225503132038815,0.1822070665141505,null,-0.3086738550722655,0.06077006638231707,null,-0.11753352463050545,0.031887759388572155,null,0.18644944867918106,0.1822070665141505,null,0.18644944867918106,0.06077006638231707,null,0.25514234003485325,-0.14953305351299032,null,0.25514234003485325,0.031887759388572155,null,0.25514234003485325,0.06077006638231707,null,0.25514234003485325,0.32598296681674577,null,0.4112806167204011,0.031887759388572155,null,0.2943153608430775,0.1822070665141505,null,0.1933930699502037,-0.14953305351299032,null,0.1933930699502037,0.06077006638231707,null,-0.23881885432289343,-0.4286293578342011,null,-0.5248266496783999,-0.14953305351299032,null,-0.14953305351299032,0.0643587775783863,null,-0.14953305351299032,-0.148793261476022,null,-0.14953305351299032,-0.1715492337656612,null,-0.14953305351299032,-0.4069800985218081,null,-0.14953305351299032,-0.651567858434859,null,-0.14953305351299032,-0.3109452745807135,null,-0.14953305351299032,0.23076551193736705,null,-0.14953305351299032,-0.6810977518115928,null,-0.14953305351299032,-0.7952328310646171,null,-0.14953305351299032,-0.13378440503461425,null,-0.14953305351299032,-4.3904093174752194e-05,null,-0.14953305351299032,-0.5397512459757698,null,-0.14953305351299032,-0.4648287864878457,null,-0.14953305351299032,-0.7028149354135982,null,-0.14953305351299032,0.2303757180593755,null,-0.14953305351299032,-0.5461027332478827,null,-0.14953305351299032,-0.286667539251227,null,-0.14953305351299032,0.02445258188878329,null,-0.14953305351299032,-0.4698342127041148,null,-0.148793261476022,0.1822070665141505,null,0.4691869806376764,0.031887759388572155,null,0.4691869806376764,0.32598296681674577,null,0.548987441374926,0.1822070665141505,null,0.02445258188878329,0.1822070665141505,null,-0.1715492337656612,0.06077006638231707,null,0.4225775511588167,0.32598296681674577,null,0.42050919452073365,0.1822070665141505,null,0.42050919452073365,0.32598296681674577,null,0.23076551193736705,0.031887759388572155,null,0.4918264334777939,0.32598296681674577,null,0.031887759388572155,0.5375904548482727,null,0.031887759388572155,-0.4698342127041148,null,0.031887759388572155,-0.3109452745807135,null,0.031887759388572155,-0.6388332377951808,null,0.031887759388572155,0.13123687579510857,null,0.031887759388572155,0.014874043438083193,null,0.0794614422127432,0.1822070665141505,null,-0.651567858434859,-0.4286293578342011,null,-0.3109452745807135,-0.4286293578342011,null,0.5375904548482727,0.32598296681674577,null,0.5375904548482727,0.1822070665141505,null,0.1822070665141505,0.4791566432055314,null,0.1822070665141505,0.6906089380462515,null,0.1822070665141505,0.39861468609912043,null,0.1822070665141505,0.5952030966231425,null,0.1822070665141505,0.29019707177267173,null,0.4791566432055314,0.32598296681674577,null,0.6640625964441176,0.32598296681674577,null,-0.320020284452218,-0.4286293578342011,null,-0.2999054863773499,-0.4286293578342011,null,0.39861468609912043,0.32598296681674577,null,0.06077006638231707,-0.101154390802939,null,0.06077006638231707,0.036732559999614244,null,0.06077006638231707,0.5740609014581278,null,0.32598296681674577,0.5018888260325075,null,-0.4286293578342011,0.1777282541577681,null,-0.4286293578342011,-0.8131674465426014,null,-0.4286293578342011,-0.9668548330768977,null,-0.4286293578342011,-1.0,null],"type":"scatter"},{"hoverinfo":"text","marker":{"color":["red","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","red","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","red","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","red","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","red","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","red","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","red","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","red","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","red","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","red","blue","blue","blue","blue"],"showscale":false,"size":10},"mode":"markers","text":["Tema LDA 0","aborto","mujer","derecho","\u00e9l","@emmarincon","vida","izquierdo","humano","madre","volver","Tema LDA 1","igualdad","vox","g\u00e9nero","pp","izquierda","ley","voto","deber","persona","gallardo","a\u00f1o","decir","hombre","ministerio","partido","pasar","Tema LDA 2","ver","querer","@theobjective_es","dar","abortar","anticonceptivo","feminismo","dirigir","esperar","privado","Tema LDA 3","@vox_es","sexual","entender","pol\u00edtico","pedir","quedar","violencia","@monasterior","seguir","ir","@irenemontero","abascal","defender","sociedad","ni\u00f1o","Tema LDA 4","pagar","creer","@pam_angelar","caso","espa\u00f1ol","llamar","hablar","euros","le\u00f3n","lista","embarazo","madrid","Tema LDA 5","gobierno","buscar","pena","salud","perspectiva","oportunidad","derechos","libertad","filolabutpl","@filolabutpl","poner","Tema LDA 6","p\u00fablico","salir","tomar","castilla","justicia","lograr","ayuso","100","comunidad","dejar","feto","medio","Tema LDA 7","referir","decidir","beb\u00e9","idea","mil","ganar","nacer","vientre","cosa","abortir","Tema LDA 8","castigar","@pabloiglesia","comunista","red","s\u00e1nchez","000","pa\u00eds","m\u00e9dico","@ppopular","denunciar","50","Tema LDA 9","trabajar","crear","@j_zaragoza","seguro"],"x":[0.0031078410200957585,0.0974425142178935,0.06072433457148403,0.1288456338114411,-0.06426166472405996,-0.043961706788197996,-0.03850222992626119,0.06368517039632741,0.01252310129512157,0.03333762365553765,-0.24319269400425067,0.1342677082203309,-0.10149604895093128,0.01964178388299163,-0.04750600968679188,-0.15037690481075108,0.1602472531085161,0.12385565098162399,0.04453394699957998,0.1909706400505164,0.2478111454570569,-0.08401492503713366,0.20066277907490943,0.21206743982301038,0.15303638612829934,-0.14700931974449985,0.34618754104049254,0.06230131167350116,-0.09568244092338034,-0.29335124070273316,-0.2833784826279664,-0.18317253853615967,0.29453496052581274,-0.22514903316987284,0.4720417653464773,-0.46405620146145354,-0.16702580788991864,-0.19871703186355935,0.08035925786635201,-0.023718806463915,-0.21034154863796214,0.13388460611854755,0.06594286935255406,-0.0831384273496599,-0.2727100228851829,0.14088891421746816,-0.40970846384032994,0.034534005088224656,0.5015463012794217,-0.004484926691240676,-0.18516675009745823,0.2637611051667271,-0.1379715979162138,-0.22313810157315497,-0.15956514873084077,-0.05960326993606519,0.42933844545573757,0.28820379733190665,-0.042631432605196355,0.004196590717716857,0.3195196149815874,0.33127680714616364,0.3243738606587621,0.43257040771839494,0.22168018988308638,-0.24602166403043838,0.0833305701332031,0.24285962799206823,-0.05420923423132402,0.5396065021189985,-0.6616489385095546,-0.5287165723379067,-0.720945265077203,-0.35500183046014433,0.7267915974521857,0.4738776084011339,0.252263381183747,-0.35425089847856434,-0.41450529654714396,0.1583976992104382,0.14250440770239306,0.5162543819160186,0.494153536983231,-0.04066523283146812,0.3248882693145814,-0.15113583137383776,-0.6482882369659143,-0.772609702437706,-0.14665946379234163,-0.040232985211907595,-0.5330438582318959,-0.7060178933677195,0.35102300022063426,0.2581291702746143,0.7153106509480018,0.3755026958056326,-0.588730084849636,-0.4889902784359505,0.1427384841490327,-0.5660999115590559,0.41277009027541345,0.557429173154736,-0.09625329853922285,0.05763877127196277,0.18466726196463368,0.39927199188861695,0.17668343224883432,0.7328773502318053,-0.6328467400368915,0.6318250516489681,-0.2516626036481916,-0.4373443231204542,-0.4593904657914387,0.8036590958763362,0.8981354571427869,-0.2469864467096565,-0.3833560594974202,-0.39294048504960516,-0.7460137883413814,-0.56174337243419,-0.4171490243003724],"y":[0.003863385069037895,0.09210283576524456,0.1244709342190062,0.13333139806363786,-0.05770694784630774,0.07708772622163639,0.1846087673164622,-0.01725702729654123,0.16684809279959992,-0.07812421941860462,-0.09463458209070351,0.097966474708852,-0.09160275715083399,0.06083250240006255,0.13425394225086623,0.11361020938187234,0.05622312618790157,-0.05249312309854349,0.2295457205217468,-0.12233673852656213,-0.029265482719365563,-0.23625604861794086,-0.2466774354317299,-0.0797549310146329,-0.007009761913758314,0.2680135497054036,-0.07627299748359553,0.19602796074311266,0.044514489037894754,-0.10542108428127028,0.3301189250052027,0.21676836525391868,-0.04025420965658385,0.38217309728152576,0.276731114908981,0.10158426719767344,-0.22512447427743892,-0.14725532719207896,0.37773193352708684,-0.01092087153200646,0.028308144193023153,-0.14260995927340503,-0.17182145444977245,0.20536442933861115,0.058225503132038815,-0.3086738550722655,-0.11753352463050545,-0.24996531838587271,0.18644944867918106,0.25514234003485325,0.4112806167204011,0.2943153608430775,0.1933930699502037,-0.23881885432289343,-0.5248266496783999,-0.14953305351299032,0.0643587775783863,-0.148793261476022,0.4691869806376764,-0.4452060897034005,0.548987441374926,0.02445258188878329,-0.1715492337656612,0.4225775511588167,0.42050919452073365,0.23076551193736705,0.4918264334777939,-0.35428338073055654,0.031887759388572155,0.0794614422127432,-0.08736541589057614,0.014874043438083193,0.37864867919598016,0.13123687579510857,0.21562415711148186,-0.31251362180480163,-0.4069800985218081,-0.651567858434859,-0.3109452745807135,0.5375904548482727,0.1822070665141505,0.4791566432055314,0.6906089380462515,0.5952030966231425,0.6640625964441176,-0.320020284452218,-0.2999054863773499,0.1974080986512613,-0.6810977518115928,-0.7952328310646171,-0.13378440503461425,-4.3904093174752194e-05,0.39861468609912043,0.06077006638231707,0.4369021580721047,0.29019707177267173,-0.5397512459757698,-0.4648287864878457,-0.7028149354135982,0.2303757180593755,-0.5461027332478827,-0.286667539251227,-0.4698342127041148,-0.6388332377951808,0.32598296681674577,0.5018888260325075,0.6770340340510179,0.12263258428940287,0.534426075049261,-0.35758019096864624,-0.42959657078276553,0.5007745124175608,-0.5523874016646465,-0.101154390802939,0.036732559999614244,0.5740609014581278,-0.4286293578342011,0.1777282541577681,-0.8131674465426014,-0.9668548330768977,-1.0],"type":"scatter"}],                        {"hovermode":"closest","margin":{"b":0,"l":0,"r":0,"t":0},"showlegend":false,"xaxis":{"showgrid":false,"showticklabels":false,"zeroline":false},"yaxis":{"showgrid":false,"showticklabels":false,"zeroline":false},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };                            </script>        </div>
+</script>
+
+
+            </div>
+            <div style="flex: 50%; padding: 10px;">
+              <h3 class="subtitulo">LSI</h3>
+              <!-- Aquí insertarás el gráfico de redes complejas con plotly para LSI-->
+              <object data="/content/redes_lsi.html" width="800" height="600" style="border:none;"></object>
+
+            </div>
+        </div>
+
+        <div class="seccion" id="odio">
+            <h2 class="titulo-seccion">Discurso de odio</h2>
+            <!-- Aquí insertarás el gráfico de redes complejas con plotly para LDA-->
+            <div>
+              <canvas id="algolinguaChart"></canvas>
+            </div>n202.
+            
+            
+<div style="width:400px; height:400px;">
+  <canvas id="algolinguaChart"></canvas>
+</div>
+
+<script>
+  var ctx = document.getElementById('algolinguaChart').getContext('2d');
+  var algolinguaChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Sin Discurso de Odio', 'Con Discurso de Odio'],
+      datasets: [{
+        label: 'Porcentaje de Tweets',
+        data: [45, 55], // Reemplaza 45 y 55 con tus valores de {porcentaje_sin} y {porcentaje_con}
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)'
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)'
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+
+
+        </div>
+
+        <div class="seccion" id="POS">
+            <h2 class="titulo-seccion">POStagging</h2>
+            <!-- Aquí insertarás el gráfico de cantidad por categoría gramatical-->
+            <div>
+              <canvas id="graficoPOStagging"></canvas>
+            </div>
+            
+<div style="width:600px; height:400px;">
+    <canvas id="graficoPOStagging"></canvas>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+var ctx = document.getElementById('graficoPOStagging').getContext('2d');
+var chart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["SPACE", "ADP", "DET", "NOUN", "PUNCT", "ADV", "VERB", "AUX", "PRON", "PROPN", "ADJ", "SYM", "SCONJ", "CCONJ", "NUM", "INTJ", "PART"],
+        datasets: [{
+            label: 'Porcentaje de Categorías Gramaticales',
+            data: [9.052967066322658, 10.13621186826529, 9.134542419183488, 16.09880103202307, 12.372894217635453, 4.080664744270755, 10.333510396114736, 3.913719836090454, 6.292684777659736, 5.569889209288208, 6.135225375626043, 0.17263621186826528, 3.109348914858097, 2.7394141751403858, 0.7095158597662772, 0.12331157990590379, 0.02466231598118076],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(255, 99, 132, 0.2)', // Repite o añade más colores según sea necesario
+             ],
+            borderColor: 'colores de borde aquí',
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'Porcentaje'
+                }
+            }
+        }
+    }
+});
+</script>
+
+        </div>
+
+        <div class="seccion" id="colocaciones">
+            <h2 class="titulo-seccion">Colocaciones</h2>
+            <!-- Aquí insertarás el gráfico de Colocaciones más frecuentes-->
+           <div>
+            <canvas id="graficocoloc"></canvas>
+            </div>
+            
+<div style="width:600px; height:400px;">
+    <canvas id="graficocoloc"></canvas>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+var ctx = document.getElementById('graficocoloc').getContext('2d');
+var chart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: JSON.parse('["castilla - le\u00f3n", "pp - vox", "irene - montero", "cristiano - ronaldo", "marcelo - gallardo", "ministerio - igualdad", "messi - gallardo", "gallardo - pity", "pity - martinez", "pp - psoe", "gallardo - messi", "jajajaja - jajajaja", "messi - cristiano", "messi - vs", "mu\u00f1eco - gallardo", "messi - neymar", "miedo - trabajar", "vox - miedo", "igualdad - g\u00e9nero", "trabajar - cobardes"]'),
+        datasets: [{
+            label: 'Colocaciones frecuentes',
+            data: JSON.parse('[115, 60, 56, 52, 46, 44, 37, 36, 33, 32, 28, 28, 27, 27, 26, 25, 24, 24, 23, 23]'),
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+</script>
+
+        </div>
+
+       </div>
+
+      
+<div style="text-align: center; margin-top: 40px;">
+    <p>© 2024 nai. Todos los derechos reservados.</p>
+    <p>Contacto: <a href="mailto:." style="color: #007bff;">.</a></p>
+</div>
+
+      
+<div id="boton-arriba-container" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+    <button onclick="scrollToTop()" style="padding: 10px 20px; background-color: #007bff; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+        Volver Arriba
+    </button>
+</div>
+<script>
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+</script>
+
+
+</body>
+</html>
