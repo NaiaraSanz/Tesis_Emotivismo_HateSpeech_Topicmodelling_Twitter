@@ -1,541 +1,541 @@
 Source,Target,Weight
-Tema LSI 0,igualdad,0.6292550050870003
-Tema LSI 0,mujer,0.36258964204221467
-Tema LSI 0,aborto,0.3371139072579226
-Tema LSI 0,derecho,0.22003254616737916
-Tema LSI 0,él,0.21158405281068182
-Tema LSI 0,hombre,0.18352674140062095
-Tema LSI 0,vox,0.17276998817080347
-Tema LSI 0,género,0.16095523139596687
-Tema LSI 0,deber,0.11312137840693967
-Tema LSI 0,vida,0.10959727879509755
-Tema LSI 1,igualdad,-0.5969849110849994
-Tema LSI 1,aborto,0.5772634370687858
-Tema LSI 1,vox,0.24754683578777606
-Tema LSI 1,derecho,0.20234245873665366
-Tema LSI 1,él,0.19598323883228064
-Tema LSI 1,género,-0.1670989182437386
-Tema LSI 1,vida,0.13621390436811245
-Tema LSI 1,año,0.09006917864860568
-Tema LSI 1,000,0.08671456783933756
-Tema LSI 1,hombre,-0.0836339308309091
-Tema LSI 0,igualdad,0.6292495143803157
-Tema LSI 0,mujer,0.36259818270362487
-Tema LSI 0,aborto,0.33711444278390934
-Tema LSI 0,derecho,0.2200361795398611
-Tema LSI 0,él,0.21158593093272743
-Tema LSI 0,hombre,0.18352643319928824
-Tema LSI 0,vox,0.17276655225069332
-Tema LSI 0,género,0.16095146522242182
-Tema LSI 0,deber,0.11312115109782847
-Tema LSI 0,vida,0.10958707055391168
-Tema LSI 1,igualdad,-0.5969847479859124
-Tema LSI 1,aborto,0.5772726502190232
-Tema LSI 1,vox,0.24755219096995773
-Tema LSI 1,derecho,0.2023414760470306
-Tema LSI 1,él,0.19598656138905798
-Tema LSI 1,género,-0.1670933581419785
-Tema LSI 1,vida,0.13622237828550676
-Tema LSI 1,año,0.09006218530462336
-Tema LSI 1,000,0.08670833808139408
-Tema LSI 1,hombre,-0.0836183728558299
-Tema LSI 2,vox,0.7608589024295507
-Tema LSI 2,aborto,-0.4169748861979183
-Tema LSI 2,voto,0.257632299235004
-Tema LSI 2,pp,0.2017283543463265
-Tema LSI 2,mujer,-0.12671007390856742
-Tema LSI 2,él,0.09514130351682464
-Tema LSI 2,decir,0.09449896482299737
-Tema LSI 2,izquierda,0.09038290370268613
-Tema LSI 2,@vox_es,0.08124006168392946
-Tema LSI 2,pagar,0.07826787372018763
-Tema LSI 0,igualdad,0.629249014520933
-Tema LSI 0,mujer,0.3626007126375145
-Tema LSI 0,aborto,0.33712269839457704
-Tema LSI 0,derecho,0.22002887748076017
-Tema LSI 0,él,0.21158759184446738
-Tema LSI 0,hombre,0.18352744099257193
-Tema LSI 0,vox,0.17277074854038
-Tema LSI 0,género,0.16095256108126135
-Tema LSI 0,deber,0.113116948976899
-Tema LSI 0,vida,0.10958366382857317
-Tema LSI 1,igualdad,-0.5969908550126538
-Tema LSI 1,aborto,0.57726115286573
-Tema LSI 1,vox,0.24754835891399057
-Tema LSI 1,derecho,0.20234039291310787
-Tema LSI 1,él,0.19598724872506673
-Tema LSI 1,género,-0.16708332966645553
-Tema LSI 1,vida,0.13621009525884992
-Tema LSI 1,año,0.09006485078825945
-Tema LSI 1,000,0.08668305925427473
-Tema LSI 1,hombre,-0.08363080450957949
-Tema LSI 2,vox,0.7608631072095181
-Tema LSI 2,aborto,-0.4169882349708734
-Tema LSI 2,voto,0.2576239366726936
-Tema LSI 2,pp,0.20173219009137772
-Tema LSI 2,mujer,-0.12671842029200012
-Tema LSI 2,él,0.09514393581658691
-Tema LSI 2,decir,0.09450424165751152
-Tema LSI 2,izquierda,0.09039576512162126
-Tema LSI 2,@vox_es,0.08120315721428031
-Tema LSI 2,pagar,0.07821685665676985
-Tema LSI 3,mujer,-0.77892998859286
-Tema LSI 3,derecho,0.282569937860686
-Tema LSI 3,hombre,-0.2609114916990051
-Tema LSI 3,igualdad,0.23915687709116307
-Tema LSI 3,aborto,0.18953193322394463
-Tema LSI 3,género,0.1283086379465154
-Tema LSI 3,feminismo,-0.1085231652043361
-Tema LSI 3,decidir,-0.09866137949569026
-Tema LSI 3,vida,0.09505412298443217
-Tema LSI 3,decir,0.09014668350034051
-Tema LSI 0,igualdad,-0.6292517330846433
-Tema LSI 0,mujer,-0.3625954519830219
-Tema LSI 0,aborto,-0.3371185116054325
-Tema LSI 0,derecho,-0.22003174412120632
-Tema LSI 0,él,-0.211583420704064
-Tema LSI 0,hombre,-0.18353046750964971
-Tema LSI 0,vox,-0.17276964361530364
-Tema LSI 0,género,-0.1609560381461334
-Tema LSI 0,deber,-0.11311934492954037
-Tema LSI 0,vida,-0.10959114297498267
-Tema LSI 1,igualdad,-0.5969831656180669
-Tema LSI 1,aborto,0.577259183358875
-Tema LSI 1,vox,0.24754733015074978
-Tema LSI 1,derecho,0.2023424845047377
-Tema LSI 1,él,0.1959839181550914
-Tema LSI 1,género,-0.16709827610559563
-Tema LSI 1,vida,0.13621741812023994
-Tema LSI 1,año,0.0900737562812112
-Tema LSI 1,000,0.08670613926561829
-Tema LSI 1,hombre,-0.08362811392501927
-Tema LSI 2,vox,-0.7608764858417804
-Tema LSI 2,aborto,0.4169744050473192
-Tema LSI 2,voto,-0.2576298579224576
-Tema LSI 2,pp,-0.2016962612440695
-Tema LSI 2,mujer,0.12673692803922162
-Tema LSI 2,él,-0.09512157736949077
-Tema LSI 2,decir,-0.09448574128210613
-Tema LSI 2,izquierda,-0.09043164471573735
-Tema LSI 2,@vox_es,-0.0812147865028135
-Tema LSI 2,pagar,-0.07828065873866015
-Tema LSI 3,mujer,0.7789733843641519
-Tema LSI 3,derecho,-0.28252924353325987
-Tema LSI 3,hombre,0.26087841649797117
-Tema LSI 3,igualdad,-0.23917312851161363
-Tema LSI 3,aborto,-0.18954599842038955
-Tema LSI 3,género,-0.12830400506780684
-Tema LSI 3,feminismo,0.10851160287162542
-Tema LSI 3,decidir,0.09859170071510895
-Tema LSI 3,vida,-0.0950918200799955
-Tema LSI 3,decir,-0.09013886260444767
-Tema LSI 4,derecho,-0.6990233223741357
-Tema LSI 4,aborto,0.2954312487968146
-Tema LSI 4,privado,0.18418500301532598
-Tema LSI 4,@emmarincon,-0.1823908805257227
-Tema LSI 4,000,0.17992278392377634
-Tema LSI 4,vida,-0.17426063687823465
-Tema LSI 4,vox,0.15142354677987455
-Tema LSI 4,público,0.14484695461558572
-Tema LSI 4,año,0.13273530782827608
-Tema LSI 4,león,0.1275904558518204
-Tema LSI 0,igualdad,0.6292511473618096
-Tema LSI 0,mujer,0.3625942689765767
-Tema LSI 0,aborto,0.3371201031537584
-Tema LSI 0,derecho,0.22003110975850348
-Tema LSI 0,él,0.211582474316139
-Tema LSI 0,hombre,0.1835233621934856
-Tema LSI 0,vox,0.17276805604673057
-Tema LSI 0,género,0.1609518839339452
-Tema LSI 0,deber,0.11312250709571915
-Tema LSI 0,vida,0.10958244099776408
-Tema LSI 1,igualdad,0.5969898021457499
-Tema LSI 1,aborto,-0.5772686182963371
-Tema LSI 1,vox,-0.24755022826989745
-Tema LSI 1,derecho,-0.20234194637797454
-Tema LSI 1,él,-0.19598432654547038
-Tema LSI 1,género,0.16708887394781144
-Tema LSI 1,vida,-0.1362097376510912
-Tema LSI 1,año,-0.09006782550002672
-Tema LSI 1,000,-0.0866929440401013
-Tema LSI 1,hombre,0.08362649414588448
-Tema LSI 2,vox,0.7608715260493459
-Tema LSI 2,aborto,-0.41697072949372926
-Tema LSI 2,voto,0.25762989880285697
-Tema LSI 2,pp,0.20172063387490416
-Tema LSI 2,mujer,-0.12672196997155674
-Tema LSI 2,él,0.0951460682987836
-Tema LSI 2,decir,0.09451933543175571
-Tema LSI 2,izquierda,0.09041932982384364
-Tema LSI 2,@vox_es,0.0811395171332009
-Tema LSI 2,pagar,0.07830176513672558
-Tema LSI 3,mujer,0.7789422626466742
-Tema LSI 3,derecho,-0.282569080060353
-Tema LSI 3,hombre,0.2608862510991908
-Tema LSI 3,igualdad,-0.239166098397783
-Tema LSI 3,aborto,-0.18957214051005972
-Tema LSI 3,género,-0.1282954635887449
-Tema LSI 3,feminismo,0.10850328288575063
-Tema LSI 3,decidir,0.09864485854271866
-Tema LSI 3,vida,-0.09501004947576756
-Tema LSI 3,decir,-0.09018294822929972
-Tema LSI 4,derecho,-0.6990381038209798
-Tema LSI 4,aborto,0.295437425918223
-Tema LSI 4,privado,0.1841924974295145
-Tema LSI 4,@emmarincon,-0.18233244938523732
-Tema LSI 4,000,0.1799879569915741
-Tema LSI 4,vida,-0.17425320288026006
-Tema LSI 4,vox,0.1514762775582915
-Tema LSI 4,público,0.1448543866507174
-Tema LSI 4,año,0.13269931493941783
-Tema LSI 4,león,0.12752732727119384
-Tema LSI 5,voto,-0.6606078505712069
-Tema LSI 5,él,0.5442287066172516
-Tema LSI 5,derecho,-0.1951042925730237
-Tema LSI 5,vox,0.15157495087849293
-Tema LSI 5,mujer,-0.11815115839507674
-Tema LSI 5,000,-0.09944423137174212
-Tema LSI 5,decir,0.0986049494883359
-Tema LSI 5,español,-0.095026395573514
-Tema LSI 5,izquierdo,0.09174803425403717
-Tema LSI 5,gobierno,-0.0914224204994398
-Tema LSI 0,igualdad,-0.6292551820282312
-Tema LSI 0,mujer,-0.3625959913785071
-Tema LSI 0,aborto,-0.33711596567371155
-Tema LSI 0,derecho,-0.22003291625533897
-Tema LSI 0,él,-0.2115805254795607
-Tema LSI 0,hombre,-0.1835266851260968
-Tema LSI 0,vox,-0.17276719508209937
-Tema LSI 0,género,-0.16095188513748207
-Tema LSI 0,deber,-0.11312388438833404
-Tema LSI 0,vida,-0.10959103037283073
-Tema LSI 1,igualdad,-0.5969891034227529
-Tema LSI 1,aborto,0.5772680501944706
-Tema LSI 1,vox,0.24754884507661287
-Tema LSI 1,derecho,0.2023387737258012
-Tema LSI 1,él,0.19597946362691365
-Tema LSI 1,género,-0.16709787619112543
-Tema LSI 1,vida,0.13620799344084034
-Tema LSI 1,año,0.0900602624025036
-Tema LSI 1,000,0.08670147018899599
-Tema LSI 1,hombre,-0.08362274058465881
-Tema LSI 2,vox,0.7608661254942949
-Tema LSI 2,aborto,-0.4169798729657621
-Tema LSI 2,voto,0.2576237951812389
-Tema LSI 2,pp,0.2017080990544082
-Tema LSI 2,mujer,-0.1267227004891523
-Tema LSI 2,él,0.09515762888130296
-Tema LSI 2,decir,0.09450036019309166
-Tema LSI 2,izquierda,0.09038561153128927
-Tema LSI 2,@vox_es,0.08127096728716655
-Tema LSI 2,pagar,0.07825407535349424
-Tema LSI 3,mujer,0.7789535041794877
-Tema LSI 3,derecho,-0.28253825795246407
-Tema LSI 3,hombre,0.2609036748791205
-Tema LSI 3,igualdad,-0.23917877310197466
-Tema LSI 3,aborto,-0.18955388272112575
-Tema LSI 3,género,-0.12825166958279385
-Tema LSI 3,feminismo,0.1084343448498011
-Tema LSI 3,decidir,0.09869515721325814
-Tema LSI 3,vida,-0.09502310841196206
-Tema LSI 3,decir,-0.09017899378030726
-Tema LSI 4,derecho,0.699050512590496
-Tema LSI 4,aborto,-0.29540130395942327
-Tema LSI 4,privado,-0.18415669776823523
-Tema LSI 4,@emmarincon,0.1822932743026207
-Tema LSI 4,000,-0.17999928773669946
-Tema LSI 4,vida,0.17418194069864543
-Tema LSI 4,vox,-0.15145709608283736
-Tema LSI 4,público,-0.14484884192999653
-Tema LSI 4,año,-0.13272723827025318
-Tema LSI 4,león,-0.12752135478532664
-Tema LSI 5,voto,0.6606419796648566
-Tema LSI 5,él,-0.5442933837394592
-Tema LSI 5,derecho,0.19512195932963206
-Tema LSI 5,vox,-0.15165676747769122
-Tema LSI 5,mujer,0.1181102838064587
-Tema LSI 5,000,0.09929904345358401
-Tema LSI 5,decir,-0.09851881270477202
-Tema LSI 5,español,0.09500791528082322
-Tema LSI 5,izquierdo,-0.09177870285840412
-Tema LSI 5,gobierno,0.09148097308457077
-Tema LSI 6,él,0.4820067197722707
-Tema LSI 6,voto,0.48041223299843644
-Tema LSI 6,vox,-0.34856307700247574
-Tema LSI 6,izquierdo,0.34599603511663407
-Tema LSI 6,derecho,-0.1830377723719898
-Tema LSI 6,medio,0.13865130163826694
-Tema LSI 6,pasar,0.13448263856443124
-Tema LSI 6,quedar,0.1013694438980876
-Tema LSI 6,idea,0.09985831134433812
-Tema LSI 6,privado,-0.09744349242298028
-Tema LSI 0,igualdad,0.6292484719459055
-Tema LSI 0,mujer,0.3625982338437939
-Tema LSI 0,aborto,0.33711782583201055
-Tema LSI 0,derecho,0.22003283412729502
-Tema LSI 0,él,0.21158303998125863
-Tema LSI 0,hombre,0.18352763602414984
-Tema LSI 0,vox,0.17276846157877382
-Tema LSI 0,género,0.1609569434380923
-Tema LSI 0,deber,0.11312093226237875
-Tema LSI 0,vida,0.10959206802916263
-Tema LSI 1,igualdad,-0.5969872059396043
-Tema LSI 1,aborto,0.5772656521899151
-Tema LSI 1,vox,0.24754812025004969
-Tema LSI 1,derecho,0.20234082589496769
-Tema LSI 1,él,0.19598572247535928
-Tema LSI 1,género,-0.1670917004883609
-Tema LSI 1,vida,0.13620990618926523
-Tema LSI 1,año,0.09007880952142666
-Tema LSI 1,000,0.08667724383064802
-Tema LSI 1,hombre,-0.08363070013619185
-Tema LSI 2,vox,0.7608590605096057
-Tema LSI 2,aborto,-0.4169738424815434
-Tema LSI 2,voto,0.2576314069481663
-Tema LSI 2,pp,0.2017265006574883
-Tema LSI 2,mujer,-0.1267195827618911
-Tema LSI 2,él,0.0951219302275332
-Tema LSI 2,decir,0.09450190574954269
-Tema LSI 2,izquierda,0.09039326960056135
-Tema LSI 2,@vox_es,0.08122820769502968
-Tema LSI 2,pagar,0.07827064960617013
-Tema LSI 3,mujer,0.7789433505469334
-Tema LSI 3,derecho,-0.28255106457085755
-Tema LSI 3,hombre,0.2608484739633714
-Tema LSI 3,igualdad,-0.23914929978723878
-Tema LSI 3,aborto,-0.18958380045311535
-Tema LSI 3,género,-0.12833689809275067
-Tema LSI 3,feminismo,0.10841881106592548
-Tema LSI 3,decidir,0.09869249242371209
-Tema LSI 3,vida,-0.09504676313370806
-Tema LSI 3,decir,-0.09013703365647528
-Tema LSI 4,derecho,-0.6990327000478762
-Tema LSI 4,aborto,0.29543316620553944
-Tema LSI 4,privado,0.18420461907326618
-Tema LSI 4,@emmarincon,-0.1823279369791234
-Tema LSI 4,000,0.1800052081280166
-Tema LSI 4,vida,-0.174218545263054
-Tema LSI 4,vox,0.15141213965260925
-Tema LSI 4,público,0.14490039945823247
-Tema LSI 4,año,0.1327070605417881
-Tema LSI 4,león,0.12753004697488063
-Tema LSI 5,voto,0.660617048462569
-Tema LSI 5,él,-0.5443477177491516
-Tema LSI 5,derecho,0.19510906319503263
-Tema LSI 5,vox,-0.15160271787659654
-Tema LSI 5,mujer,0.11815048048447077
-Tema LSI 5,000,0.09942673036925896
-Tema LSI 5,decir,-0.09867134216717784
-Tema LSI 5,español,0.09513100428659022
-Tema LSI 5,izquierdo,-0.09175510198291711
-Tema LSI 5,gobierno,0.09158926791527808
-Tema LSI 6,él,-0.4819044350417053
-Tema LSI 6,voto,-0.48039896916234087
-Tema LSI 6,vox,0.34849910075532303
-Tema LSI 6,izquierdo,-0.3460864475337847
-Tema LSI 6,derecho,0.18309571407533046
-Tema LSI 6,medio,-0.1384776488460465
-Tema LSI 6,pasar,-0.13448409291283647
-Tema LSI 6,quedar,-0.10113774167389741
-Tema LSI 6,idea,-0.09981918623328316
-Tema LSI 6,privado,0.0972707826790492
-Tema LSI 7,privado,0.3387094563235994
-Tema LSI 7,público,0.32230859989658656
-Tema LSI 7,aborto,-0.29940941061434645
-Tema LSI 7,izquierdo,0.2943807238776469
-Tema LSI 7,derecho,0.23006794948445974
-Tema LSI 7,león,0.225088956967095
-Tema LSI 7,castilla,0.2119649574019873
-Tema LSI 7,valladolid,0.1941800558637762
-Tema LSI 7,euros,0.19063250507158871
-Tema LSI 7,año,0.1895367250073554
-Tema LSI 0,igualdad,0.6292497584706793
-Tema LSI 0,mujer,0.3625968347722655
-Tema LSI 0,aborto,0.3371175152998543
-Tema LSI 0,derecho,0.2200328219427593
-Tema LSI 0,él,0.211585063548465
-Tema LSI 0,hombre,0.1835293263566777
-Tema LSI 0,vox,0.17276940767316526
-Tema LSI 0,género,0.16095102923059582
-Tema LSI 0,deber,0.1131216639388635
-Tema LSI 0,vida,0.10958849303874575
-Tema LSI 1,igualdad,-0.5969840412492636
-Tema LSI 1,aborto,0.5772590573758812
-Tema LSI 1,vox,0.2475381412351202
-Tema LSI 1,derecho,0.2023481605531203
-Tema LSI 1,él,0.1959841213937762
-Tema LSI 1,género,-0.16708650480828396
-Tema LSI 1,vida,0.13621504031560763
-Tema LSI 1,año,0.09007934833706231
-Tema LSI 1,000,0.08669332930342212
-Tema LSI 1,hombre,-0.08362862585791413
-Tema LSI 2,vox,-0.7608650098117197
-Tema LSI 2,aborto,0.41698628327083875
-Tema LSI 2,voto,-0.2576241926976515
-Tema LSI 2,pp,-0.20171406971985653
-Tema LSI 2,mujer,0.12669815221871503
-Tema LSI 2,él,-0.0951412282877529
-Tema LSI 2,decir,-0.09451999216859065
-Tema LSI 2,izquierda,-0.09040812340554659
-Tema LSI 2,@vox_es,-0.08118426744606867
-Tema LSI 2,pagar,-0.078248565250969
-Tema LSI 3,mujer,-0.7789264085183946
-Tema LSI 3,derecho,0.2825535909124539
-Tema LSI 3,hombre,-0.26084399580262185
-Tema LSI 3,igualdad,0.23915634725400872
-Tema LSI 3,aborto,0.18955631678969292
-Tema LSI 3,género,0.12832765577895686
-Tema LSI 3,feminismo,-0.10847942659130176
-Tema LSI 3,decidir,-0.09872067407553226
-Tema LSI 3,vida,0.09506401341632063
-Tema LSI 3,decir,0.09014934770582368
-Tema LSI 4,derecho,-0.699013204972481
-Tema LSI 4,aborto,0.29538859271850326
-Tema LSI 4,privado,0.18423141976988341
-Tema LSI 4,@emmarincon,-0.1823288689601049
-Tema LSI 4,000,0.18000632356201599
-Tema LSI 4,vida,-0.1742857684849069
-Tema LSI 4,vox,0.1514289889943771
-Tema LSI 4,público,0.1448119054813634
-Tema LSI 4,año,0.1326461334265152
-Tema LSI 4,león,0.12751914790947194
-Tema LSI 5,voto,-0.6605472856118264
-Tema LSI 5,él,0.5442840392629044
-Tema LSI 5,derecho,-0.1951614479281902
-Tema LSI 5,vox,0.15166877978420307
-Tema LSI 5,mujer,-0.11812502329920196
-Tema LSI 5,000,-0.09949301173381218
-Tema LSI 5,decir,0.09856045434770627
-Tema LSI 5,español,-0.09497723127344282
-Tema LSI 5,izquierdo,0.0917958304220468
-Tema LSI 5,gobierno,-0.09143824731690749
-Tema LSI 6,él,0.4819382181987047
-Tema LSI 6,voto,0.48044246492298043
-Tema LSI 6,vox,-0.3484722946033901
-Tema LSI 6,izquierdo,0.34600157555349353
-Tema LSI 6,derecho,-0.18306600704295456
-Tema LSI 6,medio,0.138593336976303
-Tema LSI 6,pasar,0.13447254048129245
-Tema LSI 6,quedar,0.10115171161238067
-Tema LSI 6,idea,0.09946648788409251
-Tema LSI 6,privado,-0.09737921160095758
-Tema LSI 7,privado,-0.3385433656293771
-Tema LSI 7,público,-0.322033975679757
-Tema LSI 7,aborto,0.29942108997469746
-Tema LSI 7,izquierdo,-0.294377950705426
-Tema LSI 7,derecho,-0.23002550446764108
-Tema LSI 7,león,-0.22536620088602172
-Tema LSI 7,castilla,-0.21202576454007033
-Tema LSI 7,valladolid,-0.19411989625285989
-Tema LSI 7,euros,-0.19076768794412405
-Tema LSI 7,año,-0.18936589437375145
-Tema LSI 8,izquierdo,0.47217698657435936
-Tema LSI 8,dirigir,-0.3987344683251058
-Tema LSI 8,volver,-0.3930148613092502
-Tema LSI 8,gallardo,-0.3633457641237067
-Tema LSI 8,medio,0.3495927158081193
-Tema LSI 8,él,-0.18257188459813903
-Tema LSI 8,marcelo,-0.15460080434850088
-Tema LSI 8,año,-0.10741848259642003
-Tema LSI 8,género,0.10308106072029657
-Tema LSI 8,vida,0.09526478085824723
-Tema LSI 0,igualdad,-0.6292515934921623
-Tema LSI 0,mujer,-0.3625951140171204
-Tema LSI 0,aborto,-0.33711838504847386
-Tema LSI 0,derecho,-0.22003202648163697
-Tema LSI 0,él,-0.21158188208807574
-Tema LSI 0,hombre,-0.1835280382706391
-Tema LSI 0,vox,-0.17276741042676758
-Tema LSI 0,género,-0.16095358547425992
-Tema LSI 0,deber,-0.11311848847853688
-Tema LSI 0,vida,-0.10959061746884545
-Tema LSI 1,igualdad,0.5969871647825877
-Tema LSI 1,aborto,-0.5772638369593055
-Tema LSI 1,vox,-0.2475578668678311
-Tema LSI 1,derecho,-0.2023381095248016
-Tema LSI 1,él,-0.1959778592376495
-Tema LSI 1,género,0.16709350928175798
-Tema LSI 1,vida,-0.13621089808248138
-Tema LSI 1,año,-0.09005694835196859
-Tema LSI 1,000,-0.08669288882313769
-Tema LSI 1,hombre,0.0836202708482235
-Tema LSI 2,vox,0.7608613523712799
-Tema LSI 2,aborto,-0.4169751048584361
-Tema LSI 2,voto,0.25763292910097735
-Tema LSI 2,pp,0.20170043000576648
-Tema LSI 2,mujer,-0.12671607559723738
-Tema LSI 2,él,0.09513773485033303
-Tema LSI 2,decir,0.09449375048493885
-Tema LSI 2,izquierda,0.09039391467750914
-Tema LSI 2,@vox_es,0.08123533082318009
-Tema LSI 2,pagar,0.07825861349598431
-Tema LSI 3,mujer,0.7789380119341253
-Tema LSI 3,derecho,-0.2825774691201149
-Tema LSI 3,hombre,0.26087244436860396
-Tema LSI 3,igualdad,-0.23915952942407404
-Tema LSI 3,aborto,-0.1895532569436388
-Tema LSI 3,género,-0.12829871115138528
-Tema LSI 3,feminismo,0.10849290075795183
-Tema LSI 3,decidir,0.09878803119251536
-Tema LSI 3,vida,-0.09505962886256082
-Tema LSI 3,decir,-0.09017142515478813
-Tema LSI 4,derecho,0.699017605612488
-Tema LSI 4,aborto,-0.2953906523422851
-Tema LSI 4,privado,-0.18416840851457467
-Tema LSI 4,@emmarincon,0.182382821891328
-Tema LSI 4,000,-0.17998226775375595
-Tema LSI 4,vida,0.17422514425598604
-Tema LSI 4,vox,-0.15144669046419926
-Tema LSI 4,público,-0.14497725183046256
-Tema LSI 4,año,-0.1327358182207227
-Tema LSI 4,león,-0.12762968658756169
-Tema LSI 5,voto,-0.660639354893089
-Tema LSI 5,él,0.544266842131738
-Tema LSI 5,derecho,-0.1951180054666042
-Tema LSI 5,vox,0.151636976497382
-Tema LSI 5,mujer,-0.11820161119395638
-Tema LSI 5,000,-0.09933470910092007
-Tema LSI 5,decir,0.09859283847307211
-Tema LSI 5,español,-0.09498690346335095
-Tema LSI 5,izquierdo,0.09176012870025728
-Tema LSI 5,gobierno,-0.09132857993038149
-Tema LSI 6,él,-0.48198676510791083
-Tema LSI 6,voto,-0.48037614813549984
-Tema LSI 6,vox,0.348544788070273
-Tema LSI 6,izquierdo,-0.3460701420104288
-Tema LSI 6,derecho,0.18302541836894756
-Tema LSI 6,medio,-0.13851169606259164
-Tema LSI 6,pasar,-0.13451003721062813
-Tema LSI 6,quedar,-0.10119834269968471
-Tema LSI 6,idea,-0.10007989248504635
-Tema LSI 6,privado,0.09719996347930313
-Tema LSI 7,privado,0.33863917080325306
-Tema LSI 7,público,0.3221132734628649
-Tema LSI 7,aborto,-0.2993895266603818
-Tema LSI 7,izquierdo,0.29425030132638275
-Tema LSI 7,derecho,0.23007675735886937
-Tema LSI 7,león,0.22519251856219524
-Tema LSI 7,castilla,0.2119408530251736
-Tema LSI 7,valladolid,0.19414699754250409
-Tema LSI 7,euros,0.190553266066629
-Tema LSI 7,año,0.18937404459337065
-Tema LSI 8,izquierdo,-0.4723154519810081
-Tema LSI 8,dirigir,0.39887659260792524
-Tema LSI 8,volver,0.39303956155003245
-Tema LSI 8,gallardo,0.3634012553470821
-Tema LSI 8,medio,-0.34936962388322784
-Tema LSI 8,él,0.18262067729253695
-Tema LSI 8,marcelo,0.15414524794134773
-Tema LSI 8,año,0.10760609157956326
-Tema LSI 8,género,-0.1030405826336172
-Tema LSI 8,vida,-0.09508023275125697
-Tema LSI 9,volver,0.34325487099429564
-Tema LSI 9,él,-0.3103884325091593
-Tema LSI 9,dirigir,0.3024500569810714
-Tema LSI 9,gallardo,0.294248273254319
-Tema LSI 9,humano,0.2830908207144444
-Tema LSI 9,@emmarincon,0.2636098317834527
-Tema LSI 9,izquierdo,0.2545713338510741
-Tema LSI 9,medio,0.24225778065573755
-Tema LSI 9,vida,0.23588212135890685
-Tema LSI 9,derecho,-0.20045548409269393
+Modelocon2temas_Subtema0,igualdad,0.629
+Modelocon2temas_Subtema0,mujer,0.363
+Modelocon2temas_Subtema0,aborto,0.337
+Modelocon2temas_Subtema0,derecho,0.22
+Modelocon2temas_Subtema0,él,0.212
+Modelocon2temas_Subtema0,hombre,0.184
+Modelocon2temas_Subtema0,vox,0.173
+Modelocon2temas_Subtema0,género,0.161
+Modelocon2temas_Subtema0,deber,0.113
+Modelocon2temas_Subtema0,vida,0.11
+Modelocon2temas_Subtema1,igualdad,-0.597
+Modelocon2temas_Subtema1,aborto,0.577
+Modelocon2temas_Subtema1,vox,0.248
+Modelocon2temas_Subtema1,derecho,0.202
+Modelocon2temas_Subtema1,él,0.196
+Modelocon2temas_Subtema1,género,-0.167
+Modelocon2temas_Subtema1,vida,0.136
+Modelocon2temas_Subtema1,año,0.09
+Modelocon2temas_Subtema1,000,0.087
+Modelocon2temas_Subtema1,hombre,-0.084
+Modelocon3temas_Subtema0,igualdad,0.629
+Modelocon3temas_Subtema0,mujer,0.363
+Modelocon3temas_Subtema0,aborto,0.337
+Modelocon3temas_Subtema0,derecho,0.22
+Modelocon3temas_Subtema0,él,0.212
+Modelocon3temas_Subtema0,hombre,0.184
+Modelocon3temas_Subtema0,vox,0.173
+Modelocon3temas_Subtema0,género,0.161
+Modelocon3temas_Subtema0,deber,0.113
+Modelocon3temas_Subtema0,vida,0.11
+Modelocon3temas_Subtema1,igualdad,-0.597
+Modelocon3temas_Subtema1,aborto,0.577
+Modelocon3temas_Subtema1,vox,0.248
+Modelocon3temas_Subtema1,derecho,0.202
+Modelocon3temas_Subtema1,él,0.196
+Modelocon3temas_Subtema1,género,-0.167
+Modelocon3temas_Subtema1,vida,0.136
+Modelocon3temas_Subtema1,año,0.09
+Modelocon3temas_Subtema1,000,0.087
+Modelocon3temas_Subtema1,hombre,-0.084
+Modelocon3temas_Subtema2,vox,0.761
+Modelocon3temas_Subtema2,aborto,-0.417
+Modelocon3temas_Subtema2,voto,0.258
+Modelocon3temas_Subtema2,pp,0.202
+Modelocon3temas_Subtema2,mujer,-0.127
+Modelocon3temas_Subtema2,él,0.095
+Modelocon3temas_Subtema2,decir,0.094
+Modelocon3temas_Subtema2,izquierda,0.09
+Modelocon3temas_Subtema2,atvox_es,0.081
+Modelocon3temas_Subtema2,pagar,0.078
+Modelocon4temas_Subtema0,igualdad,0.629
+Modelocon4temas_Subtema0,mujer,0.363
+Modelocon4temas_Subtema0,aborto,0.337
+Modelocon4temas_Subtema0,derecho,0.22
+Modelocon4temas_Subtema0,él,0.212
+Modelocon4temas_Subtema0,hombre,0.184
+Modelocon4temas_Subtema0,vox,0.173
+Modelocon4temas_Subtema0,género,0.161
+Modelocon4temas_Subtema0,deber,0.113
+Modelocon4temas_Subtema0,vida,0.11
+Modelocon4temas_Subtema1,igualdad,-0.597
+Modelocon4temas_Subtema1,aborto,0.577
+Modelocon4temas_Subtema1,vox,0.248
+Modelocon4temas_Subtema1,derecho,0.202
+Modelocon4temas_Subtema1,él,0.196
+Modelocon4temas_Subtema1,género,-0.167
+Modelocon4temas_Subtema1,vida,0.136
+Modelocon4temas_Subtema1,año,0.09
+Modelocon4temas_Subtema1,000,0.087
+Modelocon4temas_Subtema1,hombre,-0.084
+Modelocon4temas_Subtema2,vox,0.761
+Modelocon4temas_Subtema2,aborto,-0.417
+Modelocon4temas_Subtema2,voto,0.258
+Modelocon4temas_Subtema2,pp,0.202
+Modelocon4temas_Subtema2,mujer,-0.127
+Modelocon4temas_Subtema2,él,0.095
+Modelocon4temas_Subtema2,decir,0.095
+Modelocon4temas_Subtema2,izquierda,0.09
+Modelocon4temas_Subtema2,atvox_es,0.081
+Modelocon4temas_Subtema2,pagar,0.078
+Modelocon4temas_Subtema3,mujer,-0.779
+Modelocon4temas_Subtema3,derecho,0.283
+Modelocon4temas_Subtema3,hombre,-0.261
+Modelocon4temas_Subtema3,igualdad,0.239
+Modelocon4temas_Subtema3,aborto,0.19
+Modelocon4temas_Subtema3,género,0.128
+Modelocon4temas_Subtema3,feminismo,-0.109
+Modelocon4temas_Subtema3,decidir,-0.099
+Modelocon4temas_Subtema3,vida,0.095
+Modelocon4temas_Subtema3,decir,0.09
+Modelocon5temas_Subtema0,igualdad,-0.629
+Modelocon5temas_Subtema0,mujer,-0.363
+Modelocon5temas_Subtema0,aborto,-0.337
+Modelocon5temas_Subtema0,derecho,-0.22
+Modelocon5temas_Subtema0,él,-0.212
+Modelocon5temas_Subtema0,hombre,-0.184
+Modelocon5temas_Subtema0,vox,-0.173
+Modelocon5temas_Subtema0,género,-0.161
+Modelocon5temas_Subtema0,deber,-0.113
+Modelocon5temas_Subtema0,vida,-0.11
+Modelocon5temas_Subtema1,igualdad,-0.597
+Modelocon5temas_Subtema1,aborto,0.577
+Modelocon5temas_Subtema1,vox,0.248
+Modelocon5temas_Subtema1,derecho,0.202
+Modelocon5temas_Subtema1,él,0.196
+Modelocon5temas_Subtema1,género,-0.167
+Modelocon5temas_Subtema1,vida,0.136
+Modelocon5temas_Subtema1,año,0.09
+Modelocon5temas_Subtema1,000,0.087
+Modelocon5temas_Subtema1,hombre,-0.084
+Modelocon5temas_Subtema2,vox,-0.761
+Modelocon5temas_Subtema2,aborto,0.417
+Modelocon5temas_Subtema2,voto,-0.258
+Modelocon5temas_Subtema2,pp,-0.202
+Modelocon5temas_Subtema2,mujer,0.127
+Modelocon5temas_Subtema2,él,-0.095
+Modelocon5temas_Subtema2,decir,-0.094
+Modelocon5temas_Subtema2,izquierda,-0.09
+Modelocon5temas_Subtema2,atvox_es,-0.081
+Modelocon5temas_Subtema2,pagar,-0.078
+Modelocon5temas_Subtema3,mujer,0.779
+Modelocon5temas_Subtema3,derecho,-0.283
+Modelocon5temas_Subtema3,hombre,0.261
+Modelocon5temas_Subtema3,igualdad,-0.239
+Modelocon5temas_Subtema3,aborto,-0.19
+Modelocon5temas_Subtema3,género,-0.128
+Modelocon5temas_Subtema3,feminismo,0.109
+Modelocon5temas_Subtema3,decidir,0.099
+Modelocon5temas_Subtema3,vida,-0.095
+Modelocon5temas_Subtema3,decir,-0.09
+Modelocon5temas_Subtema4,derecho,-0.699
+Modelocon5temas_Subtema4,aborto,0.295
+Modelocon5temas_Subtema4,privado,0.184
+Modelocon5temas_Subtema4,atemmarincon,-0.182
+Modelocon5temas_Subtema4,000,0.18
+Modelocon5temas_Subtema4,vida,-0.174
+Modelocon5temas_Subtema4,vox,0.151
+Modelocon5temas_Subtema4,público,0.145
+Modelocon5temas_Subtema4,año,0.133
+Modelocon5temas_Subtema4,león,0.128
+Modelocon6temas_Subtema0,igualdad,0.629
+Modelocon6temas_Subtema0,mujer,0.363
+Modelocon6temas_Subtema0,aborto,0.337
+Modelocon6temas_Subtema0,derecho,0.22
+Modelocon6temas_Subtema0,él,0.212
+Modelocon6temas_Subtema0,hombre,0.184
+Modelocon6temas_Subtema0,vox,0.173
+Modelocon6temas_Subtema0,género,0.161
+Modelocon6temas_Subtema0,deber,0.113
+Modelocon6temas_Subtema0,vida,0.11
+Modelocon6temas_Subtema1,igualdad,0.597
+Modelocon6temas_Subtema1,aborto,-0.577
+Modelocon6temas_Subtema1,vox,-0.248
+Modelocon6temas_Subtema1,derecho,-0.202
+Modelocon6temas_Subtema1,él,-0.196
+Modelocon6temas_Subtema1,género,0.167
+Modelocon6temas_Subtema1,vida,-0.136
+Modelocon6temas_Subtema1,año,-0.09
+Modelocon6temas_Subtema1,000,-0.087
+Modelocon6temas_Subtema1,hombre,0.084
+Modelocon6temas_Subtema2,vox,0.761
+Modelocon6temas_Subtema2,aborto,-0.417
+Modelocon6temas_Subtema2,voto,0.258
+Modelocon6temas_Subtema2,pp,0.202
+Modelocon6temas_Subtema2,mujer,-0.127
+Modelocon6temas_Subtema2,él,0.095
+Modelocon6temas_Subtema2,decir,0.095
+Modelocon6temas_Subtema2,izquierda,0.09
+Modelocon6temas_Subtema2,atvox_es,0.081
+Modelocon6temas_Subtema2,pagar,0.078
+Modelocon6temas_Subtema3,mujer,0.779
+Modelocon6temas_Subtema3,derecho,-0.283
+Modelocon6temas_Subtema3,hombre,0.261
+Modelocon6temas_Subtema3,igualdad,-0.239
+Modelocon6temas_Subtema3,aborto,-0.19
+Modelocon6temas_Subtema3,género,-0.128
+Modelocon6temas_Subtema3,feminismo,0.109
+Modelocon6temas_Subtema3,decidir,0.099
+Modelocon6temas_Subtema3,vida,-0.095
+Modelocon6temas_Subtema3,decir,-0.09
+Modelocon6temas_Subtema4,derecho,-0.699
+Modelocon6temas_Subtema4,aborto,0.295
+Modelocon6temas_Subtema4,privado,0.184
+Modelocon6temas_Subtema4,atemmarincon,-0.182
+Modelocon6temas_Subtema4,000,0.18
+Modelocon6temas_Subtema4,vida,-0.174
+Modelocon6temas_Subtema4,vox,0.151
+Modelocon6temas_Subtema4,público,0.145
+Modelocon6temas_Subtema4,año,0.133
+Modelocon6temas_Subtema4,león,0.128
+Modelocon6temas_Subtema5,voto,-0.661
+Modelocon6temas_Subtema5,él,0.544
+Modelocon6temas_Subtema5,derecho,-0.195
+Modelocon6temas_Subtema5,vox,0.152
+Modelocon6temas_Subtema5,mujer,-0.118
+Modelocon6temas_Subtema5,000,-0.099
+Modelocon6temas_Subtema5,decir,0.099
+Modelocon6temas_Subtema5,español,-0.095
+Modelocon6temas_Subtema5,izquierdo,0.092
+Modelocon6temas_Subtema5,gobierno,-0.091
+Modelocon7temas_Subtema0,igualdad,-0.629
+Modelocon7temas_Subtema0,mujer,-0.363
+Modelocon7temas_Subtema0,aborto,-0.337
+Modelocon7temas_Subtema0,derecho,-0.22
+Modelocon7temas_Subtema0,él,-0.212
+Modelocon7temas_Subtema0,hombre,-0.184
+Modelocon7temas_Subtema0,vox,-0.173
+Modelocon7temas_Subtema0,género,-0.161
+Modelocon7temas_Subtema0,deber,-0.113
+Modelocon7temas_Subtema0,vida,-0.11
+Modelocon7temas_Subtema1,igualdad,-0.597
+Modelocon7temas_Subtema1,aborto,0.577
+Modelocon7temas_Subtema1,vox,0.248
+Modelocon7temas_Subtema1,derecho,0.202
+Modelocon7temas_Subtema1,él,0.196
+Modelocon7temas_Subtema1,género,-0.167
+Modelocon7temas_Subtema1,vida,0.136
+Modelocon7temas_Subtema1,año,0.09
+Modelocon7temas_Subtema1,000,0.087
+Modelocon7temas_Subtema1,hombre,-0.084
+Modelocon7temas_Subtema2,vox,0.761
+Modelocon7temas_Subtema2,aborto,-0.417
+Modelocon7temas_Subtema2,voto,0.258
+Modelocon7temas_Subtema2,pp,0.202
+Modelocon7temas_Subtema2,mujer,-0.127
+Modelocon7temas_Subtema2,él,0.095
+Modelocon7temas_Subtema2,decir,0.095
+Modelocon7temas_Subtema2,izquierda,0.09
+Modelocon7temas_Subtema2,atvox_es,0.081
+Modelocon7temas_Subtema2,pagar,0.078
+Modelocon7temas_Subtema3,mujer,0.779
+Modelocon7temas_Subtema3,derecho,-0.283
+Modelocon7temas_Subtema3,hombre,0.261
+Modelocon7temas_Subtema3,igualdad,-0.239
+Modelocon7temas_Subtema3,aborto,-0.19
+Modelocon7temas_Subtema3,género,-0.128
+Modelocon7temas_Subtema3,feminismo,0.108
+Modelocon7temas_Subtema3,decidir,0.099
+Modelocon7temas_Subtema3,vida,-0.095
+Modelocon7temas_Subtema3,decir,-0.09
+Modelocon7temas_Subtema4,derecho,0.699
+Modelocon7temas_Subtema4,aborto,-0.295
+Modelocon7temas_Subtema4,privado,-0.184
+Modelocon7temas_Subtema4,atemmarincon,0.182
+Modelocon7temas_Subtema4,000,-0.18
+Modelocon7temas_Subtema4,vida,0.174
+Modelocon7temas_Subtema4,vox,-0.151
+Modelocon7temas_Subtema4,público,-0.145
+Modelocon7temas_Subtema4,año,-0.133
+Modelocon7temas_Subtema4,león,-0.128
+Modelocon7temas_Subtema5,voto,0.661
+Modelocon7temas_Subtema5,él,-0.544
+Modelocon7temas_Subtema5,derecho,0.195
+Modelocon7temas_Subtema5,vox,-0.152
+Modelocon7temas_Subtema5,mujer,0.118
+Modelocon7temas_Subtema5,000,0.099
+Modelocon7temas_Subtema5,decir,-0.099
+Modelocon7temas_Subtema5,español,0.095
+Modelocon7temas_Subtema5,izquierdo,-0.092
+Modelocon7temas_Subtema5,gobierno,0.091
+Modelocon7temas_Subtema6,él,0.482
+Modelocon7temas_Subtema6,voto,0.48
+Modelocon7temas_Subtema6,vox,-0.349
+Modelocon7temas_Subtema6,izquierdo,0.346
+Modelocon7temas_Subtema6,derecho,-0.183
+Modelocon7temas_Subtema6,medio,0.139
+Modelocon7temas_Subtema6,pasar,0.134
+Modelocon7temas_Subtema6,quedar,0.101
+Modelocon7temas_Subtema6,idea,0.1
+Modelocon7temas_Subtema6,privado,-0.097
+Modelocon8temas_Subtema0,igualdad,0.629
+Modelocon8temas_Subtema0,mujer,0.363
+Modelocon8temas_Subtema0,aborto,0.337
+Modelocon8temas_Subtema0,derecho,0.22
+Modelocon8temas_Subtema0,él,0.212
+Modelocon8temas_Subtema0,hombre,0.184
+Modelocon8temas_Subtema0,vox,0.173
+Modelocon8temas_Subtema0,género,0.161
+Modelocon8temas_Subtema0,deber,0.113
+Modelocon8temas_Subtema0,vida,0.11
+Modelocon8temas_Subtema1,igualdad,-0.597
+Modelocon8temas_Subtema1,aborto,0.577
+Modelocon8temas_Subtema1,vox,0.248
+Modelocon8temas_Subtema1,derecho,0.202
+Modelocon8temas_Subtema1,él,0.196
+Modelocon8temas_Subtema1,género,-0.167
+Modelocon8temas_Subtema1,vida,0.136
+Modelocon8temas_Subtema1,año,0.09
+Modelocon8temas_Subtema1,000,0.087
+Modelocon8temas_Subtema1,hombre,-0.084
+Modelocon8temas_Subtema2,vox,0.761
+Modelocon8temas_Subtema2,aborto,-0.417
+Modelocon8temas_Subtema2,voto,0.258
+Modelocon8temas_Subtema2,pp,0.202
+Modelocon8temas_Subtema2,mujer,-0.127
+Modelocon8temas_Subtema2,él,0.095
+Modelocon8temas_Subtema2,decir,0.095
+Modelocon8temas_Subtema2,izquierda,0.09
+Modelocon8temas_Subtema2,atvox_es,0.081
+Modelocon8temas_Subtema2,pagar,0.078
+Modelocon8temas_Subtema3,mujer,0.779
+Modelocon8temas_Subtema3,derecho,-0.283
+Modelocon8temas_Subtema3,hombre,0.261
+Modelocon8temas_Subtema3,igualdad,-0.239
+Modelocon8temas_Subtema3,aborto,-0.19
+Modelocon8temas_Subtema3,género,-0.128
+Modelocon8temas_Subtema3,feminismo,0.108
+Modelocon8temas_Subtema3,decidir,0.099
+Modelocon8temas_Subtema3,vida,-0.095
+Modelocon8temas_Subtema3,decir,-0.09
+Modelocon8temas_Subtema4,derecho,-0.699
+Modelocon8temas_Subtema4,aborto,0.295
+Modelocon8temas_Subtema4,privado,0.184
+Modelocon8temas_Subtema4,atemmarincon,-0.182
+Modelocon8temas_Subtema4,000,0.18
+Modelocon8temas_Subtema4,vida,-0.174
+Modelocon8temas_Subtema4,vox,0.151
+Modelocon8temas_Subtema4,público,0.145
+Modelocon8temas_Subtema4,año,0.133
+Modelocon8temas_Subtema4,león,0.128
+Modelocon8temas_Subtema5,voto,0.661
+Modelocon8temas_Subtema5,él,-0.544
+Modelocon8temas_Subtema5,derecho,0.195
+Modelocon8temas_Subtema5,vox,-0.152
+Modelocon8temas_Subtema5,mujer,0.118
+Modelocon8temas_Subtema5,000,0.099
+Modelocon8temas_Subtema5,decir,-0.099
+Modelocon8temas_Subtema5,español,0.095
+Modelocon8temas_Subtema5,izquierdo,-0.092
+Modelocon8temas_Subtema5,gobierno,0.092
+Modelocon8temas_Subtema6,él,-0.482
+Modelocon8temas_Subtema6,voto,-0.48
+Modelocon8temas_Subtema6,vox,0.348
+Modelocon8temas_Subtema6,izquierdo,-0.346
+Modelocon8temas_Subtema6,derecho,0.183
+Modelocon8temas_Subtema6,medio,-0.138
+Modelocon8temas_Subtema6,pasar,-0.134
+Modelocon8temas_Subtema6,quedar,-0.101
+Modelocon8temas_Subtema6,idea,-0.1
+Modelocon8temas_Subtema6,privado,0.097
+Modelocon8temas_Subtema7,privado,0.339
+Modelocon8temas_Subtema7,público,0.322
+Modelocon8temas_Subtema7,aborto,-0.299
+Modelocon8temas_Subtema7,izquierdo,0.294
+Modelocon8temas_Subtema7,derecho,0.23
+Modelocon8temas_Subtema7,león,0.225
+Modelocon8temas_Subtema7,castilla,0.212
+Modelocon8temas_Subtema7,valladolid,0.194
+Modelocon8temas_Subtema7,euros,0.191
+Modelocon8temas_Subtema7,año,0.19
+Modelocon9temas_Subtema0,igualdad,0.629
+Modelocon9temas_Subtema0,mujer,0.363
+Modelocon9temas_Subtema0,aborto,0.337
+Modelocon9temas_Subtema0,derecho,0.22
+Modelocon9temas_Subtema0,él,0.212
+Modelocon9temas_Subtema0,hombre,0.184
+Modelocon9temas_Subtema0,vox,0.173
+Modelocon9temas_Subtema0,género,0.161
+Modelocon9temas_Subtema0,deber,0.113
+Modelocon9temas_Subtema0,vida,0.11
+Modelocon9temas_Subtema1,igualdad,-0.597
+Modelocon9temas_Subtema1,aborto,0.577
+Modelocon9temas_Subtema1,vox,0.248
+Modelocon9temas_Subtema1,derecho,0.202
+Modelocon9temas_Subtema1,él,0.196
+Modelocon9temas_Subtema1,género,-0.167
+Modelocon9temas_Subtema1,vida,0.136
+Modelocon9temas_Subtema1,año,0.09
+Modelocon9temas_Subtema1,000,0.087
+Modelocon9temas_Subtema1,hombre,-0.084
+Modelocon9temas_Subtema2,vox,-0.761
+Modelocon9temas_Subtema2,aborto,0.417
+Modelocon9temas_Subtema2,voto,-0.258
+Modelocon9temas_Subtema2,pp,-0.202
+Modelocon9temas_Subtema2,mujer,0.127
+Modelocon9temas_Subtema2,él,-0.095
+Modelocon9temas_Subtema2,decir,-0.095
+Modelocon9temas_Subtema2,izquierda,-0.09
+Modelocon9temas_Subtema2,atvox_es,-0.081
+Modelocon9temas_Subtema2,pagar,-0.078
+Modelocon9temas_Subtema3,mujer,-0.779
+Modelocon9temas_Subtema3,derecho,0.283
+Modelocon9temas_Subtema3,hombre,-0.261
+Modelocon9temas_Subtema3,igualdad,0.239
+Modelocon9temas_Subtema3,aborto,0.19
+Modelocon9temas_Subtema3,género,0.128
+Modelocon9temas_Subtema3,feminismo,-0.108
+Modelocon9temas_Subtema3,decidir,-0.099
+Modelocon9temas_Subtema3,vida,0.095
+Modelocon9temas_Subtema3,decir,0.09
+Modelocon9temas_Subtema4,derecho,-0.699
+Modelocon9temas_Subtema4,aborto,0.295
+Modelocon9temas_Subtema4,privado,0.184
+Modelocon9temas_Subtema4,atemmarincon,-0.182
+Modelocon9temas_Subtema4,000,0.18
+Modelocon9temas_Subtema4,vida,-0.174
+Modelocon9temas_Subtema4,vox,0.151
+Modelocon9temas_Subtema4,público,0.145
+Modelocon9temas_Subtema4,año,0.133
+Modelocon9temas_Subtema4,león,0.128
+Modelocon9temas_Subtema5,voto,-0.661
+Modelocon9temas_Subtema5,él,0.544
+Modelocon9temas_Subtema5,derecho,-0.195
+Modelocon9temas_Subtema5,vox,0.152
+Modelocon9temas_Subtema5,mujer,-0.118
+Modelocon9temas_Subtema5,000,-0.099
+Modelocon9temas_Subtema5,decir,0.099
+Modelocon9temas_Subtema5,español,-0.095
+Modelocon9temas_Subtema5,izquierdo,0.092
+Modelocon9temas_Subtema5,gobierno,-0.091
+Modelocon9temas_Subtema6,él,0.482
+Modelocon9temas_Subtema6,voto,0.48
+Modelocon9temas_Subtema6,vox,-0.348
+Modelocon9temas_Subtema6,izquierdo,0.346
+Modelocon9temas_Subtema6,derecho,-0.183
+Modelocon9temas_Subtema6,medio,0.139
+Modelocon9temas_Subtema6,pasar,0.134
+Modelocon9temas_Subtema6,quedar,0.101
+Modelocon9temas_Subtema6,idea,0.099
+Modelocon9temas_Subtema6,privado,-0.097
+Modelocon9temas_Subtema7,privado,-0.339
+Modelocon9temas_Subtema7,público,-0.322
+Modelocon9temas_Subtema7,aborto,0.299
+Modelocon9temas_Subtema7,izquierdo,-0.294
+Modelocon9temas_Subtema7,derecho,-0.23
+Modelocon9temas_Subtema7,león,-0.225
+Modelocon9temas_Subtema7,castilla,-0.212
+Modelocon9temas_Subtema7,valladolid,-0.194
+Modelocon9temas_Subtema7,euros,-0.191
+Modelocon9temas_Subtema7,año,-0.189
+Modelocon9temas_Subtema8,izquierdo,0.472
+Modelocon9temas_Subtema8,dirigir,-0.399
+Modelocon9temas_Subtema8,volver,-0.393
+Modelocon9temas_Subtema8,gallardo,-0.363
+Modelocon9temas_Subtema8,medio,0.35
+Modelocon9temas_Subtema8,él,-0.183
+Modelocon9temas_Subtema8,marcelo,-0.155
+Modelocon9temas_Subtema8,año,-0.107
+Modelocon9temas_Subtema8,género,0.103
+Modelocon9temas_Subtema8,vida,0.095
+Modelocon10temas_Subtema0,igualdad,-0.629
+Modelocon10temas_Subtema0,mujer,-0.363
+Modelocon10temas_Subtema0,aborto,-0.337
+Modelocon10temas_Subtema0,derecho,-0.22
+Modelocon10temas_Subtema0,él,-0.212
+Modelocon10temas_Subtema0,hombre,-0.184
+Modelocon10temas_Subtema0,vox,-0.173
+Modelocon10temas_Subtema0,género,-0.161
+Modelocon10temas_Subtema0,deber,-0.113
+Modelocon10temas_Subtema0,vida,-0.11
+Modelocon10temas_Subtema1,igualdad,0.597
+Modelocon10temas_Subtema1,aborto,-0.577
+Modelocon10temas_Subtema1,vox,-0.248
+Modelocon10temas_Subtema1,derecho,-0.202
+Modelocon10temas_Subtema1,él,-0.196
+Modelocon10temas_Subtema1,género,0.167
+Modelocon10temas_Subtema1,vida,-0.136
+Modelocon10temas_Subtema1,año,-0.09
+Modelocon10temas_Subtema1,000,-0.087
+Modelocon10temas_Subtema1,hombre,0.084
+Modelocon10temas_Subtema2,vox,0.761
+Modelocon10temas_Subtema2,aborto,-0.417
+Modelocon10temas_Subtema2,voto,0.258
+Modelocon10temas_Subtema2,pp,0.202
+Modelocon10temas_Subtema2,mujer,-0.127
+Modelocon10temas_Subtema2,él,0.095
+Modelocon10temas_Subtema2,decir,0.094
+Modelocon10temas_Subtema2,izquierda,0.09
+Modelocon10temas_Subtema2,atvox_es,0.081
+Modelocon10temas_Subtema2,pagar,0.078
+Modelocon10temas_Subtema3,mujer,0.779
+Modelocon10temas_Subtema3,derecho,-0.283
+Modelocon10temas_Subtema3,hombre,0.261
+Modelocon10temas_Subtema3,igualdad,-0.239
+Modelocon10temas_Subtema3,aborto,-0.19
+Modelocon10temas_Subtema3,género,-0.128
+Modelocon10temas_Subtema3,feminismo,0.108
+Modelocon10temas_Subtema3,decidir,0.099
+Modelocon10temas_Subtema3,vida,-0.095
+Modelocon10temas_Subtema3,decir,-0.09
+Modelocon10temas_Subtema4,derecho,0.699
+Modelocon10temas_Subtema4,aborto,-0.295
+Modelocon10temas_Subtema4,privado,-0.184
+Modelocon10temas_Subtema4,atemmarincon,0.182
+Modelocon10temas_Subtema4,000,-0.18
+Modelocon10temas_Subtema4,vida,0.174
+Modelocon10temas_Subtema4,vox,-0.151
+Modelocon10temas_Subtema4,público,-0.145
+Modelocon10temas_Subtema4,año,-0.133
+Modelocon10temas_Subtema4,león,-0.128
+Modelocon10temas_Subtema5,voto,-0.661
+Modelocon10temas_Subtema5,él,0.544
+Modelocon10temas_Subtema5,derecho,-0.195
+Modelocon10temas_Subtema5,vox,0.152
+Modelocon10temas_Subtema5,mujer,-0.118
+Modelocon10temas_Subtema5,000,-0.099
+Modelocon10temas_Subtema5,decir,0.099
+Modelocon10temas_Subtema5,español,-0.095
+Modelocon10temas_Subtema5,izquierdo,0.092
+Modelocon10temas_Subtema5,gobierno,-0.091
+Modelocon10temas_Subtema6,él,-0.482
+Modelocon10temas_Subtema6,voto,-0.48
+Modelocon10temas_Subtema6,vox,0.349
+Modelocon10temas_Subtema6,izquierdo,-0.346
+Modelocon10temas_Subtema6,derecho,0.183
+Modelocon10temas_Subtema6,medio,-0.139
+Modelocon10temas_Subtema6,pasar,-0.135
+Modelocon10temas_Subtema6,quedar,-0.101
+Modelocon10temas_Subtema6,idea,-0.1
+Modelocon10temas_Subtema6,privado,0.097
+Modelocon10temas_Subtema7,privado,0.339
+Modelocon10temas_Subtema7,público,0.322
+Modelocon10temas_Subtema7,aborto,-0.299
+Modelocon10temas_Subtema7,izquierdo,0.294
+Modelocon10temas_Subtema7,derecho,0.23
+Modelocon10temas_Subtema7,león,0.225
+Modelocon10temas_Subtema7,castilla,0.212
+Modelocon10temas_Subtema7,valladolid,0.194
+Modelocon10temas_Subtema7,euros,0.191
+Modelocon10temas_Subtema7,año,0.189
+Modelocon10temas_Subtema8,izquierdo,-0.472
+Modelocon10temas_Subtema8,dirigir,0.399
+Modelocon10temas_Subtema8,volver,0.393
+Modelocon10temas_Subtema8,gallardo,0.363
+Modelocon10temas_Subtema8,medio,-0.349
+Modelocon10temas_Subtema8,él,0.183
+Modelocon10temas_Subtema8,marcelo,0.154
+Modelocon10temas_Subtema8,año,0.108
+Modelocon10temas_Subtema8,género,-0.103
+Modelocon10temas_Subtema8,vida,-0.095
+Modelocon10temas_Subtema9,volver,0.343
+Modelocon10temas_Subtema9,él,-0.31
+Modelocon10temas_Subtema9,dirigir,0.302
+Modelocon10temas_Subtema9,gallardo,0.294
+Modelocon10temas_Subtema9,humano,0.283
+Modelocon10temas_Subtema9,atemmarincon,0.264
+Modelocon10temas_Subtema9,izquierdo,0.255
+Modelocon10temas_Subtema9,medio,0.242
+Modelocon10temas_Subtema9,vida,0.236
+Modelocon10temas_Subtema9,derecho,-0.2

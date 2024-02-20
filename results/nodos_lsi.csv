@@ -1,50 +1,94 @@
-Id,Label,Type
-vida,vida,Palabra clave
-decir,decir,Palabra clave
-Tema LSI 3,Tema LSI 3,Tema
-privado,privado,Palabra clave
-gallardo,gallardo,Palabra clave
-humano,humano,Palabra clave
-español,español,Palabra clave
-Tema LSI 6,Tema LSI 6,Tema
-dirigir,dirigir,Palabra clave
-@vox_es,@vox_es,Palabra clave
-vox,vox,Palabra clave
-derecho,derecho,Palabra clave
-pp,pp,Palabra clave
-@emmarincon,@emmarincon,Palabra clave
-volver,volver,Palabra clave
-Tema LSI 5,Tema LSI 5,Tema
-Tema LSI 0,Tema LSI 0,Tema
-Tema LSI 1,Tema LSI 1,Tema
-voto,voto,Palabra clave
-Tema LSI 9,Tema LSI 9,Tema
-izquierda,izquierda,Palabra clave
-Tema LSI 8,Tema LSI 8,Tema
-valladolid,valladolid,Palabra clave
-Tema LSI 7,Tema LSI 7,Tema
-Tema LSI 2,Tema LSI 2,Tema
-pagar,pagar,Palabra clave
-aborto,aborto,Palabra clave
-decidir,decidir,Palabra clave
-feminismo,feminismo,Palabra clave
-quedar,quedar,Palabra clave
-idea,idea,Palabra clave
-año,año,Palabra clave
-él,él,Palabra clave
-hombre,hombre,Palabra clave
-euros,euros,Palabra clave
-público,público,Palabra clave
-género,género,Palabra clave
-Tema LSI 4,Tema LSI 4,Tema
-deber,deber,Palabra clave
-gobierno,gobierno,Palabra clave
-pasar,pasar,Palabra clave
-castilla,castilla,Palabra clave
-igualdad,igualdad,Palabra clave
-000,000,Palabra clave
-mujer,mujer,Palabra clave
-medio,medio,Palabra clave
-izquierdo,izquierdo,Palabra clave
-marcelo,marcelo,Palabra clave
-león,león,Palabra clave
+Id,Label
+volver,volver
+feminismo,feminismo
+medio,medio
+Modelocon10temas_Subtema1,Subtema 1 del Modelocon10temas
+Modelocon4temas_Subtema0,Subtema 0 del Modelocon4temas
+Modelocon2temas_Subtema1,Subtema 1 del Modelocon2temas
+Modelocon8temas_Subtema4,Subtema 4 del Modelocon8temas
+Modelocon4temas_Subtema1,Subtema 1 del Modelocon4temas
+género,género
+Modelocon5temas_Subtema3,Subtema 3 del Modelocon5temas
+atemmarincon,@emmarincon
+Modelocon8temas_Subtema0,Subtema 0 del Modelocon8temas
+castilla,castilla
+él,él
+Modelocon7temas_Subtema5,Subtema 5 del Modelocon7temas
+Modelocon8temas_Subtema5,Subtema 5 del Modelocon8temas
+deber,deber
+Modelocon10temas_Subtema7,Subtema 7 del Modelocon10temas
+Modelocon10temas_Subtema3,Subtema 3 del Modelocon10temas
+vida,vida
+Modelocon3temas_Subtema2,Subtema 2 del Modelocon3temas
+humano,humano
+Modelocon7temas_Subtema1,Subtema 1 del Modelocon7temas
+Modelocon9temas_Subtema5,Subtema 5 del Modelocon9temas
+mujer,mujer
+Modelocon5temas_Subtema4,Subtema 4 del Modelocon5temas
+Modelocon10temas_Subtema0,Subtema 0 del Modelocon10temas
+público,público
+Modelocon9temas_Subtema6,Subtema 6 del Modelocon9temas
+Modelocon6temas_Subtema1,Subtema 1 del Modelocon6temas
+Modelocon7temas_Subtema4,Subtema 4 del Modelocon7temas
+decir,decir
+Modelocon9temas_Subtema4,Subtema 4 del Modelocon9temas
+año,año
+Modelocon9temas_Subtema7,Subtema 7 del Modelocon9temas
+Modelocon7temas_Subtema2,Subtema 2 del Modelocon7temas
+privado,privado
+Modelocon4temas_Subtema3,Subtema 3 del Modelocon4temas
+español,español
+idea,idea
+gallardo,gallardo
+Modelocon7temas_Subtema3,Subtema 3 del Modelocon7temas
+voto,voto
+igualdad,igualdad
+Modelocon9temas_Subtema0,Subtema 0 del Modelocon9temas
+izquierdo,izquierdo
+pasar,pasar
+vox,vox
+gobierno,gobierno
+Modelocon7temas_Subtema6,Subtema 6 del Modelocon7temas
+Modelocon3temas_Subtema0,Subtema 0 del Modelocon3temas
+Modelocon8temas_Subtema2,Subtema 2 del Modelocon8temas
+valladolid,valladolid
+Modelocon8temas_Subtema7,Subtema 7 del Modelocon8temas
+Modelocon9temas_Subtema1,Subtema 1 del Modelocon9temas
+marcelo,marcelo
+Modelocon10temas_Subtema6,Subtema 6 del Modelocon10temas
+Modelocon9temas_Subtema3,Subtema 3 del Modelocon9temas
+pp,pp
+Modelocon3temas_Subtema1,Subtema 1 del Modelocon3temas
+Modelocon5temas_Subtema1,Subtema 1 del Modelocon5temas
+Modelocon7temas_Subtema0,Subtema 0 del Modelocon7temas
+Modelocon2temas_Subtema0,Subtema 0 del Modelocon2temas
+Modelocon5temas_Subtema2,Subtema 2 del Modelocon5temas
+hombre,hombre
+euros,euros
+Modelocon5temas_Subtema0,Subtema 0 del Modelocon5temas
+Modelocon6temas_Subtema4,Subtema 4 del Modelocon6temas
+Modelocon6temas_Subtema2,Subtema 2 del Modelocon6temas
+pagar,pagar
+Modelocon9temas_Subtema8,Subtema 8 del Modelocon9temas
+Modelocon6temas_Subtema5,Subtema 5 del Modelocon6temas
+Modelocon10temas_Subtema8,Subtema 8 del Modelocon10temas
+aborto,aborto
+Modelocon9temas_Subtema2,Subtema 2 del Modelocon9temas
+dirigir,dirigir
+león,león
+Modelocon10temas_Subtema4,Subtema 4 del Modelocon10temas
+000,000
+Modelocon8temas_Subtema3,Subtema 3 del Modelocon8temas
+derecho,derecho
+Modelocon4temas_Subtema2,Subtema 2 del Modelocon4temas
+izquierda,izquierda
+Modelocon6temas_Subtema3,Subtema 3 del Modelocon6temas
+Modelocon10temas_Subtema9,Subtema 9 del Modelocon10temas
+Modelocon10temas_Subtema2,Subtema 2 del Modelocon10temas
+Modelocon6temas_Subtema0,Subtema 0 del Modelocon6temas
+decidir,decidir
+Modelocon8temas_Subtema6,Subtema 6 del Modelocon8temas
+Modelocon8temas_Subtema1,Subtema 1 del Modelocon8temas
+Modelocon10temas_Subtema5,Subtema 5 del Modelocon10temas
+atvox_es,@vox_es
+quedar,quedar
