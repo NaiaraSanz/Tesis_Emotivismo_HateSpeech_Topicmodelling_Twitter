@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg contentScriptType="text/ecmascript" width="1386.355"
+     xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify"
+     contentStyleType="text/css"
+     viewBox="-682.102966 -664.094543 1386.354980 1339.771973" height="1339.772"
+     preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+     version="1.1">
+    <g id="edges">
+        <path stroke-linecap="round" fill="none" class="id_messi id_gallardo"
+              d="M 670.433716,-22.054178 A 182.535736,182.535736 0,0 1,551.793762,-184.114777"
+              stroke="#73c000" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_de id_derechos"
+              d="M -20.613571,658.675476 A 647.294489,647.294489 0,0 1,465.878418,68.133690"
+              stroke="#e99d5a" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_psoe id_pp"
+              d="M -596.883118,-181.351669 A 398.558232,398.558232 0,0 1,-203.756805,37.639221"
+              stroke="#df89ff" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_pp id_vox"
+              d="M -203.373337,37.466640 A 192.843341,192.843341 0,0 1,-169.557373,-152.983063"
+              stroke="#95679e" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_años id_psoe"
+              d="M -27.027702,227.793884 A 596.511665,596.511665 0,0 1,-603.440369,-171.095261"
+              stroke="#ef9cfc" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_sánchez id_pp"
+              d="M -346.254913,-266.930389 A 307.008451,307.008451 0,0 1,-189.541840,35.634586"
+              stroke="#6f85b3" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_izquierda id_pp"
+              d="M -252.542435,314.715851 A 223.199403,223.199403 0,0 1,-211.199615,77.807999"
+              stroke="#df89ff" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_gente id_vox"
+              d="M 212.614639,134.396912 A 403.089431,403.089431 0,0 1,-149.882645,-148.190521"
+              stroke="#4c463e" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_partido id_messi"
+              d="M 316.485077,-90.607071 A 314.343504,314.343504 0,0 1,672.554626,-25.357454"
+              stroke="#396569" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_partido id_vox"
+              d="M 297.666534,-81.471237 A 391.453613,391.453613 0,0 1,-141.068283,-153.324371"
+              stroke="#262888" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_vida id_psoe"
+              d="M -418.490234,174.022552 A 339.931780,339.931780 0,0 1,-607.853149,-170.651611"
+              stroke="#ef6fc1" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_aborto id_españa"
+              d="M -395.096375,-36.103897 A 522.601247,522.601247 0,0 1,-246.650925,552.654724"
+              stroke="#7fda92" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_derecho id_de"
+              d="M 393.674011,302.261505 A 464.415519,464.415519 0,0 1,-13.879705,665.141602"
+              stroke="#7fa682" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_años id_gallardo"
+              d="M -15.847146,219.228394 A 592.769650,592.769650 0,0 1,537.738403,-197.880386"
+              stroke="#b9b77d" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_ayuso id_cosa"
+              d="M 319.040100,-557.666565 A 389.557759,389.557759 0,0 1,-129.795822,-638.427185"
+              stroke="#8ea055" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_cosa id_problema"
+              d="M -128.397659,-640.281006 A 402.657607,402.657607 0,0 1,79.363197,-216.463348"
+              stroke="#c0657f" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_problema id_pp"
+              d="M 77.076294,-202.906998 A 319.078840,319.078840 0,0 1,-168.702515,55.910751"
+              stroke="#df89ff" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_derecha id_aborto"
+              d="M -458.652618,466.214447 A 433.125695,433.125695 0,0 1,-415.306183,-34.496353"
+              stroke="#6fa6ff" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -405.980377,-45.094929 C -377.745605,-73.329689 -377.745605,-16.860170 -405.980377,-45.094929"
+              class="id_aborto" stroke-opacity="1.0" stroke="#00c4ff"/>
+        <path stroke-linecap="round" fill="none" class="id_mundo id_problema"
+              d="M 605.779724,263.856842 A 595.596239,595.596239 0,0 1,79.556404,-202.971970"
+              stroke="#cfa4df" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_años id_messi"
+              d="M -13.501075,220.343094 A 615.933000,615.933000 0,0 1,670.337402,-21.758463"
+              stroke="#b9b77d" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 78.139259,-209.698746 C 91.888123,-223.447601 91.888123,-195.949890 78.139259,-209.698746"
+              class="id_problema" stroke-opacity="1.0" stroke="#df89ff"/>
+        <path stroke-linecap="round" fill="none" class="id_derecho id_aborto"
+              d="M 388.087097,296.836487 A 725.335970,725.335970 0,0 1,-398.777374,-32.953384"
+              stroke="#00c4ff" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_aborto id_años"
+              d="M -391.864136,-45.273754 A 394.915171,394.915171 0,0 1,-21.128517,219.312958"
+              stroke="#7fb9fc" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -155.490112,-167.951736 C -114.407310,-209.034546 -114.407310,-126.868935 -155.490112,-167.951736"
+              class="id_vox" stroke-opacity="1.0" stroke="#4c463e"/>
+        <path stroke-linecap="round" fill="none" class="id_igualdad id_derechos"
+              d="M -37.159817,441.633606 A 535.882954,535.882954 0,0 1,465.661591,66.425842"
+              stroke="#e99d5a" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_ley id_igualdad"
+              d="M 177.664154,381.395538 A 197.709686,197.709686 0,0 1,-28.989109,456.484467"
+              stroke="#7fa24c" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_problema id_izquierda"
+              d="M 78.724823,-202.849304 A 520.528798,520.528798 0,0 1,-241.533875,319.192596"
+              stroke="#df89ff" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_país id_qué"
+              d="M -325.754852,-527.121643 A 371.590689,371.590689 0,0 1,90.717728,-432.801910"
+              stroke="#ef98f1" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_aborto id_ley"
+              d="M -391.864258,-45.284527 A 602.271196,602.271196 0,0 1,180.062332,365.134308"
+              stroke="#00c0c9" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_españa id_vox"
+              d="M -255.732971,553.211121 A 613.827846,613.827846 0,0 1,-169.585754,-153.009781"
+              stroke="#a59b31" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_gobierno id_españa"
+              d="M 40.067966,8.027997 A 528.744689,528.744689 0,0 1,-241.141815,557.732666"
+              stroke="#cbe892" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_país id_psoe"
+              d="M -333.284973,-516.236694 A 366.117514,366.117514 0,0 1,-597.179932,-182.928207"
+              stroke="#df89ff" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_psoe id_españa"
+              d="M -597.968323,-175.763153 A 686.426466,686.426466 0,0 1,-248.619583,552.075928"
+              stroke="#efbd92" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_partido id_gallardo"
+              d="M 312.271851,-95.136925 A 224.147381,224.147381 0,0 1,537.970459,-200.545517"
+              stroke="#396569" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_partido id_de"
+              d="M 309.390137,-75.869965 A 683.591434,683.591434 0,0 1,-14.795923,662.246155"
+              stroke="#7f496b" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_gobierno id_pp"
+              d="M 31.670975,5.755512 A 200.024546,200.024546 0,0 1,-169.547211,68.131401"
+              stroke="#bbb4ff" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_violadores id_qué"
+              d="M 105.426849,-648.602173 A 194.261861,194.261861 0,0 1,109.707634,-433.841156"
+              stroke="#dfa3f1" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_qué id_gallardo"
+              d="M 116.170403,-423.651550 A 419.115787,419.115787 0,0 1,545.165527,-210.313492"
+              stroke="#b9b372" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_problema id_españa"
+              d="M 79.747177,-203.014999 A 699.367699,699.367699 0,0 1,-241.485626,557.100952"
+              stroke="#efbd92" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_españa id_pp"
+              d="M -255.843018,553.272888 A 421.153243,421.153243 0,0 1,-209.929337,79.021606"
+              stroke="#efbd92" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_derecho id_vida"
+              d="M 388.753052,298.578644 A 678.849460,678.849460 0,0 1,-404.982513,183.477646"
+              stroke="#7f8cc1" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_cosas id_psoe"
+              d="M -603.152466,277.911407 A 386.447433,386.447433 0,0 1,-612.230286,-172.357727"
+              stroke="#95679e" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_pp id_qué"
+              d="M -195.014221,35.408173 A 470.179221,470.179221 0,0 1,86.576378,-415.130219"
+              stroke="#ef98f1" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_gobierno id_vox"
+              d="M 27.870956,-3.315423 A 212.455207,212.455207 0,0 1,-150.033920,-148.148224"
+              stroke="#71929e" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_años id_gente"
+              d="M -13.608404,220.271790 A 214.496375,214.496375 0,0 1,212.898392,132.505020"
+              stroke="#a57a9c" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_izquierda id_mundo"
+              d="M -242.903580,316.929047 A 720.036135,720.036135 0,0 1,606.888245,260.617981"
+              stroke="#cfa4df" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_aborto id_problema"
+              d="M -397.822357,-56.616520 A 426.114714,426.114714 0,0 1,71.587685,-211.780731"
+              stroke="#6fa6ff" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_sánchez id_vox"
+              d="M -345.295593,-272.363556 A 186.506493,186.506493 0,0 1,-165.397980,-185.945724"
+              stroke="#266453" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_vox id_derecho"
+              d="M -135.003174,-166.456818 A 599.579444,599.579444 0,0 1,393.484222,288.030975"
+              stroke="#26859e" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_gracias id_mujeres"
+              d="M 513.258240,-406.533813 A 537.287983,537.287983 0,0 1,-118.143822,-397.100006"
+              stroke="#e9ada5" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_derechos id_mujeres"
+              d="M 465.663910,66.164795 A 633.956579,633.956579 0,0 1,-123.372368,-393.448944"
+              stroke="#d3b3b0" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_vox id_mujer"
+              d="M -137.469223,-158.092896 A 707.392957,707.392957 0,0 1,208.754852,590.847839"
+              stroke="#9b261f" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_mujeres id_problema"
+              d="M -116.434311,-401.401306 A 234.061397,234.061397 0,0 1,76.878151,-216.456512"
+              stroke="#d99ed7" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_política id_pp"
+              d="M -649.077942,38.512733 A 384.930023,384.930023 0,0 1,-213.210358,45.223969"
+              stroke="#be96ff" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_dinero id_mujeres"
+              d="M -527.605103,-411.224304 A 339.365399,339.365399 0,0 1,-133.619308,-408.415588"
+              stroke="#ba69d7" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_pp id_derecha"
+              d="M -192.132858,85.322189 A 406.720641,406.720641 0,0 1,-448.309570,469.755554"
+              stroke="#df89ff" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_mujer id_igualdad"
+              d="M 198.100388,600.438904 A 239.751883,239.751883 0,0 1,-35.733845,464.301331"
+              stroke="#f44702" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_sánchez id_problema"
+              d="M -346.254974,-275.304260 A 363.819413,363.819413 0,0 1,73.228989,-214.509888"
+              stroke="#6f85b3" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_pp id_ayuso"
+              d="M -191.535583,35.412407 A 674.427667,674.427667 0,0 1,318.506439,-559.144043"
+              stroke="#acc4d4" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 325.472076,-560.825012 C 339.803284,-575.156250 339.803284,-546.493774 325.472076,-560.825012"
+              class="id_ayuso" stroke-opacity="1.0" stroke="#7affaa"/>
+        <path stroke-linecap="round" fill="none" class="id_izquierda id_país"
+              d="M -254.765686,316.158234 A 708.745699,708.745699 0,0 1,-337.000916,-517.343262"
+              stroke="#df89ff" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_vox id_mujeres"
+              d="M -164.722061,-186.301682 A 197.156758,197.156758 0,0 1,-132.428879,-395.636230"
+              stroke="#8f7c77" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_españa id_gente"
+              d="M -248.488785,552.101807 A 531.004821,531.004821 0,0 1,212.652267,135.722153"
+              stroke="#a59b31" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_montero id_de"
+              d="M 430.490021,516.230652 A 401.186050,401.186050 0,0 1,-14.180130,667.940735"
+              stroke="#7fa24c" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_españa id_izquierda"
+              d="M -256.682922,553.804443 A 200.157094,200.157094 0,0 1,-254.074615,328.983673"
+              stroke="#efbd92" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_años id_vida"
+              d="M -25.953728,231.722214 A 329.773190,329.773190 0,0 1,-404.838379,183.328934"
+              stroke="#ff82bf" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_aborto id_quieren"
+              d="M -398.138550,-56.834023 A 638.833389,638.833389 0,0 1,307.339630,-309.603149"
+              stroke="#7fda92" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_ley id_pp"
+              d="M 173.754196,373.289978 A 408.110284,408.110284 0,0 1,-186.800873,84.488724"
+              stroke="#6fa3c9" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_aborto id_dinero"
+              d="M -417.538086,-53.201710 A 319.860013,319.860013 0,0 1,-535.130493,-400.724335"
+              stroke="#5072ff" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_mujeres id_derecho"
+              d="M -116.754837,-399.922638 A 725.764182,725.764182 0,0 1,395.154846,287.831970"
+              stroke="#69bbd7" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_mujeres id_igualdad"
+              d="M -119.497589,-395.582397 A 716.796897,716.796897 0,0 1,-34.475258,442.814514"
+              stroke="#e99d5a" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 100.881584,-421.098907 C 131.882492,-452.099823 131.882492,-390.097992 100.881584,-421.098907"
+              class="id_qué" stroke-opacity="1.0" stroke="#ffa7e4"/>
+        <path stroke-linecap="round" fill="none" class="id_partido id_qué"
+              d="M 297.394409,-90.058952 A 327.826118,327.826118 0,0 1,99.825470,-405.634460"
+              stroke="#7f58db" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_vida id_pp"
+              d="M -407.252563,170.059723 A 205.984082,205.984082 0,0 1,-218.207108,58.136547"
+              stroke="#ef6fc1" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_gobierno id_psoe"
+              d="M 28.524399,1.377665 A 557.564523,557.564523 0,0 1,-600.556763,-172.663223"
+              stroke="#bbb4ff" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_política id_problema"
+              d="M -650.912354,36.667679 A 645.971959,645.971959 0,0 1,71.585999,-211.775421"
+              stroke="#be96ff" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_país id_gobierno"
+              d="M -325.524445,-521.633362 A 533.631469,533.631469 0,0 1,38.538605,-12.935998"
+              stroke="#bbb4ff" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_dinero id_cosa"
+              d="M -530.484924,-413.528198 A 386.081985,386.081985 0,0 1,-141.609711,-644.218506"
+              stroke="#a1317f" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_igualdad id_cosas"
+              d="M -52.099468,457.223389 A 486.362692,486.362692 0,0 1,-594.952759,288.810883"
+              stroke="#a56721" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_gallardo id_ley"
+              d="M 552.450439,-184.137726 A 567.030058,567.030058 0,0 1,191.509842,370.604248"
+              stroke="#39be4a" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_vox id_qué"
+              d="M -151.763290,-188.152237 A 300.242883,300.242883 0,0 1,85.582542,-418.608215"
+              stroke="#a57691" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_vida id_igualdad"
+              d="M -402.551422,177.642227 A 384.666784,384.666784 0,0 1,-44.276115,441.669159"
+              stroke="#ff6e44" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_pp id_partido"
+              d="M -177.753220,40.775894 A 434.458041,434.458041 0,0 1,297.225403,-89.622131"
+              stroke="#6f49e8" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_cosa id_pp"
+              d="M -130.928909,-637.554260 A 588.595354,588.595354 0,0 1,-177.096069,41.316521"
+              stroke="#c0657f" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_aborto id_gobierno"
+              d="M -393.790588,-52.215988 A 372.007101,372.007101 0,0 1,30.484419,-9.384178"
+              stroke="#4bd1ff" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_gobierno id_izquierda"
+              d="M 37.369293,8.115248 A 361.442119,361.442119 0,0 1,-241.120834,320.533813"
+              stroke="#bbb4ff" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -125.933769,-402.686401 C -106.761795,-421.858368 -106.761795,-383.514435 -125.933769,-402.686401"
+              class="id_mujeres" stroke-opacity="1.0" stroke="#d3b3b0"/>
+        <path stroke-linecap="round" fill="none" class="id_españa id_partido"
+              d="M -249.823318,551.916748 A 712.780988,712.780988 0,0 1,296.865021,-83.739365"
+              stroke="#7f7d7b" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_cosas id_pp"
+              d="M -596.154480,277.147614 A 385.795705,385.795705 0,0 1,-218.158127,57.641335"
+              stroke="#95679e" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_de id_derecha"
+              d="M -27.943666,667.317627 A 395.964823,395.964823 0,0 1,-451.439880,478.554962"
+              stroke="#ef8882" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_de id_qué"
+              d="M -24.570251,659.636780 A 911.420252,911.420252 0,0 1,90.353935,-409.722046"
+              stroke="#ff9774" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_de id_igualdad"
+              d="M -25.657154,660.415833 A 177.893365,177.893365 0,0 1,-46.649696,463.763947"
+              stroke="#ff8805" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_de id_gente"
+              d="M -22.446953,658.818909 A 486.537660,486.537660 0,0 1,213.760788,139.250458"
+              stroke="#a56721" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_qué id_vida"
+              d="M 99.710442,-405.642761 A 656.355768,656.355768 0,0 1,-402.764618,175.703171"
+              stroke="#ff7eb4" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_mujeres id_pp"
+              d="M -121.450089,-394.213623 A 389.926412,389.926412 0,0 1,-176.156235,42.158741"
+              stroke="#d99ed7" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_mujer id_aborto"
+              d="M 198.197189,598.083740 A 741.350424,741.350424 0,0 1,-404.203522,-31.089815"
+              stroke="#75657f" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_izquierda id_aborto"
+              d="M -256.321472,318.060883 A 332.863527,332.863527 0,0 1,-409.046906,-31.314627"
+              stroke="#6fa6ff" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_mujer id_españa"
+              d="M 199.386871,604.309265 A 382.604457,382.604457 0,0 1,-242.583328,569.380859"
+              stroke="#f47c12" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_montero id_ley"
+              d="M 427.437744,511.224670 A 238.579423,238.579423 0,0 1,186.916672,382.134979"
+              stroke="#00bd94" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -249.208038,322.290100 C -232.656631,305.738678 -232.656631,338.841522 -249.208038,322.290100"
+              class="id_izquierda" stroke-opacity="1.0" stroke="#df89ff"/>
+        <path stroke-linecap="round" fill="none" class="id_país id_cosa"
+              d="M -329.882568,-531.272583 A 192.952619,192.952619 0,0 1,-141.619949,-644.106689"
+              stroke="#c0657f" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_aborto id_mujeres"
+              d="M -405.422485,-59.201279 A 378.500097,378.500097 0,0 1,-135.158051,-400.078003"
+              stroke="#69bbd7" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_país id_pp"
+              d="M -326.982361,-519.016296 A 500.731029,500.731029 0,0 1,-183.940720,37.169849"
+              stroke="#df89ff" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_españa id_sánchez"
+              d="M -257.896790,554.796875 A 699.993258,699.993258 0,0 1,-358.472473,-263.370483"
+              stroke="#7fb946" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -193.305267,60.349693 C -143.305267,10.349693 -143.305267,110.349693 -193.305267,60.349693"
+              class="id_pp" stroke-opacity="1.0" stroke="#df89ff"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 518.761841,-410.713531 C 532.583496,-424.535187 532.583496,-396.891876 518.761841,-410.713531"
+              class="id_gracias" stroke-opacity="1.0" stroke="#ffa79a"/>
+        <path stroke-linecap="round" fill="none" class="id_gobierno id_sánchez"
+              d="M 27.834688,-2.072192 A 396.388966,396.388966 0,0 1,-351.151764,-262.726471"
+              stroke="#4bb0b3" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_de id_gallardo"
+              d="M -21.363569,658.676514 A 863.637763,863.637763 0,0 1,538.580200,-193.247559"
+              stroke="#b9a402" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_vox id_psoe"
+              d="M -172.573242,-156.544907 A 376.065252,376.065252 0,0 1,-598.869629,-174.365463"
+              stroke="#95679e" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_años id_de"
+              d="M -13.274693,234.566681 A 365.224366,365.224366 0,0 1,-16.722908,660.075867"
+              stroke="#ff9b7f" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_dinero id_vox"
+              d="M -526.343384,-407.723297 A 372.573456,372.573456 0,0 1,-163.301208,-186.950043"
+              stroke="#76339e" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_pp id_quieren"
+              d="M -185.344467,36.651051 A 522.415446,522.415446 0,0 1,307.040222,-307.607422"
+              stroke="#efbd92" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_país id_gallardo"
+              d="M -325.453308,-526.276367 A 785.657572,785.657572 0,0 1,543.984924,-209.615952"
+              stroke="#a9a47f" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_cosa id_qué"
+              d="M -127.660172,-642.638367 A 269.947830,269.947830 0,0 1,97.814720,-436.292938"
+              stroke="#d07472" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 395.176422,295.124939 C 409.762421,280.538940 409.762421,309.710938 395.176422,295.124939"
+              class="id_derecho" stroke-opacity="1.0" stroke="#00c4ff"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_izquierda id_derechos"
+              d="M -244.581665,315.428314 A 638.518855,638.518855 0,0 1,465.983368,64.209053"
+              stroke="#d99ed7" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 678.322388,-19.321680 C 695.019409,-36.018677 695.019409,-2.624683 678.322388,-19.321680"
+              class="id_messi" stroke-opacity="1.0" stroke="#73c000"/>
+        <path stroke-linecap="round" fill="none" class="id_quieren id_igualdad"
+              d="M 315.750702,-300.429779 A 699.587069,699.587069 0,0 1,-30.024206,447.430359"
+              stroke="#ffbc15" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_derechos id_aborto"
+              d="M 466.604950,69.962967 A 738.356090,738.356090 0,0 1,-395.748260,-35.368473"
+              stroke="#69bbd7" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_qué id_aborto"
+              d="M 96.244919,-406.308197 A 525.917185,525.917185 0,0 1,-391.863464,-45.210278"
+              stroke="#7fb5f1" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_mundo id_partido"
+              d="M 605.923035,262.930786 A 387.677292,387.677292 0,0 1,307.974915,-75.647514"
+              stroke="#6065c9" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_derechos id_mujer"
+              d="M 474.276642,73.598061 A 496.603476,496.603476 0,0 1,214.976395,595.543884"
+              stroke="#de5d58" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_cosas id_mundo"
+              d="M -593.614014,279.178314 A 1010.054790,1010.054790 0,0 1,607.100769,260.306000"
+              stroke="#86837f" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_derecha id_españa"
+              d="M -447.980713,470.859283 A 186.132233,186.132233 0,0 1,-256.053772,553.396057"
+              stroke="#efbd92" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -410.917908,177.580826 C -394.184509,160.847427 -394.184509,194.314224 -410.917908,177.580826"
+              class="id_vida" stroke-opacity="1.0" stroke="#ff5584"/>
+        <path stroke-linecap="round" fill="none" class="id_sánchez id_aborto"
+              d="M -350.680725,-262.907288 A 193.249695,193.249695 0,0 1,-395.538116,-54.595444"
+              stroke="#00a3b3" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_pp id_gracias"
+              d="M -184.488663,36.955944 A 711.483279,711.483279 0,0 1,511.861145,-411.087891"
+              stroke="#ef98cc" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_cosas id_aborto"
+              d="M -599.709900,276.551544 A 317.467486,317.467486 0,0 1,-418.881378,-39.362156"
+              stroke="#26859e" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_problema id_qué"
+              d="M 74.741798,-215.674957 A 177.183284,177.183284 0,0 1,90.814194,-409.312836"
+              stroke="#ef98f1" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_pp id_dinero"
+              d="M -216.998337,52.372341 A 481.707745,481.707745 0,0 1,-533.200928,-400.429657"
+              stroke="#c054ff" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_quieren id_españa"
+              d="M 314.756439,-300.297180 A 864.436306,864.436306 0,0 1,-240.689972,558.769531"
+              stroke="#fff125" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_gracias id_gobierno"
+              d="M 517.190552,-403.983704 A 525.394724,525.394724 0,0 1,48.904392,-3.135527"
+              stroke="#cbc3cc" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_montero id_igualdad"
+              d="M 428.316040,513.845886 A 398.918314,398.918314 0,0 1,-31.776724,461.471008"
+              stroke="#7fa24c" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_violadores id_dinero"
+              d="M 97.707664,-648.365540 A 567.419665,567.419665 0,0 1,-526.567322,-405.454346"
+              stroke="#b05fff" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_vox id_violadores"
+              d="M -158.256271,-188.306030 A 458.286216,458.286216 0,0 1,95.165237,-651.213928"
+              stroke="#86729e" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_gallardo id_vox"
+              d="M 540.778809,-189.336090 A 589.804613,589.804613 0,0 1,-138.348633,-156.632767"
+              stroke="#5f831f" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_psoe id_sánchez"
+              d="M -601.050720,-188.378357 A 223.599082,223.599082 0,0 1,-362.654083,-273.562286"
+              stroke="#6f85b3" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_vox id_izquierda"
+              d="M -146.928543,-149.279602 A 415.932753,415.932753 0,0 1,-243.143524,316.659027"
+              stroke="#95679e" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_gobierno id_ley"
+              d="M 47.227386,3.361853 A 335.882326,335.882326 0,0 1,185.310379,364.993835"
+              stroke="#4bcec9" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_derecha id_vox"
+              d="M -456.392212,465.336670 A 589.058509,589.058509 0,0 1,-173.445175,-157.973511"
+              stroke="#95679e" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_izquierda id_cosas"
+              d="M -256.396027,326.391327 A 293.311476,293.311476 0,0 1,-593.996216,287.948853"
+              stroke="#95679e" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_derecho id_igualdad"
+              d="M 391.126587,301.190125 A 386.357127,386.357127 0,0 1,-29.015739,456.578583"
+              stroke="#7fa682" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_país id_igualdad"
+              d="M -326.693604,-519.380127 A 850.068326,850.068326 0,0 1,-36.554195,441.833893"
+              stroke="#ef8882" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_años id_qué"
+              d="M -22.159058,219.736038 A 549.584481,549.584481 0,0 1,89.642014,-410.424805"
+              stroke="#ffabef" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_sánchez id_cosa"
+              d="M -354.977875,-279.968536 A 360.224264,360.224264 0,0 1,-141.077774,-640.760254"
+              stroke="#516234" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_gracias id_vox"
+              d="M 514.931396,-404.961395 A 597.186052,597.186052 0,0 1,-135.752701,-162.261078"
+              stroke="#a5766c" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_dinero id_gobierno"
+              d="M -526.328430,-407.394684 A 583.664782,583.664782 0,0 1,35.061661,-12.401588"
+              stroke="#9c7fff" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_años id_izquierda"
+              d="M -22.954319,234.890945 A 207.952313,207.952313 0,0 1,-241.158081,324.209869"
+              stroke="#ef9cfc" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_gente id_psoe"
+              d="M 212.946472,137.274216 A 738.561830,738.561830 0,0 1,-601.324158,-172.116974"
+              stroke="#95679e" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_psoe id_dinero"
+              d="M -609.539734,-189.653259 A 198.752294,198.752294 0,0 1,-538.651733,-403.223724"
+              stroke="#c054ff" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_gallardo id_vida"
+              d="M 544.214600,-186.261566 A 861.032172,861.032172 0,0 1,-402.846802,179.785126"
+              stroke="#b98a42" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_españa id_años"
+              d="M -250.836319,551.890137 A 339.654782,339.654782 0,0 1,-26.552780,230.376343"
+              stroke="#ffd08f" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_pp id_mundo"
+              d="M -170.065277,51.135418 A 693.039422,693.039422 0,0 1,608.380554,258.946960"
+              stroke="#cfa4df" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_país id_españa"
+              d="M -327.836761,-518.149597 A 908.051315,908.051315 0,0 1,-244.965775,553.516052"
+              stroke="#efbd92" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -354.102295,-271.117279 C -336.313385,-288.906189 -336.313385,-253.328384 -354.102295,-271.117279"
+              class="id_sánchez" stroke-opacity="1.0" stroke="#008268"/>
+        <path stroke-linecap="round" fill="none" class="id_vida id_aborto"
+              d="M -415.633759,170.669785 A 185.608729,185.608729 0,0 1,-414.270508,-33.668034"
+              stroke="#7f8cc1" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_vida id_mujeres"
+              d="M -412.409302,169.348129 A 538.726633,538.726633 0,0 1,-134.437958,-398.262604"
+              stroke="#e9849a" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_mujeres id_españa"
+              d="M -121.261398,-394.316223 A 810.983244,810.983244 0,0 1,-243.272247,554.840576"
+              stroke="#e9d26a" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_quieren id_derecho"
+              d="M 319.346771,-302.328308 A 506.722545,506.722545 0,0 1,398.691406,288.734894"
+              stroke="#7fda92" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_mujer id_país"
+              d="M 199.089752,595.464233 A 1038.922078,1038.922078 0,0 1,-334.469269,-516.374268"
+              stroke="#e4487f" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_psoe id_partido"
+              d="M -598.191833,-185.312927 A 765.425995,765.425995 0,0 1,299.334564,-93.115860"
+              stroke="#6f49e8" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_vox id_problema"
+              d="M -140.719925,-182.227264 A 197.774930,197.774930 0,0 1,71.947098,-212.684540"
+              stroke="#95679e" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -134.624237,-643.522949 C -120.584198,-657.562988 -120.584198,-629.482910 -134.624237,-643.522949"
+              class="id_cosa" stroke-opacity="1.0" stroke="#a24200"/>
+        <path stroke-linecap="round" fill="none" class="id_años id_vox"
+              d="M -25.486897,222.592514 A 348.822211,348.822211 0,0 1,-161.172302,-148.211884"
+              stroke="#a57a9c" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_izquierda id_derecha"
+              d="M -251.785461,330.154205 A 212.221341,212.221341 0,0 1,-447.825317,472.317261"
+              stroke="#df89ff" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_gobierno id_gallardo"
+              d="M 44.115311,-11.242472 A 457.728101,457.728101 0,0 1,538.219910,-201.642014"
+              stroke="#85cf7f" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_de id_vida"
+              d="M -27.868126,663.961243 A 520.687184,520.687184 0,0 1,-410.596008,185.941330"
+              stroke="#ff6e44" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_gracias id_ayuso"
+              d="M 511.854950,-410.946808 A 203.944414,203.944414 0,0 1,327.483612,-553.947571"
+              stroke="#bcd3a2" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_ayuso id_montero"
+              d="M 330.309387,-555.538574 A 897.204147,897.204147 0,0 1,438.349304,504.040070"
+              stroke="#3dde9f" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_política id_vida"
+              d="M -647.924744,41.584904 A 232.404954,232.404954 0,0 1,-414.477264,170.008987"
+              stroke="#ce7cc1" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_derechos id_ley"
+              d="M 472.105988,73.652565 A 352.282650,352.282650 0,0 1,191.952347,372.182220"
+              stroke="#69b8a2" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_igualdad id_gobierno"
+              d="M -45.995403,442.354950 A 385.353607,385.353607 0,0 1,30.800421,4.951946"
+              stroke="#cbb382" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_política id_sánchez"
+              d="M -653.961121,35.498890 A 362.075791,362.075791 0,0 1,-362.860901,-269.568756"
+              stroke="#4e92b3" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 207.012405,599.625610 C 224.910492,581.727539 224.910492,617.523682 207.012405,599.625610"
+              class="id_mujer" stroke-opacity="1.0" stroke="#ea0700"/>
+        <path stroke-linecap="round" fill="none" class="id_dinero id_país"
+              d="M -530.386597,-413.485596 A 193.138547,193.138547 0,0 1,-340.778870,-524.812561"
+              stroke="#c054ff" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_vox id_aborto"
+              d="M -165.616302,-150.079712 A 232.497244,232.497244 0,0 1,-392.036957,-42.885567"
+              stroke="#26859e" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -40.660076,453.232513 C -16.428957,429.001404 -16.428957,477.463623 -40.660076,453.232513"
+              class="id_igualdad" stroke-opacity="1.0" stroke="#ff8805"/>
+        <path stroke-linecap="round" fill="none" class="id_años id_derecho"
+              d="M -10.616538,223.611938 A 349.182776,349.182776 0,0 1,390.069641,289.918365"
+              stroke="#7fb9fc" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_mujer id_años"
+              d="M 198.752655,596.181519 A 362.517152,362.517152 0,0 1,-19.108961,236.177246"
+              stroke="#f45b7d" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_gobierno id_qué"
+              d="M 33.505020,-11.743111 A 352.792726,352.792726 0,0 1,90.094437,-409.967804"
+              stroke="#cbc3f1" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_quieren id_qué"
+              d="M 307.107391,-306.551819 A 201.456037,201.456037 0,0 1,107.994965,-407.327057"
+              stroke="#ffcc84" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_qué id_mujeres"
+              d="M 88.864227,-411.308746 A 189.634557,189.634557 0,0 1,-117.698128,-397.780762"
+              stroke="#e9adca" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_derechos id_qué"
+              d="M 465.952454,64.312737 A 511.055227,511.055227 0,0 1,101.248718,-405.602814"
+              stroke="#e9adca" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_vox id_ayuso"
+              d="M -150.165421,-187.791016 A 517.522156,517.522156 0,0 1,318.314850,-560.478699"
+              stroke="#63a274" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 221.754959,134.800552 C 240.053406,116.502098 240.053406,153.098999 221.754959,134.800552"
+              class="id_gente" stroke-opacity="1.0" stroke="#4c463e"/>
+        <path stroke-linecap="round" fill="none" class="id_españa id_gracias"
+              d="M -250.283707,551.892578 A 1033.811808,1033.811808 0,0 1,512.086243,-408.925690"
+              stroke="#ffcc5f" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_derecha id_qué"
+              d="M -455.564362,465.218842 A 876.867031,876.867031 0,0 1,86.484482,-415.355438"
+              stroke="#ef98f1" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_gobierno id_gente"
+              d="M 48.927311,-2.107713 A 190.843384,190.843384 0,0 1,218.972916,126.084557"
+              stroke="#71929e" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_mundo id_montero"
+              d="M 612.912964,271.631897 A 253.024714,253.024714 0,0 1,441.533020,508.029724"
+              stroke="#60beaa" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_quieren id_mujer"
+              d="M 317.908569,-301.245453 A 761.238831,761.238831 0,0 1,213.147293,593.110352"
+              stroke="#f47c12" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_años id_derechos"
+              d="M -13.311548,220.474747 A 430.935499,430.935499 0,0 1,466.029724,64.063156"
+              stroke="#e9b1d5" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_sánchez id_partido"
+              d="M -345.786896,-274.274078 A 572.143939,572.143939 0,0 1,300.620178,-94.307343"
+              stroke="#00469d" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_messi id_mundo"
+              d="M 681.571472,-11.631359 A 242.707662,242.707662 0,0 1,618.294373,259.796051"
+              stroke="#99c060" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_vox id_cosa"
+              d="M -166.639862,-185.203751 A 396.690633,396.690633 0,0 1,-139.030182,-638.057739"
+              stroke="#77441f" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_gracias id_ley"
+              d="M 520.365540,-403.991364 A 711.194989,711.194989 0,0 1,190.850555,369.225403"
+              stroke="#7fb297" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_ley id_sánchez"
+              d="M 173.998550,371.684113 A 699.402082,699.402082 0,0 1,-353.594025,-262.237366"
+              stroke="#009f7e" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_qué id_messi"
+              d="M 116.378159,-421.445862 A 586.220680,586.220680 0,0 1,675.644592,-27.229076"
+              stroke="#b9b372" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_años id_pp"
+              d="M -26.945841,226.317108 A 201.656308,201.656308 0,0 1,-187.688217,84.710495"
+              stroke="#ef9cfc" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_gracias id_violadores"
+              d="M 511.890381,-409.976959 A 402.673095,402.673095 0,0 1,104.132027,-647.868347"
+              stroke="#dfa3cc" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_sánchez id_dinero"
+              d="M -362.992645,-271.386780 A 187.432994,187.432994 0,0 1,-531.161255,-400.724854"
+              stroke="#5051b3" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_qué id_gente"
+              d="M 112.436897,-410.767456 A 474.074078,474.074078 0,0 1,225.483536,126.445549"
+              stroke="#a57691" stroke-width="2.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_gallardo id_cosa"
+              d="M 537.760742,-197.214035 A 681.824212,681.824212 0,0 1,-132.173340,-636.944641"
+              stroke="#8a8100" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_vida id_problema"
+              d="M -408.722015,169.507431 A 519.857310,519.857310 0,0 1,71.268547,-209.472702"
+              stroke="#ef6fc1" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_vida id_mujer"
+              d="M -402.557129,177.266556 A 623.587062,623.587062 0,0 1,204.068146,591.174744"
+              stroke="#f42e42" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_qué id_izquierda"
+              d="M 103.840256,-405.883453 A 684.749525,684.749525 0,0 1,-241.918655,318.371918"
+              stroke="#ef98f1" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_qué id_ayuso"
+              d="M 107.002235,-435.339752 A 220.422990,220.422990 0,0 1,318.324371,-561.331238"
+              stroke="#bcd3c7" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_sánchez id_montero"
+              d="M -345.297394,-269.858307 A 925.213993,925.213993 0,0 1,433.543549,503.097412"
+              stroke="#009f7e" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_problema id_mujer"
+              d="M 83.053291,-204.891449 A 682.933882,682.933882 0,0 1,211.137268,591.683899"
+              stroke="#e4487f" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_gobierno id_ayuso"
+              d="M 36.714626,-12.804835 A 523.260986,523.260986 0,0 1,319.049042,-557.648499"
+              stroke="#88efd4" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_problema id_psoe"
+              d="M 72.795341,-205.374359 A 571.138995,571.138995 0,0 1,-598.493225,-174.887115"
+              stroke="#df89ff" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_gente id_pp"
+              d="M 213.528534,138.804825 A 351.403845,351.403845 0,0 1,-175.627777,78.027542"
+              stroke="#95679e" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_vox id_cosas"
+              d="M -158.614731,-147.649368 A 527.296122,527.296122 0,0 1,-592.283752,282.269806"
+              stroke="#4c463e" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_derecho id_mujer"
+              d="M 395.743011,302.395905 A 298.289503,298.289503 0,0 1,215.293579,596.233337"
+              stroke="#75657f" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_gente id_derecho"
+              d="M 230.831741,135.949585 A 196.812991,196.812991 0,0 1,393.730042,287.976807"
+              stroke="#26859e" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_aborto id_país"
+              d="M -412.433807,-57.650948 A 403.755274,403.755274 0,0 1,-338.516266,-518.524597"
+              stroke="#6fa6ff" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_derecha id_dinero"
+              d="M -459.724609,467.002716 A 735.881624,735.881624 0,0 1,-536.712646,-401.436005"
+              stroke="#c054ff" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_mujeres id_ley"
+              d="M -117.789810,-397.630005 A 696.430179,696.430179 0,0 1,185.268768,364.982727"
+              stroke="#69b8a2" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_mujer id_partido"
+              d="M 202.793930,591.733215 A 577.461220,577.461220 0,0 1,299.711243,-78.626411"
+              stroke="#750869" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_mundo id_gallardo"
+              d="M 607.944519,259.333435 A 388.780985,388.780985 0,0 1,545.047424,-185.775162"
+              stroke="#99c060" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_messi id_gracias"
+              d="M 671.213989,-23.699860 A 352.222225,352.222225 0,0 1,517.074951,-404.011749"
+              stroke="#b9b34d" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_pp id_aborto"
+              d="M -218.125519,63.342155 A 197.816676,197.816676 0,0 1,-399.178680,-32.724102"
+              stroke="#6fa6ff" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_derecho id_qué"
+              d="M 388.932709,291.356110 A 645.274531,645.274531 0,0 1,97.172630,-406.048737"
+              stroke="#7fb5f1" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_política id_izquierda"
+              d="M -647.875610,42.223267 A 410.690825,410.690825 0,0 1,-251.917023,314.470337"
+              stroke="#be96ff" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_pp id_de"
+              d="M -173.769348,75.949295 A 524.577107,524.577107 0,0 1,-18.471367,659.121643"
+              stroke="#ef8882" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_qué id_psoe"
+              d="M 91.979958,-408.409332 A 622.770107,622.770107 0,0 1,-597.289001,-177.380768"
+              stroke="#ef98f1" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_ley id_qué"
+              d="M 176.731934,367.076752 A 665.987065,665.987065 0,0 1,93.058601,-407.717377"
+              stroke="#7fb2bc" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_vox id_quieren"
+              d="M -142.837097,-184.133530 A 408.404855,408.404855 0,0 1,307.469452,-309.998779"
+              stroke="#a59b31" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_vox id_política"
+              d="M -166.249680,-150.453705 A 451.578504,451.578504 0,0 1,-648.067932,44.084965"
+              stroke="#74749e" stroke-width="1.0" stroke-opacity="1.0"/>
+    </g>
+    <g id="nodes">
+        <circle fill-opacity="1.0" fill="#a120ff" r="6.274249" cx="-533.1467"
+                class="id_dinero" cy="-407.24927" stroke="#7016b2"
+                stroke-opacity="1.0" stroke-width="1.0911738"/>
+        <circle fill-opacity="1.0" fill="#ffaffa" r="7.9819837" cx="-18.355528"
+                class="id_años" cy="227.53395" stroke="#b27aaf"
+                stroke-opacity="1.0" stroke-width="1.3881711"/>
+        <circle fill-opacity="1.0" fill="#000ad2" r="9.622748" cx="307.06223"
+                class="id_partido" cy="-86.06712" stroke="#000793"
+                stroke-opacity="1.0" stroke-width="1.6735214"/>
+        <circle fill-opacity="1.0" fill="#4c463e" r="8.417289" cx="221.75496"
+                class="id_gente" cy="134.80055" stroke="#35312b"
+                stroke-opacity="1.0" stroke-width="1.4638764"/>
+        <circle fill-opacity="1.0" fill="#97dfff" r="9.706461" cx="38.3805"
+                class="id_gobierno" cy="-2.3866818" stroke="#699cb2"
+                stroke-opacity="1.0" stroke-width="1.6880801"/>
+        <circle fill-opacity="1.0" fill="#ea0700" r="8.233122" cx="207.0124"
+                class="id_mujer" cy="599.6256" stroke="#a30400"
+                stroke-opacity="1.0" stroke-width="1.4318472"/>
+        <circle fill-opacity="1.0" fill="#ff8805" r="11.146315" cx="-40.660076"
+                class="id_igualdad" cy="453.2325" stroke="#b25f03"
+                stroke-opacity="1.0" stroke-width="1.9384894"/>
+        <circle fill-opacity="1.0" fill="#008268" r="8.182894" cx="-354.1023"
+                class="id_sánchez" cy="-271.11728" stroke="#005b48"
+                stroke-opacity="1.0" stroke-width="1.4231118"/>
+        <circle fill-opacity="1.0" fill="#73c000" r="7.6806183" cx="678.3224"
+                class="id_messi" cy="-19.32168" stroke="#508600"
+                stroke-opacity="1.0" stroke-width="1.3357598"/>
+        <circle fill-opacity="1.0" fill="#ffa79a" r="6.3579617" cx="518.76184"
+                class="id_gracias" cy="-410.71353" stroke="#b2746b"
+                stroke-opacity="1.0" stroke-width="1.1057324"/>
+        <circle fill-opacity="1.0" fill="#00bd94" r="6.676069" cx="434.63153"
+                class="id_montero" cy="510.27197" stroke="#008467"
+                stroke-opacity="1.0" stroke-width="1.1610554"/>
+        <circle fill-opacity="1.0" fill="#a24200" r="6.458417" cx="-134.62424"
+                class="id_cosa" cy="-643.52295" stroke="#712e00"
+                stroke-opacity="1.0" stroke-width="1.1232029"/>
+        <circle fill-opacity="1.0" fill="#d3b3b0" r="6.7597814" cx="473.00888"
+                class="id_derechos" cy="66.360664" stroke="#937d7b"
+                stroke-opacity="1.0" stroke-width="1.1756141"/>
+        <circle fill-opacity="1.0" fill="#00bd94" r="8.450773" cx="182.92189"
+                class="id_ley" cy="373.8635" stroke="#008467"
+                stroke-opacity="1.0" stroke-width="1.4696996"/>
+        <circle fill-opacity="1.0" fill="#df89ff" r="23.0" cx="-193.30527"
+                class="id_pp" cy="60.349693" stroke="#9c5fb2"
+                stroke-opacity="1.0" stroke-width="4.0"/>
+        <circle fill-opacity="1.0" fill="#00c4ff" r="6.709554" cx="395.17642"
+                class="id_derecho" cy="295.12494" stroke="#0089b2"
+                stroke-opacity="1.0" stroke-width="1.1668789"/>
+        <circle fill-opacity="1.0" fill="#ff8805" r="6.5588717" cx="-20.978876"
+                class="id_de" cy="665.79535" stroke="#b25f03"
+                stroke-opacity="1.0" stroke-width="1.1406734"/>
+        <circle fill-opacity="1.0" fill="#fff125" r="6.676069" cx="314.2965"
+                class="id_quieren" cy="-307.53918" stroke="#b2a819"
+                stroke-opacity="1.0" stroke-width="1.1610554"/>
+        <circle fill-opacity="1.0" fill="#4c463e" r="6.274249" cx="-599.01965"
+                class="id_cosas" cy="283.33636" stroke="#35312b"
+                stroke-opacity="1.0" stroke-width="1.0911738"/>
+        <circle fill-opacity="1.0" fill="#d3b3b0" r="8.819108" cx="-125.93377"
+                class="id_mujeres" cy="-402.6864" stroke="#937d7b"
+                stroke-opacity="1.0" stroke-width="1.5337579"/>
+        <circle fill-opacity="1.0" fill="#4c463e" r="18.898088" cx="-155.49011"
+                class="id_vox" cy="-167.95174" stroke="#35312b"
+                stroke-opacity="1.0" stroke-width="3.286624"/>
+        <circle fill-opacity="1.0" fill="#ffa7e4" r="14.260419" cx="100.881584"
+                class="id_qué" cy="-421.0989" stroke="#b2749f"
+                stroke-opacity="1.0" stroke-width="2.4800727"/>
+        <circle fill-opacity="1.0" fill="#df89ff" r="7.2118287" cx="-332.97522"
+                class="id_país" cy="-524.0695" stroke="#9c5fb2"
+                stroke-opacity="1.0" stroke-width="1.2542311"/>
+        <circle fill-opacity="1.0" fill="#c09fff" r="6.3579617" cx="101.39162"
+                class="id_violadores" cy="-654.2126" stroke="#866fb2"
+                stroke-opacity="1.0" stroke-width="1.1057324"/>
+        <circle fill-opacity="1.0" fill="#ff5584" r="7.6973615" cx="-410.9179"
+                class="id_vida" cy="177.58083" stroke="#b23b5c"
+                stroke-opacity="1.0" stroke-width="1.3386716"/>
+        <circle fill-opacity="1.0" fill="#df89ff" r="7.613649" cx="-249.20804"
+                class="id_izquierda" cy="322.2901" stroke="#9c5fb2"
+                stroke-opacity="1.0" stroke-width="1.3241128"/>
+        <circle fill-opacity="1.0" fill="#9da3ff" r="6.441674" cx="-654.874"
+                class="id_política" cy="42.44094" stroke="#6d72b2"
+                stroke-opacity="1.0" stroke-width="1.1202911"/>
+        <circle fill-opacity="1.0" fill="#df89ff" r="8.986533" cx="-606.5984"
+                class="id_psoe" cy="-180.33865" stroke="#9c5fb2"
+                stroke-opacity="1.0" stroke-width="1.5628754"/>
+        <circle fill-opacity="1.0" fill="#df89ff" r="6.324477" cx="78.13926"
+                class="id_problema" cy="-209.69875" stroke="#9c5fb2"
+                stroke-opacity="1.0" stroke-width="1.0999091"/>
+        <circle fill-opacity="1.0" fill="#00c4ff" r="12.987988" cx="-405.98038"
+                class="id_aborto" cy="-45.09493" stroke="#0089b2"
+                stroke-opacity="1.0" stroke-width="2.2587807"/>
+        <circle fill-opacity="1.0" fill="#df89ff" r="6.575614" cx="-454.9727"
+                class="id_derecha" cy="472.3417" stroke="#9c5fb2"
+                stroke-opacity="1.0" stroke-width="1.1435851"/>
+        <circle fill-opacity="1.0" fill="#c0c0c0" r="6.575614" cx="612.89954"
+                class="id_mundo" cy="264.4845" stroke="#868686"
+                stroke-opacity="1.0" stroke-width="1.1435851"/>
+        <circle fill-opacity="1.0" fill="#7affaa" r="6.5923567" cx="325.47208"
+                class="id_ayuso" cy="-560.825" stroke="#55b276"
+                stroke-opacity="1.0" stroke-width="1.1464968"/>
+        <circle fill-opacity="1.0" fill="#fff125" r="9.739945" cx="-250.60739"
+                class="id_españa" cy="562.47455" stroke="#b2a819"
+                stroke-opacity="1.0" stroke-width="1.6939034"/>
+        <circle fill-opacity="1.0" fill="#73c000" r="12.787079" cx="551.6368"
+                class="id_gallardo" cy="-198.0129" stroke="#508600"
+                stroke-opacity="1.0" stroke-width="2.2238398"/>
+    </g>
+    <g id="node-labels">
+        <text font-size="16" x="-533.1467" y="-404.3391" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_dinero">
+            dinero
+        </text>
+        <text font-size="21" x="-18.355528" y="231.31252" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_años">
+            años
+        </text>
+        <text font-size="25" x="307.06223" y="-80.35017" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_partido">
+            partido
+        </text>
+        <text font-size="22" x="221.75496" y="139.8082" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_gente">
+            gente
+        </text>
+        <text font-size="25" x="38.3805" y="3.4035203" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_gobierno">
+            gobierno
+        </text>
+        <text font-size="21" x="207.0124" y="604.4894" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_mujer">
+            mujer
+        </text>
+        <text font-size="29" x="-40.660076" y="459.94916" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_igualdad">
+            igualdad
+        </text>
+        <text font-size="21" x="-354.1023" y="-267.2772" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_sánchez">
+            sánchez
+        </text>
+        <text font-size="20" x="678.3224" y="-15.683985" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_messi">
+            messi
+        </text>
+        <text font-size="17" x="518.76184" y="-406.77618" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_gracias">
+            gracias
+        </text>
+        <text font-size="17" x="434.63153" y="513.2962" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_montero">
+            montero
+        </text>
+        <text font-size="17" x="-134.62424" y="-641.2195" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_cosa">
+            cosa
+        </text>
+        <text font-size="18" x="473.00888" y="69.63459" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_derechos">
+            derechos
+        </text>
+        <text font-size="22" x="182.92189" y="378.95886" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_ley">
+            ley
+        </text>
+        <text font-size="60" x="-193.30527" y="71.28719" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_pp">
+            pp
+        </text>
+        <text font-size="18" x="395.17642" y="298.39886" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_derecho">
+            derecho
+        </text>
+        <text font-size="17" x="-20.978876" y="668.8874" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_de">
+            de
+        </text>
+        <text font-size="17" x="314.2965" y="-303.65164" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_quieren">
+            quieren
+        </text>
+        <text font-size="16" x="-599.01965" y="285.50433" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_cosas">
+            cosas
+        </text>
+        <text font-size="23" x="-125.93377" y="-397.3594" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_mujeres">
+            mujeres
+        </text>
+        <text font-size="49" x="-155.49011" y="-161.31233" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_vox">
+            vox
+        </text>
+        <text font-size="37" x="100.881584" y="-412.60168" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_qué">
+            qué
+        </text>
+        <text font-size="19" x="-332.97522" y="-519.70605" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_país">
+            país
+        </text>
+        <text font-size="17" x="101.39162" y="-651.12054" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_violadores">
+            violadores
+        </text>
+        <text font-size="20" x="-410.9179" y="181.21852" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_vida">
+            vida
+        </text>
+        <text font-size="20" x="-249.20804" y="326.86368" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_izquierda">
+            izquierda
+        </text>
+        <text font-size="17" x="-654.874" y="46.345074" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_política">
+            política
+        </text>
+        <text font-size="23" x="-606.5984" y="-176.14595" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_psoe">
+            psoe
+        </text>
+        <text font-size="16" x="78.13926" y="-206.03989" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_problema">
+            problema
+        </text>
+        <text font-size="34" x="-405.98038" y="-38.910847" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_aborto">
+            aborto
+        </text>
+        <text font-size="17" x="-454.9727" y="475.43375" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_derecha">
+            derecha
+        </text>
+        <text font-size="17" x="612.89954" y="267.57654" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_mundo">
+            mundo
+        </text>
+        <text font-size="17" x="325.47208" y="-557.6763" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_ayuso">
+            ayuso
+        </text>
+        <text font-size="25" x="-250.60739" y="568.1427" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_españa">
+            españa
+        </text>
+        <text font-size="33" x="551.6368" y="-190.36983" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_gallardo">
+            gallardo
+        </text>
+    </g>
+</svg>
