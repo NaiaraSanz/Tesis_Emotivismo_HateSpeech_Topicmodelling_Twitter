@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo Discurso de Odio</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div style="width:400px; height:400px;">
+  <canvas id="algolinguaChart"></canvas>
+</div>
+
+<script>
+  var ctx = document.getElementById('algolinguaChart').getContext('2d');
+  var algolinguaChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Sin Discurso de Odio', 'Con Discurso de Odio'],
+      datasets: [{
+        label: 'Porcentaje de Tweets',
+        data: [45, 55], // Reemplaza 45 y 55 con tus valores de {porcentaje_sin} y {porcentaje_con}
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)'
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)'
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
